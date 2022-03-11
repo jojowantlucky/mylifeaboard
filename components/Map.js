@@ -39,33 +39,7 @@ const Map = () => {
       });
   }, []);
 
-  // console.log('rawGpsData: ', rawGpsData[0]);
-
-  // const centerCoordinates =
-  //   rawGpsData.length < 2 || rawGpsData.length === 0
-  //     ? homePortCoordinates
-  //     : rawGpsData[rawGpsData.length - 1].latLon;
-
   const centerCoordinates = homePortCoordinates;
-
-  // const coordinatesToMark =
-  //   rawGpsData.length > 0
-  //     ? rawGpsData.map((c) => {
-  //         const coordinate = {};
-
-  //         // UPDATE LATLON TO CONVERT ARRAY OF NUMBERS TO ARRAY OF STRINGS
-  //         coordinate.trip = c.trip;
-  //         coordinate.latLon = c.latLon;
-  //         coordinate.timestamp = new Date(c.timestamp);
-  //         return coordinate;
-  //       })
-  //     : centerCoordinates;
-
-  // const sortedCoordinatesToMark = coordinatesToMark.sort(
-  //   (a, b) => {
-  //     return b.timestamp - a.timestamp;
-  //   }
-  // );
 
   return (
     <MapContainer
