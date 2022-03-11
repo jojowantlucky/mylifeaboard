@@ -47,7 +47,7 @@ const SailLog = () => {
                           The GPS device onboard Onnie is a{' '}
                           <a href='https://www.garmin.com/en-US/p/631368#devices'>
                             Garmin inReach
-                          </a>{' '}
+                          </a>
                           . The unit's access to satellites
                           makes it possible to update
                           location to send simple SMS
@@ -73,9 +73,9 @@ const SailLog = () => {
                         <p>
                           Every 15 minutes,{' '}
                           <Link href='https://www.zapier.com'>
-                            <a>Zapier</a>
+                            <a>Zapier </a>
                           </Link>
-                          check the Twilio phone number for
+                          checks the Twilio phone number for
                           new messages. When it finds a new
                           SMS message, Zapier updates this
                           site's back end that provides the
