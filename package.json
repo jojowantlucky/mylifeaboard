@@ -4,7 +4,7 @@
   "description": "Nezox - React Next Cyber Security Company Template",
   "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=dev && next dev",
+    "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "start": "next start",
