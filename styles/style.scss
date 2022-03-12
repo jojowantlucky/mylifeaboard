@@ -44,7 +44,7 @@ $body-family: 'Montserrat', sans-serif;
 $body-color: #4b5280;
 $main-color: #e21f36;
 $optional-color: #ff5a00;
-$heading-color: #0002199b;
+$heading-color: #0b3c5cae;
 $white-color: #e1e5e9;
 $black-color: #2f3238;
 $font-size: 16px;
@@ -2619,7 +2619,7 @@ Page Title Area Style
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.5;
   }
   .page-title-content {
     position: relative;

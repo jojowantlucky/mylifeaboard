@@ -4,6 +4,7 @@ import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Link from 'next/link';
 import Footer from '../components/_App/Footer';
+import TripSelectorDropdown from '../components/TripSelectorDropdown';
 
 const SailLog = () => {
   const MapWithNoSSR = dynamic(
@@ -37,7 +38,7 @@ const SailLog = () => {
                       <div className='overlay-two'>
                         <h3>
                           <Link href='/coming-soon'>
-                            <a>
+                            <a target='_blank'>
                               Onboard GPS Device Sends SMS
                               Message
                             </a>
@@ -45,7 +46,9 @@ const SailLog = () => {
                         </h3>
                         <p>
                           The GPS device onboard Onnie is a{' '}
-                          <a href='https://www.garmin.com/en-US/p/631368#devices'>
+                          <a
+                            href='https://www.garmin.com/en-US/p/631368#devices'
+                            target='_blank'>
                             Garmin inReach
                           </a>
                           . The unit's access to satellites
@@ -65,7 +68,7 @@ const SailLog = () => {
                       <div className='overlay-two'>
                         <h3>
                           <Link href='/coming-soon'>
-                            <a>
+                            <a target='_blank'>
                               Zapier Watches Twilio Number
                             </a>
                           </Link>
@@ -73,8 +76,8 @@ const SailLog = () => {
                         <p>
                           Every 15 minutes,{' '}
                           <Link href='https://www.zapier.com'>
-                            <a>Zapier </a>
-                          </Link>
+                            <a target='_blank'>Zapier</a>
+                          </Link>{' '}
                           checks the Twilio phone number for
                           new messages. When it finds a new
                           SMS message, Zapier updates this
@@ -91,7 +94,7 @@ const SailLog = () => {
                       <div className='overlay-two'>
                         <h3>
                           <Link href='/coming-soon'>
-                            <a>
+                            <a target='_blank'>
                               Update Website with Location
                               Information
                             </a>
@@ -113,6 +116,7 @@ const SailLog = () => {
             </div>
 
             <div className='col-lg-6 pr-0'>
+              <TripSelectorDropdown />
               <MapWithNoSSR />
             </div>
           </div>
