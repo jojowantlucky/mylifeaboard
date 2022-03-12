@@ -7,6 +7,7 @@ import Protects from '../components/About/Protects';
 import Testimonials from '../components/Common/Testimonials';
 import Sponsors from '../components/Common/Sponsors';
 import Footer from '../components/_App/Footer';
+import Image from 'next/image';
 
 const AboutOnnie = () => {
   return (
@@ -22,13 +23,17 @@ const AboutOnnie = () => {
       <div className='pt-100 pb-70'>
         <AboutOnnieContent />
       </div>
-
+      <Image
+        className="cascade-logo"
+        src='/images/about/cascade-logo.png'
+        alt='cascade yachts logo'
+        width={150}
+        height={150}
+        
+      />
       <OurChallenges />
 
       <Protects />
-
-      <Testimonials />
-
       <Sponsors />
 
       <Footer />
