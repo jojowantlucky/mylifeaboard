@@ -33,7 +33,10 @@ const BlogSidebar = () => {
               <Link href={`/blog-details/${post.slug}`}>
                 <a>
                   {post.headline}
-                  <img src={post.recentPostImgUrl} alt={post.alt} />
+                  <img
+                    src={post.recentPostImgUrl}
+                    alt={post.alt}
+                  />
                 </a>
               </Link>
               <span>{post.date}</span>
