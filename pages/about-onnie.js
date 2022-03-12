@@ -26,9 +26,6 @@ const AboutOnnie = () => {
       <OurChallenges />
 
       <Protects />
-
-      <Testimonials />
-
       <Sponsors />
 
       <Footer />
