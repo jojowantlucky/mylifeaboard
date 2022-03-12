@@ -2,9 +2,9 @@ import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import AboutOnnieContent from '../components/About/AboutOnnieContent';
-import OurChallenges from '../components/Common/OurChallenges';
+import Gallery from '../components/Common/Gallery';
 import Protects from '../components/About/Protects';
-import Testimonials from '../components/Common/Testimonials';
+// import Testimonials from '../components/Common/Testimonials';
 import Sponsors from '../components/Common/Sponsors';
 import Footer from '../components/_App/Footer';
 import Image from 'next/image';
@@ -24,14 +24,13 @@ const AboutOnnie = () => {
         <AboutOnnieContent />
       </div>
       <Image
-        className="cascade-logo"
+        className='cascade-logo'
         src='/images/about/cascade-logo.png'
         alt='cascade yachts logo'
         width={150}
         height={150}
-        
       />
-      <OurChallenges />
+      <Gallery />
 
       <Protects />
       <Sponsors />

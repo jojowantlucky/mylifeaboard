@@ -3927,6 +3927,116 @@ Main Contact Area Style
   }
 }
 
+/*
+Gallery Area Style
+======================================================*/
+.gallery-area {
+  background-image: url(/images/gallery-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $heading-color;
+    opacity: 0.75;
+  }
+  &.gallery-area-two {
+    background-image: unset;
+    background-color: $heading-color;
+
+    &::before {
+      display: none;
+    }
+    .gallery-shape {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .gallery-single {
+      i {
+        transition: $transition;
+      }
+      h3 {
+        transition: $transition;
+      }
+      p {
+        transition: $transition;
+      }
+      &:hover {
+        background-color: $main-color;
+
+        i {
+          color: $white-color;
+        }
+        h3 {
+          color: $white-color;
+        }
+        p {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+.gallery-single {
+  position: relative;
+  margin-bottom: 30px;
+  transition: $transition;
+  background-color: $white-color;
+  box-shadow: $box-shadow;
+  padding: 30px 25px;
+  text-align: center;
+  z-index: 1;
+
+  i {
+    font-size: 50px;
+    color: $main-color;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .build {
+    &::before {
+      font-family: 'Material Icons';
+      content: 'build';
+      font-size: 90px;
+      color: $main-color;
+    }
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+    z-index: -1;
+    opacity: 0.06;
+    top: 50%;
+    transform: translateY(-50%);
+    
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
 /*====================================================
 OTHERS STYLE AREA
 ======================================================*/

@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import AboutJoeContent from '../components/About/AboutJoeContent';
-import OurChallenges from '../components/Common/OurChallenges';
+import Gallery from '../components/Common/Gallery';
 import Protects from '../components/About/Protects';
 import Testimonials from '../components/Common/Testimonials';
 import Sponsors from '../components/Common/Sponsors';
@@ -23,7 +23,7 @@ const AboutUs = () => {
         <AboutJoeContent />
       </div>
 
-      <OurChallenges />
+      <Gallery />
 
       <Protects />
 
