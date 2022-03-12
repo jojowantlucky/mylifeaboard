@@ -95,7 +95,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0002199b;
+  color: #0b3c5cae;
   font-weight: 800;
 }
 
@@ -402,19 +402,19 @@ Header Area Style
   background-color: #2f3238 !important;
 }
 .top-header.top-header-three .header-left-content li {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .top-header.top-header-three .header-left-content li i {
   color: #e21f36;
 }
 .top-header.top-header-three .header-left-content li a {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .top-header.top-header-three .header-left-content li a:hover {
   color: #e21f36;
 }
 .top-header.top-header-three .header-right-content li a i {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .top-header.top-header-three .header-right-content li a:hover i {
   color: #e21f36;
@@ -496,7 +496,7 @@ Navbar Area Style
 }
 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
   font-size: 15px;
-  color: #0002199b;
+  color: #0b3c5cae;
   position: relative;
   padding: 10px 15px;
   border-bottom: 1px dashed #eeeeee;
@@ -543,7 +543,7 @@ Navbar Area Style
   visibility: hidden !important;
 }
 .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
-  color: #0002199b;
+  color: #0b3c5cae;
   text-transform: capitalize;
   font-weight: 600;
 }
@@ -625,7 +625,7 @@ Navbar Area Style
   color: #e21f36;
 }
 .navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
   color: #e21f36;
@@ -634,7 +634,7 @@ Navbar Area Style
   color: #e21f36;
 }
 .navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover {
   color: #e21f36;
@@ -672,7 +672,7 @@ Navbar Area Style
   width: 100%;
   z-index: 999;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
@@ -816,7 +816,7 @@ Banner Area Style
 }
 .banner-area.banner-area-three .banner-content h1 {
   font-size: 62px;
-  color: #0002199b;
+  color: #0b3c5cae;
   margin-bottom: 25px;
 }
 .banner-area.banner-area-three .banner-content p {
@@ -944,7 +944,7 @@ RefitLiveAboardSailLog Area Style
   opacity: 0.4;
 }
 .RefitLiveAboardSailLog-area.RefitLiveAboardSailLog-area-four .single-feature {
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
 }
 .RefitLiveAboardSailLog-area.RefitLiveAboardSailLog-area-four .single-feature h3 {
   color: #e1e5e9;
@@ -953,7 +953,7 @@ RefitLiveAboardSailLog Area Style
   color: #e1e5e9;
 }
 .RefitLiveAboardSailLog-area.RefitLiveAboardSailLog-area-five .RefitLiveAboardSailLog-single {
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
 }
 .RefitLiveAboardSailLog-area.RefitLiveAboardSailLog-area-five .RefitLiveAboardSailLog-single h3 {
   color: #e1e5e9;
@@ -1022,7 +1022,7 @@ The Plan Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   z-index: -1;
   transition: all ease 0.5s;
 }
@@ -1030,7 +1030,7 @@ The Plan Area Style
   width: 0;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(1) .the-plan-single:hover h3 {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(1) .the-plan-single:hover p {
   color: #4b5280;
@@ -1039,7 +1039,7 @@ The Plan Area Style
   background-color: transparent;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(2) .the-plan-single h3 {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(2) .the-plan-single p {
   color: #4b5280;
@@ -1051,7 +1051,7 @@ The Plan Area Style
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   z-index: -1;
   transition: all ease 0.5s;
 }
@@ -1068,7 +1068,7 @@ The Plan Area Style
   background-color: transparent;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(3) .the-plan-single h3 {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(3) .the-plan-single p {
   color: #4b5280;
@@ -1080,7 +1080,7 @@ The Plan Area Style
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   z-index: -1;
   transition: all ease 0.5s;
 }
@@ -1105,7 +1105,7 @@ The Plan Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   z-index: -1;
   transition: all ease 0.5s;
 }
@@ -1113,7 +1113,7 @@ The Plan Area Style
   width: 0;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(4) .the-plan-single:hover h3 {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .the-plan-area.the-plan-area-four .col-lg-6 .row .col-lg-6:nth-child(4) .the-plan-single:hover p {
   color: #4b5280;
@@ -1325,7 +1325,7 @@ Get In Touch Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   opacity: 0.75;
   z-index: -1;
 }
@@ -1522,7 +1522,7 @@ Footer Top Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   opacity: 0.95;
   z-index: -1;
 }
@@ -1653,7 +1653,7 @@ Footer Top Area Style
 Copy Right Area Style
 ======================================================*/
 .copy-right-area {
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   border-top: 1px solid #212437;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1712,8 +1712,8 @@ About Area Style
   margin-right: 30px;
   font-weight: 700;
   font-size: 16px;
-  color: #0002199b;
-  border-bottom: 2px solid #0002199b;
+  color: #0b3c5cae;
+  border-bottom: 2px solid #0b3c5cae;
   padding: 0 0 5px;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -1734,7 +1734,7 @@ About Area Style
 .about-content .react-tabs__tab-panel ul li {
   margin-bottom: 10px;
   font-weight: 600;
-  color: #0002199b;
+  color: #0b3c5cae;
   position: relative;
   font-size: 16px;
   padding-left: 25px;
@@ -1826,7 +1826,7 @@ Pricing Area Style
   padding-bottom: 0;
 }
 .single-pricing.active {
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
 }
 .single-pricing.active .pricing-title h3 {
   color: #e1e5e9;
@@ -1852,7 +1852,7 @@ Pricing Area Style
 }
 .single-pricing:hover {
   transform: translateY(-5px);
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
 }
 .single-pricing:hover .pricing-title h3 {
   color: #e1e5e9;
@@ -1896,7 +1896,7 @@ At A Glance Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   opacity: 0.2;
   z-index: -1;
 }
@@ -1941,7 +1941,7 @@ At A Glance Area Style
   border-color: #edeaea;
 }
 .at-a-glance-area.at-a-glance-area-three .at-a-glance-single h2 {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .at-a-glance-area.at-a-glance-area-three .at-a-glance-single h3 {
   color: #2f3238;
@@ -2032,7 +2032,7 @@ About Area Style
   background-color: #f5f7fa;
 }
 .about-area.about-area-three .about-single .about-content h3 {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .about-area.about-area-three .about-single .about-content span {
   color: #4b5280;
@@ -2042,7 +2042,7 @@ About Area Style
   background-color: #e1e5e9;
 }
 .about-area.about-area-three .about-single .about-content ul li a i {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .about-area.about-area-three .about-single .about-content ul li a:hover i {
   color: #e21f36;
@@ -2054,7 +2054,7 @@ About Area Style
   background-color: #eae1d6;
 }
 .about-area.about-area-three .about-single:hover .about-content span {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .about-area.about-area-three .about-right-shape {
   z-index: -1;
@@ -2071,7 +2071,7 @@ About Area Style
 }
 .about-single .about-content {
   position: relative;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   padding: 20px 30px;
   margin-top: -60px;
   margin-left: 30px;
@@ -2281,7 +2281,7 @@ Page Title Area Style
   overflow: hidden;
   text-align: center;
   z-index: 1;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -2298,7 +2298,7 @@ Page Title Area Style
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 .page-title-area .page-title-content {
   position: relative;
@@ -2415,7 +2415,7 @@ FAQ Area Style
 .faq-accordion .accordion .accordion__button {
   background-color: transparent;
   padding: 15px 15px 15px 20px;
-  color: #0002199b;
+  color: #0b3c5cae;
   text-decoration: none;
   position: relative;
   display: block;
@@ -2462,7 +2462,7 @@ FAQ Area Style
 }
 .faq-accordion .accordion .accordion__panel span {
   font-weight: 500;
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .faq-accordion .accordion .accordion__panel p {
   margin-bottom: 0;
@@ -2580,7 +2580,7 @@ Coming Soon Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   opacity: 0.9;
   z-index: -1;
 }
@@ -2609,7 +2609,7 @@ Coming Soon Area Style
   margin-top: 40px;
 }
 .coming-soon-area .coming-soon-content #timer div {
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   color: #e1e5e9;
   width: 100px;
   height: 105px;
@@ -2646,7 +2646,7 @@ Coming Soon Area Style
   pointer-events: none;
   width: 100%;
   height: 100%;
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .coming-soon-area .coming-soon-content form .form-group .label-title i {
   position: absolute;
@@ -2671,7 +2671,7 @@ Coming Soon Area Style
   border: none;
   border-bottom: 1px solid #eeeeee;
   padding: 0 0 0 32px;
-  color: #0002199b;
+  color: #0b3c5cae;
   height: 45px;
   display: block;
   width: 100%;
@@ -2833,7 +2833,7 @@ User Area Style
   line-height: 1;
 }
 .user-area-style .contact-form-action p a {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .user-area-style .contact-form-action p a:hover {
   color: #e21f36;
@@ -2908,7 +2908,7 @@ Blog Details Area Style
 .blog-details-content .blog-top-content blockquote p {
   font-weight: 600;
   font-size: 18px;
-  color: #0002199b;
+  color: #0b3c5cae;
   text-align: center;
   padding-left: 50px;
   margin-bottom: 0;
@@ -2940,7 +2940,7 @@ Blog Details Area Style
   margin-right: 10px;
   font-weight: 600;
   font-size: 18px;
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .blog-details-content .tag-list ul {
   display: inline-block;
@@ -3104,7 +3104,7 @@ Blog Details Area Style
   transition: all ease 0.5s;
 }
 .sidebar-widget.search .search-form .search-button:hover {
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
 }
 .sidebar-widget.recent-post ul li {
   padding-bottom: 15px;
@@ -3120,7 +3120,7 @@ Blog Details Area Style
 }
 .sidebar-widget.recent-post ul li a {
   font-size: 16px;
-  color: #0002199b;
+  color: #0b3c5cae;
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -3212,7 +3212,7 @@ Onboard Equipment Area Style
 }
 .onboard-equipment-sidebar .onboard-equipment-category ul li a {
   font-weight: 600;
-  color: #0002199b;
+  color: #0b3c5cae;
   padding: 15px 20px;
   border-bottom: 1px solid #d9d9d9;
   display: block;
@@ -3246,7 +3246,7 @@ Onboard Equipment Area Style
 }
 .onboard-equipment-sidebar .onboard-equipment-pdf ul li a {
   padding: 20px 30px;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   color: #e1e5e9;
   display: block;
   position: relative;
@@ -3305,7 +3305,7 @@ Blog Column One Area Style
   margin-bottom: 15px;
 }
 .single-blog-posts .single-blog-content h3 a {
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .single-blog-posts .single-blog-content h3 a:hover {
   color: #e21f36;
@@ -3434,7 +3434,7 @@ Main Contact Area Style
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .main-contact-area .contact-info .address li {
   padding-left: 60px;
@@ -3463,7 +3463,7 @@ Main Contact Area Style
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #0002199b;
+  color: #0b3c5cae;
 }
 .main-contact-area .contact-info .sidebar-follow-us {
   margin-top: 30px;
@@ -3828,7 +3828,7 @@ Page-navigation Area Style*/
   width: 40px;
   height: 40px;
   line-height: 40px;
-  color: #0002199b;
+  color: #0b3c5cae;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -3979,7 +3979,7 @@ Services Details Area Style
 }
 .services-sidebar .services-category ul li a {
   font-weight: 600;
-  color: #0002199b;
+  color: #0b3c5cae;
   padding: 15px 20px;
   border-bottom: 1px solid #d9d9d9;
   display: block;
@@ -4013,7 +4013,7 @@ Services Details Area Style
 }
 .services-sidebar .services-pdf ul li a {
   padding: 20px 30px;
-  background-color: #0002199b;
+  background-color: #0b3c5cae;
   color: #e1e5e9;
   display: block;
   position: relative;
