@@ -101,25 +101,17 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/coming-soon'>
+                    <Link href='https://www.youtube.com/channel/UCNEPqqyC1MiqYgauqqMxNrA'>
                       <a>Videos</a>
                     </Link>
                   </li>
+                  
                   <li>
-                    <Link href='/coming-soon'>
-                      <a>Sailing Community</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='https://www.patreon.com/mylifeaboard'>
+                    <Link href='https://www.patreon.com/mlifeaboard'>
                       <a>Support Onnie</a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href='/coming-soon'>
-                      <a>Collaboration</a>
-                    </Link>
-                  </li>
+                 
                 </ul>
               </div>
             </div>
@@ -145,13 +137,13 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/blog-1'>
+                    <Link href='/main-blog-posts-page'>
                       <a>Blog</a>
                     </Link>
-                  </li>
+                  </li>https://www.youtube.com/channel/UCNEPqqyC1MiqYgauqqMxNrAcolla
                   <li>
                     <Link href='/coming-soon'>
-                      <a>Case Studies</a>
+                      <a>User Guides</a>
                     </Link>
                   </li>
                   <li>
