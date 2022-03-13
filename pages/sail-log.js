@@ -37,12 +37,8 @@ const SailLog = () => {
                     <div className='sail-log-single overlay-one'>
                       <div className='overlay-two'>
                         <h3>
-                          <Link href='/coming-soon'>
-                            <a target='_blank'>
-                              Onboard GPS Device Sends SMS
-                              Message
-                            </a>
-                          </Link>
+                          Onboard GPS Device Sends SMS
+                          Message
                         </h3>
                         <p>
                           The GPS device onboard Onnie is a{' '}
@@ -67,11 +63,7 @@ const SailLog = () => {
                     <div className='sail-log-single overlay-one'>
                       <div className='overlay-two'>
                         <h3>
-                          <Link href='/coming-soon'>
-                            <a target='_blank'>
-                              Zapier Watches Twilio Number
-                            </a>
-                          </Link>
+                          Zapier Watches Twilio Number
                         </h3>
                         <p>
                           Every 15 minutes,{' '}
@@ -93,12 +85,8 @@ const SailLog = () => {
                     <div className='sail-log-single overlay-one'>
                       <div className='overlay-two'>
                         <h3>
-                          <Link href='/coming-soon'>
-                            <a target='_blank'>
-                              Update Website with Location
-                              Information
-                            </a>
-                          </Link>
+                          Update Website with Location
+                          Information
                         </h3>
                         <p>
                           New texts trigger Zapier to update
