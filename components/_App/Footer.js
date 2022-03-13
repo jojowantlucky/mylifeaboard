@@ -102,16 +102,15 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href='https://www.youtube.com/channel/UCNEPqqyC1MiqYgauqqMxNrA'>
-                      <a>Videos</a>
+                      <a target='_blank'>Videos</a>
                     </Link>
                   </li>
-                  
+
                   <li>
                     <Link href='https://www.patreon.com/mlifeaboard'>
-                      <a>Support Onnie</a>
+                      <a target='_blank'>Support Onnie</a>
                     </Link>
                   </li>
-                 
                 </ul>
               </div>
             </div>
@@ -128,22 +127,24 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href='https://asa.com/'>
-                      <a>American Sailing Association</a>
+                      <a target='_blank'>
+                        American Sailing Association
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href='/coming-soon'>
-                      <a>Onnie Merch</a>
+                      <a target='_blank'>Onnie Merch</a>
                     </Link>
                   </li>
                   <li>
                     <Link href='/main-blog-posts-page'>
                       <a>Blog</a>
                     </Link>
-                  </li>https://www.youtube.com/channel/UCNEPqqyC1MiqYgauqqMxNrAcolla
+                  </li>
                   <li>
                     <Link href='/coming-soon'>
-                      <a>User Guides</a>
+                      <a target='_blank'>User Guides</a>
                     </Link>
                   </li>
                   <li>
