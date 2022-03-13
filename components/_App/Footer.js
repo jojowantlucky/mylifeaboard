@@ -20,10 +20,11 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consec tetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna
-                  aliqua consec tetur adipiscing.
+                  Onnie is a 1974 Cascade High Side 42.5
+                  hailing from Portland, OR. Purchased in
+                  2022, her adventure started with a refit
+                  that is sure to span many years and it's
+                  all documented here.
                 </p>
 
                 <ul className='social-icon'>
