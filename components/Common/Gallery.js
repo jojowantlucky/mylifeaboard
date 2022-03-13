@@ -26,6 +26,7 @@ const Gallery = () => {
           <div className='col-lg-3 col-sm-6'>
             <div className='gallery-single overlay-one'>
               <div className='overlay-two'>
+                <i className='flaticon-cyber-security-1'></i>
                 <span className='material-icons build'></span>
                 <h3>Exterior Below Decks</h3>
                 <p>
@@ -33,8 +34,8 @@ const Gallery = () => {
                   listing from 2022.
                 </p>
                 <span className='material-icons build'></span>
-                
-								{/* <span className='flaticon-cyber'></span> */}
+
+                {/* <span className='flaticon-cyber'></span> */}
               </div>
             </div>
           </div>
