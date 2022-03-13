@@ -9,7 +9,7 @@ import baseUrl from '../../utils/baseUrl';
 const alertContent = () => {
   MySwal.fire({
     title: 'Congratulations!',
-    text: 'Your message was successfully send and will back to you soon',
+    text: "Thank you for sending me a message. I'll respond as soon as I can",
     icon: 'success',
     timer: 2000,
     timerProgressBar: true,
@@ -37,6 +37,7 @@ const ContactForm = () => {
       [name]: value,
     }));
     console.log(contact);
+    console.log(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
   };
 
   const onSubmit = async (e) => {

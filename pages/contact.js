@@ -10,6 +10,7 @@ const Contact = () => {
     () => import('../components/Map'),
     { ssr: false }
   );
+
   return (
     <Fragment>
       <Navbar />
