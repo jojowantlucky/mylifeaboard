@@ -40,8 +40,8 @@ const ThePlan = () => {
                   <div className='the-plan-single'>
                     <h3>Learn to sail</h3>
                     <p>
-                      Before I leave the slip, I have to
-                      learn to sail.
+                      Sailing lessons, outings on the river,
+                      working as crew, classes, and lessons.
                     </p>
                   </div>
                 </div>
@@ -50,9 +50,9 @@ const ThePlan = () => {
                   <div className='the-plan-single'>
                     <h3>Refit and Remodel</h3>
                     <p>
-                      Onnie needs a lot of TLC. Returning
-                      her to her former glory began March
-                      23, 2022.
+                      Bring Onnie back to her former glory
+                      featuring modern electronics and
+                      materials.
                     </p>
                   </div>
                 </div>
@@ -61,9 +61,9 @@ const ThePlan = () => {
                   <div className='the-plan-single'>
                     <h3>Sail the world</h3>
                     <p>
-                      See where we've been and where we're
-                      going to go. The world is our for the
-                      exploring and you only live once.
+                      Start small and easy, learn about the
+                      Columbia River Bar, head down the west
+                      coast, and go from there.
                     </p>
                   </div>
                 </div>
@@ -72,8 +72,9 @@ const ThePlan = () => {
                   <div className='the-plan-single'>
                     <h3>Document it all</h3>
                     <p>
-                      sed diam nonumy eirmod tempor invidunt
-                      ut labore et.
+                      Refitting, remodeling, education, live
+                      aboard live, sailing, gadgetry, and
+                      more.
                     </p>
                   </div>
                 </div>
