@@ -137,7 +137,7 @@ ul {
 .form-control {
   height: 50px;
   color: #e21f36;
-  border: 1px solid #ebebeb;
+  border: 1px solid #bfbfbf;
   border-radius: 0;
   font-size: 16px;
   padding: 10px 20px;
@@ -3522,6 +3522,9 @@ Main Contact Area Style
   display: none;
 }
 
+.map-area h4 {
+  text-align: center;
+}
 .map-area iframe {
   height: 480px;
   width: 100%;

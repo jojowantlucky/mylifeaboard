@@ -146,8 +146,7 @@ ul {
 .form-control {
   height: 50px;
   color: $main-color;
-  border: 1px solid #ebebeb;
-  // background-color: transparent;
+  border: 1px solid #bfbfbf;
   border-radius: 0;
   font-size: 16px;
   padding: 10px 20px;
@@ -3919,6 +3918,9 @@ Main Contact Area Style
   display: none;
 }
 .map-area {
+  h4 {
+    text-align: center;
+  }
   iframe {
     height: 480px;
     width: 100%;
@@ -4030,7 +4032,6 @@ Gallery Area Style
     opacity: 0.06;
     top: 50%;
     transform: translateY(-50%);
-    
   }
   &:hover {
     transform: translateY(-5px);
