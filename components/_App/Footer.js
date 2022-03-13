@@ -144,7 +144,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href='/coming-soon'>
-                      <a target='_blank'>User Guides</a>
+                      <a>User Guides</a>
                     </Link>
                   </li>
                   <li>
