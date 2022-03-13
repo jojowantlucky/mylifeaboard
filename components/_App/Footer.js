@@ -92,7 +92,7 @@ const Footer = () => {
 
                 <ul className='import-link'>
                   <li>
-                    <Link href='/coming-soon'>
+                    <Link href='/diy-refit-remodel'>
                       <a>DIY Refit &amp; Remodel</a>
                     </Link>
                   </li>
