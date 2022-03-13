@@ -3,6 +3,7 @@ import sgTransport from 'nodemailer-sendgrid-transport';
 
 const transporter = {
   auth: {
+    // SendGrid API
     api_key: process.env.NEXT_PUBLIC_SENDGRID_API_KEY,
   },
 };
@@ -16,12 +17,14 @@ export default async (req, res) => {
   const { name, email, number, subject, text } = req.body;
 
   const data = {
+    // Sender Email
     to: 'info@mylifeaboard.com',
-    from: email,
+    from: 'info@mylifeaboard.com',
     subject: 'New Message from MyLifeAboard.com',
     text: text,
     html: `
             <b>From:</b> ${name} <br /> 
+            <b>Email:</b> ${email} <br/>
             <b>Number:</b> ${number} <br /> 
             <b>Subject:</b> ${subject} <br /> 
             <b>Text:</b> ${text} 

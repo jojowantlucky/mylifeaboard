@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -11,7 +11,7 @@ const alertContent = () => {
     title: 'Congratulations!',
     text: "Thank you for sending me a message. I'll respond as soon as I can",
     icon: 'success',
-    timer: 2000,
+    timer: 4000,
     timerProgressBar: true,
     showConfirmButton: false,
   });
@@ -37,7 +37,6 @@ const ContactForm = () => {
       [name]: value,
     }));
     console.log(contact);
-    console.log(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
   };
 
   const onSubmit = async (e) => {
@@ -65,7 +64,7 @@ const ContactForm = () => {
     <div className='contact-wrap'>
       <div className='contact-form'>
         <div className='contact-title'>
-          <h2>Write Us</h2>
+          <h2>Drop Me a Line </h2>
         </div>
 
         <form

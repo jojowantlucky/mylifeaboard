@@ -29,13 +29,10 @@ const Equipment = () => {
               <div className='onboard-equipment-content'>
                 <h3>
                   <Link href='/navigation'>
-                    <a>Navigation</a>
+                    <a>Electronics &amp; Nav</a>
                   </Link>
                 </h3>
-                <p>
-                  Autopilot, GPS, radar, satellite, and
-                  more.
-                </p>
+                <p>Electronics and navigation systems.</p>
                 <Link href='/navigation'>
                   <a className='read-more'>
                     Read More
@@ -122,7 +119,7 @@ const Equipment = () => {
               <div className='onboard-equipment-content'>
                 <h3>
                   <Link href='/power-generation'>
-                    <a>Power Generation</a>
+                    <a>Power &amp; Electrical</a>
                   </Link>
                 </h3>
                 <p>
