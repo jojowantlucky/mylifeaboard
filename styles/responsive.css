@@ -371,7 +371,11 @@
   .user-area-style .contact-form-action form .login-action {
     margin-bottom: 20px;
   }
-  .user-area-style .contact-form-action form .login-action .forgot-login {
+  .user-area-style
+    .contact-form-action
+    form
+    .login-action
+    .forgot-login {
     float: unset;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -451,7 +455,10 @@
     font-size: 25px;
     margin-top: -8px;
   }
-  .sail-log-details-area .sail-logs-content .challenge-btn .two {
+  .sail-log-details-area
+    .sail-logs-content
+    .challenge-btn
+    .two {
     float: right;
   }
 
@@ -460,13 +467,22 @@
     text-align: center;
   }
 
-  .portfolio-details-content .portfolio-top-content .news-content h3 {
+  .portfolio-details-content
+    .portfolio-top-content
+    .news-content
+    h3 {
     font-size: 20px;
   }
-  .portfolio-details-content .portfolio-top-content .news-content-2 h3 {
+  .portfolio-details-content
+    .portfolio-top-content
+    .news-content-2
+    h3 {
     font-size: 20px;
   }
-  .portfolio-details-content .portfolio-top-content .news-content-3 h3 {
+  .portfolio-details-content
+    .portfolio-top-content
+    .news-content-3
+    h3 {
     font-size: 20px;
   }
 
@@ -490,7 +506,10 @@
     border-right: none;
     margin-bottom: 10px;
   }
-  .single-blog-posts .single-blog-content .admin li:last-child {
+  .single-blog-posts
+    .single-blog-content
+    .admin
+    li:last-child {
     margin-bottom: 0;
   }
 
@@ -523,7 +542,10 @@
     bottom: -94px !important;
   }
 
-  .blog-details-content .blog-top-content .news-content .admin {
+  .blog-details-content
+    .blog-top-content
+    .news-content
+    .admin {
     padding-bottom: 15px;
   }
   .blog-details-content .blog-top-content .news-content h3 {
@@ -549,7 +571,11 @@
   .user-area-style .contact-form-action form .right {
     margin-top: 10px;
   }
-  .user-area-style .contact-form-action form .right .remember {
+  .user-area-style
+    .contact-form-action
+    form
+    .right
+    .remember {
     margin-bottom: 0;
   }
 
@@ -584,16 +610,28 @@
     max-height: 70vh;
     padding-right: 15px;
   }
-  .navbar-area .main-nav .navbar .navbar-collapse::-webkit-scrollbar {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-collapse::-webkit-scrollbar {
     width: 12px;
   }
-  .navbar-area .main-nav .navbar .navbar-collapse::-webkit-scrollbar-track {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-collapse::-webkit-scrollbar-track {
     background: #f5f5f5;
   }
-  .navbar-area .main-nav .navbar .navbar-collapse::-webkit-scrollbar-thumb {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-collapse::-webkit-scrollbar-thumb {
     background: #e21f36;
   }
-  .navbar-area .main-nav .navbar .navbar-collapse::-webkit-scrollbar-thumb:hover {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-collapse::-webkit-scrollbar-thumb:hover {
     background: #e21f36;
   }
   .navbar-area .main-nav .navbar .navbar-nav .nav-item a {
@@ -604,7 +642,12 @@
   .navbar-area .main-nav .navbar .navbar-nav .nav-item a i {
     display: none;
   }
-  .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu {
     border-top: 1px solid #e21f36;
     left: 0;
     position: relative;
@@ -614,11 +657,25 @@
     top: 0 !important;
     width: 100%;
   }
-  .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu
+    li
+    a {
     font-size: 14px;
     padding: 10px 15px;
   }
-  .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu
+    li
+    .dropdown-menu {
     left: 15px !important;
     right: 0 !important;
     top: 0 !important;
@@ -640,14 +697,22 @@
   .navbar-area.navbar-area-two {
     border-bottom: 1px solid #f3f3f3;
   }
-  .navbar-area.navbar-area-two .main-nav .navbar .navbar-collapse {
+  .navbar-area.navbar-area-two
+    .main-nav
+    .navbar
+    .navbar-collapse {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0;
     background: #fff;
     border-top: 1px solid #eee;
   }
-  .navbar-area.navbar-area-two .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  .navbar-area.navbar-area-two
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu {
     border-left: 1px dashed #eeeeee;
   }
   .navbar-area.navbar-area-two .navbar-toggler .icon-bar {
@@ -680,7 +745,7 @@
 /* Max width 767px */
 @media only screen and (max-width: 575px) {
   .top-header-four .header-right-content,
-.top-header .header-right-content {
+  .top-header .header-right-content {
     margin-top: 10px;
   }
 
@@ -1041,7 +1106,10 @@
     border-right: none;
     margin-bottom: 10px;
   }
-  .single-blog-posts .single-blog-content .admin li:last-child {
+  .single-blog-posts
+    .single-blog-content
+    .admin
+    li:last-child {
     margin-bottom: 0;
   }
 
@@ -1106,12 +1174,24 @@
     padding: 6px 0;
     margin: 0 3px;
   }
-  .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu {
     border-top: 1px solid #e21f36;
     width: 200px;
     left: 0;
   }
-  .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu
+    li
+    a {
     font-size: 14px;
     padding: 10px 15px;
   }
@@ -1215,7 +1295,7 @@
     position: relative;
   }
   .the-plan-img::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1249,7 +1329,7 @@
     position: relative;
   }
   .about-img::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1289,7 +1369,11 @@
     font-size: 15px;
   }
 
-  .blog-details-content .blog-top-content .news-content .admin li {
+  .blog-details-content
+    .blog-top-content
+    .news-content
+    .admin
+    li {
     padding-right: 10px;
     margin-right: 10px;
   }
@@ -1367,7 +1451,7 @@
   }
 
   .mobile-size-adjustment {
-    min-height: 24rem !important;
+    min-height: 30rem !important;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
@@ -1376,7 +1460,7 @@
   }
 
   .mobile-size-adjustment {
-    min-height: 24rem !important;
+    min-height: 36rem !important;
   }
 }
 /* Max width 1550px */

@@ -1,5 +1,9 @@
-const getTripCoordinates = (tripId) => {
+import getTrips from './getTrips';
+
+const getTripCoordinates = () => {
   // load in data from airtable.
+  const allTrips = getTrips();
+  console.log(allTrips)
   // filter db by trip id
   // filter out by trip id
   // create array of object:
@@ -11,6 +15,7 @@ const getTripCoordinates = (tripId) => {
   //      imgUrl: '#',
   //     }
   //  ]
+  return tripId;
 };
 
 export default getTripCoordinates;

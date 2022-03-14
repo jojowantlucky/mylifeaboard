@@ -1,20 +1,19 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import { TextField } from '@mui/material';
-import getTripCoordinates from '../api/getTripCoordinates'
+import getTripCoordinates from '../pages/api/getTripCoordinates';
 
 const TripSelectorDropdown = () => {
-  const [selectedTrip, setSelectedTrip] = useState('1');
+  const [selectedTrip, setSelectedTrip] = useState('01');
 
   const handleChange = (event) => {
     setSelectedTrip(event.target.value);
-    //format setSelectedTrip to use with getTripCoordinates. 
+    //format setSelectedTrip to use with getTripCoordinates.
     // const formattedSelectedTrip = setSelectedTrip
-    //getTripCoordinates(formattedSelectedTrip)
+    getTripCoordinates()
   };
 
   const tripList = [
