@@ -1378,6 +1378,9 @@
       font-size: 27px;
     }
   }
+  .mobile-size-adjustment {
+    min-height: 24rem !important;
+  }
 }
 
 /* Min width 992px to Max width 1199px */
@@ -1633,6 +1636,9 @@
       font-size: 34px;
     }
   }
+  .mobile-size-adjustment {
+    min-height: 24rem !important;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
@@ -1640,6 +1646,9 @@
     .mobile-adjustment {
       font-size: 36px;
     }
+  }
+  .mobile-size-adjustment {
+    min-height: 24rem !important;
   }
 }
 
@@ -1668,5 +1677,8 @@
     .mobile-adjustment {
       font-size: 36px;
     }
+  }
+  .mobile-size-adjustment {
+    min-height: 46rem !important;
   }
 }

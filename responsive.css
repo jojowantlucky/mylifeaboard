@@ -4,42 +4,33 @@
   body {
     font-size: 14px;
   }
-
   .container {
     max-width: 100%;
   }
-
   .ptb-100 {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .pt-100 {
     padding-top: 50px;
   }
-
   .pb-100 {
     padding-bottom: 50px;
   }
-
   .pb-70 {
     padding-bottom: 20px;
   }
-
   .pt-70 {
     padding-top: 20px;
   }
-
   .default-btn {
     font-size: 15px;
     padding: 13px 25px;
   }
-
   h3 {
     font-size: 17px;
     line-height: 1.4;
   }
-
   .section-title {
     margin-bottom: 30px;
     text-align: center !important;
@@ -50,11 +41,9 @@
   .section-title h2 {
     font-size: 25px;
   }
-
   p {
     font-size: 14px;
   }
-
   .top-header .header-left-content {
     text-align: center;
   }
@@ -62,7 +51,6 @@
     float: unset;
     text-align: center;
   }
-
   .banner-area {
     height: 100%;
     padding-top: 80px;
@@ -72,11 +60,9 @@
     padding-top: 140px;
     padding-bottom: 80px;
   }
-
   .banner-image {
     margin-top: 30px;
   }
-
   .banner-area.banner-area-three {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -84,7 +70,6 @@
   .banner-area.banner-area-three .banner-content h1 {
     margin-bottom: 15px;
   }
-
   .about-content .react-tabs__tab-list li {
     margin-right: 15px;
     font-size: 15px;
@@ -93,7 +78,6 @@
   .about-content .react-tabs__tab-list li:last-child {
     margin-right: 0;
   }
-
   .banner-content {
     text-align: center;
     margin-top: 0;
@@ -107,22 +91,18 @@
     margin-bottom: 25px;
     font-size: 14px;
   }
-
   .banner-area.banner-area-two .banner-content h1 {
     margin-bottom: 15px;
   }
-
   .RefitLiveAboardSailLog-area {
     margin-top: 50px;
   }
-
   .banner-video {
     margin-top: 30px;
     text-align: center;
     top: 0;
     left: 0;
   }
-
   .video-btn {
     width: 60px;
     height: 60px;
@@ -131,7 +111,6 @@
   .video-btn i {
     font-size: 40px;
   }
-
   .RefitLiveAboardSailLog-feature {
     margin-top: 0;
     text-align: center;
@@ -149,7 +128,6 @@
   .RefitLiveAboardSailLog-feature .title h3 {
     padding-left: 0;
   }
-
   .overlay-one::before {
     display: none;
   }
@@ -162,7 +140,6 @@
   .overlay-one .overlay-two::after {
     display: none;
   }
-
   .the-plan-content {
     margin-left: 0;
   }
@@ -175,7 +152,6 @@
     font-size: 17px;
     margin-bottom: 10px;
   }
-
   .single-services .services-content {
     text-align: center;
     padding: 20px;
@@ -184,30 +160,24 @@
   .single-services .services-content h3 {
     margin-bottom: 10px;
   }
-
   .sail-log-single h3 {
     font-size: 17px;
   }
-
   .sail-log-area .pr-0 {
     padding-right: 15px !important;
   }
-
   .sail-log-title {
     margin-bottom: 30px;
   }
   .sail-log-title h2 {
     font-size: 25px;
   }
-
   .sail-log-single {
     padding: 20px;
   }
-
   .get-in-touch-form .form-group {
     margin-bottom: 20px;
   }
-
   .single-blog .blog-content {
     margin-top: 20px;
   }
@@ -217,11 +187,9 @@
   .single-blog .blog-img a img {
     width: 100%;
   }
-
   .single-challenges {
     padding: 20px;
   }
-
   .copy-right-area {
     text-align: center;
   }
@@ -229,29 +197,24 @@
     text-align: center;
     margin-top: 12px;
   }
-
   .sail-log-img {
     background-image: none;
   }
   .sail-log-img img {
     display: block;
   }
-
   .banner-area.banner-area-two .banner-content {
     margin-top: 0;
   }
-
   .about-content {
     margin-left: 0;
   }
-
   .about-content .about-title {
     margin-bottom: 30px;
   }
   .about-content .about-title h2 {
     font-size: 25px;
   }
-
   .single-counter {
     padding-left: 30px;
     text-align: center;
@@ -268,21 +231,17 @@
     font-size: 40px;
     margin-bottom: 12px;
   }
-
   .single-team .team-content {
     margin-left: 0;
     margin-right: 0;
   }
-
   .banner-area.banner-area-three .banner-content h1 {
     font-size: 30px;
   }
-
   .banner-img {
     margin-top: 30px;
     text-align: center;
   }
-
   .single-safety {
     padding: 15px;
   }
@@ -292,32 +251,26 @@
   .single-safety h3 {
     margin-bottom: 10px;
   }
-
   .shape-three {
     display: none;
   }
-
   .counter-area.counter-area-three .single-counter {
     padding-left: 30px;
   }
   .counter-area.counter-area-three .single-counter i {
     border: none;
   }
-
   .faq-img {
     margin-bottom: 30px;
     text-align: center;
   }
-
   .faq-accordion .faq-title h2 {
     font-size: 25px;
   }
-
   .sail-log-img-two {
     margin-bottom: 30px;
     text-align: center;
   }
-
   .the-plan-single-box {
     padding: 20px;
   }
@@ -338,12 +291,10 @@
   .the-plan-single-box h3 {
     margin-top: 25px;
   }
-
   .counter-img {
     text-align: center;
     margin-bottom: 30px;
   }
-
   .page-title-area {
     padding-top: 130px;
     padding-bottom: 60px;
@@ -355,7 +306,6 @@
     padding-top: 200px;
     padding-bottom: 70px;
   }
-
   .user-area-style .account-title h2 {
     font-size: 25px !important;
   }
@@ -396,7 +346,6 @@
   .user-area-style.recover-password-area .default-btn {
     margin-bottom: 0 !important;
   }
-
   .coming-soon-area {
     height: 100%;
     padding-top: 120px;
@@ -427,15 +376,12 @@
     max-width: 100%;
     margin-top: 40px;
   }
-
   .privacy-policy .title h2 {
     font-size: 30px;
   }
-
   .terms-conditions .title h2 {
     font-size: 28px;
   }
-
   .error-area {
     padding: 70px 0;
   }
@@ -446,7 +392,6 @@
   .error-area .error-content h1 {
     font-size: 100px;
   }
-
   .sail-log-details-area .sail-logs-content h3 {
     font-size: 25px;
     margin-top: -8px;
@@ -454,12 +399,10 @@
   .sail-log-details-area .sail-logs-content .challenge-btn .two {
     float: right;
   }
-
   .showing-result-count {
     margin-bottom: 15px;
     text-align: center;
   }
-
   .portfolio-details-content .portfolio-top-content .news-content h3 {
     font-size: 20px;
   }
@@ -469,15 +412,12 @@
   .portfolio-details-content .portfolio-top-content .news-content-3 h3 {
     font-size: 20px;
   }
-
   .sidebar-widget.recent-post ul li {
     height: 100px;
   }
-
   .sidebar-widget.recent-post ul li a {
     font-size: 15px;
   }
-
   .single-blog-posts .single-blog-content {
     padding: 20px;
   }
@@ -493,15 +433,12 @@
   .single-blog-posts .single-blog-content .admin li:last-child {
     margin-bottom: 0;
   }
-
   .pagination-area {
     margin-top: 0;
   }
-
   .sidebar-widget.search {
     margin-top: 35px;
   }
-
   .blog-details-content .comments ul li {
     padding-left: 0;
   }
@@ -509,20 +446,16 @@
     position: unset;
     display: block;
   }
-
   .main-contact-area .contact-info {
     margin-top: 50px;
     padding: 20px;
   }
-
   .onboard-equipment-details-content .services-content h2 {
     font-size: 25px;
   }
-
   .onboard-equipment-content {
     bottom: -94px !important;
   }
-
   .blog-details-content .blog-top-content .news-content .admin {
     padding-bottom: 15px;
   }
@@ -545,14 +478,12 @@
   .blog-details-content .tag-list ul li {
     margin: 5px;
   }
-
   .user-area-style .contact-form-action form .right {
     margin-top: 10px;
   }
   .user-area-style .contact-form-action form .right .remember {
     margin-bottom: 0;
   }
-
   .user-area-style .contact-form-action p {
     margin-top: 0;
   }
@@ -560,19 +491,16 @@
     text-align: left !important;
     margin-top: 10px;
   }
-
   .banner-area.banner-area-four {
     height: 100%;
     padding-top: 200px;
   }
-
   .banner-area.banner-area-five {
     padding-top: 225px;
   }
   .banner-area.banner-area-five .banner-content {
     margin-top: 0;
   }
-
   .navbar-area .main-nav .navbar {
     padding: 10px 0;
   }
@@ -653,51 +581,45 @@
   .navbar-area.navbar-area-two .navbar-toggler .icon-bar {
     background: #3c3a3a;
   }
-
   .about-us-area .mb_30 {
     margin-bottom: 30px;
   }
-
   .get-in-touch-form .form-group .form-control {
     height: 45px;
   }
-
   .faq-accordion .accordion .accordion__button {
     font-size: 15px;
   }
-
   .pagination-area .page-numbers {
     width: 35px;
     height: 35px;
     line-height: 35px;
     font-size: 15px;
   }
-
   .left-sidebar {
     margin-bottom: 30px;
   }
 }
+
 /* Max width 767px */
 @media only screen and (max-width: 575px) {
   .top-header-four .header-right-content,
-.top-header .header-right-content {
+  .top-header .header-right-content {
     margin-top: 10px;
   }
-
   .at-a-glance-single .mobile-adjustment {
     font-size: 27px;
   }
 }
+
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .container {
     max-width: 540px;
   }
-
   .sail-log-area .container-fluid {
     max-width: 540px;
   }
-
   .page-title-area {
     padding-top: 160px;
     padding-bottom: 80px;
@@ -706,12 +628,10 @@
     padding-top: 223px;
     padding-bottom: 100px;
   }
-
   .showing-result-count {
     margin-bottom: 0;
     text-align: left;
   }
-
   .single-blog-posts .single-blog-content .admin li {
     margin-right: 15px;
     padding-right: 15px;
@@ -719,38 +639,32 @@
     margin-bottom: 0;
   }
 }
+
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
   }
-
   .ptb-100 {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .pt-100 {
     padding-top: 50px;
   }
-
   .pb-100 {
     padding-bottom: 50px;
   }
-
   .pb-70 {
     padding-bottom: 20px;
   }
-
   .pt-70 {
     padding-top: 20px;
   }
-
   .default-btn {
     font-size: 15px;
     padding: 12px 20px;
   }
-
   .section-title {
     margin-bottom: 30px;
     text-align: center !important;
@@ -761,11 +675,9 @@
   .section-title h2 {
     font-size: 30px;
   }
-
   p {
     font-size: 15px;
   }
-
   .banner-area {
     height: 100%;
     padding-top: 100px;
@@ -774,7 +686,6 @@
   .banner-area .banner-image {
     margin-top: 30px;
   }
-
   .banner-content {
     text-align: center;
     margin-top: 0;
@@ -787,26 +698,21 @@
     margin-bottom: 26px;
     font-size: 16px;
   }
-
   .feature-area {
     margin-top: 50px;
   }
-
   .banner-area.banner-area-three {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
   .banner-area.banner-area-two .banner-content {
     text-align: left;
   }
-
   .banner-area.banner-area-two {
     height: auto;
     padding-top: 250px;
     padding-bottom: 150px;
   }
-
   .single-feature {
     margin-top: 0;
     text-align: center;
@@ -824,7 +730,6 @@
   .single-feature .title h3 {
     padding-left: 0;
   }
-
   .overlay-one::before {
     display: none;
   }
@@ -837,7 +742,6 @@
   .overlay-one .overlay-two::after {
     display: none;
   }
-
   .the-plan-content {
     margin-left: 0;
   }
@@ -849,11 +753,9 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-
   .the-plan-img img {
     width: 100%;
   }
-
   .single-services .services-content {
     text-align: center;
     padding: 20px;
@@ -862,70 +764,57 @@
   .single-services .services-content h3 {
     margin-bottom: 15px;
   }
-
   .sail-log-area .pr-0 {
     padding-right: 15px !important;
   }
   .sail-log-area .container-fluid {
     max-width: 720px;
   }
-
   .sail-log-content {
     max-width: 100%;
   }
-
   .sail-log-title {
     margin-bottom: 30px;
   }
   .sail-log-title h2 {
     font-size: 25px;
   }
-
   .sail-log-single {
     padding: 20px;
   }
-
   .get-in-touch-form .form-group {
     margin-bottom: 20px;
   }
-
   .single-blog .blog-img a {
     display: block;
   }
   .single-blog .blog-img a img {
     width: 100%;
   }
-
   .single-challenges {
     padding: 20px;
   }
-
   .sail-log-img {
     background-image: none;
   }
   .sail-log-img img {
     display: block;
   }
-
   .banner-area.banner-area-two .banner-content {
     margin-top: 0;
   }
-
   .about-content {
     margin-left: 0;
   }
-
   .about-content .about-title {
     margin-bottom: 30px;
   }
   .about-content .about-title h2 {
     font-size: 25px;
   }
-
   .about-img img {
     width: 100%;
   }
-
   .single-counter {
     padding-left: 30px;
     text-align: center;
@@ -942,46 +831,37 @@
     font-size: 40px;
     margin-bottom: 12px;
   }
-
   .single-team .team-content {
     margin-left: 0;
     margin-right: 0;
   }
-
   .banner-area.banner-area-three .banner-content h1 {
     font-size: 35px;
   }
-
   .banner-img {
     margin-top: 30px;
     text-align: center;
   }
-
   .shape-three {
     display: none;
   }
-
   .counter-area.counter-area-three .single-counter {
     padding-left: 30px;
   }
   .counter-area.counter-area-three .single-counter i {
     border: none;
   }
-
   .faq-img {
     margin-bottom: 30px;
     text-align: center;
   }
-
   .faq-accordion .faq-title h2 {
     font-size: 25px;
   }
-
   .sail-log-img-two {
     margin-bottom: 30px;
     text-align: center;
   }
-
   .the-plan-single-box {
     padding: 20px;
   }
@@ -992,12 +872,10 @@
   .the-plan-single-box h3 {
     margin-top: 25px;
   }
-
   .counter-img {
     text-align: center;
     margin-bottom: 30px;
   }
-
   .page-title-area {
     padding-top: 160px;
     padding-bottom: 90px;
@@ -1009,11 +887,9 @@
     padding-top: 223px;
     padding-bottom: 100px;
   }
-
   .contact-form-action.mb-50 {
     margin-bottom: 50px;
   }
-
   .error-area {
     padding: 70px 0;
   }
@@ -1024,11 +900,9 @@
   .error-area .error-content h1 {
     font-size: 200px;
   }
-
   .sidebar-widget.recent-post ul li {
     height: 100px;
   }
-
   .single-blog-posts .single-blog-content {
     padding: 20px;
   }
@@ -1044,31 +918,25 @@
   .single-blog-posts .single-blog-content .admin li:last-child {
     margin-bottom: 0;
   }
-
   .pagination-area {
     margin-top: 0;
   }
-
   .sidebar-widget.search {
     margin-top: 35px;
   }
-
   .main-contact-area .contact-info {
     margin-top: 50px;
     padding: 30px;
   }
-
   .services-details-content .services-content h2 {
     font-size: 25px;
   }
-
   .banner-video {
     margin-top: 30px !important;
     text-align: center;
     top: 0;
     left: 0;
   }
-
   .video-btn {
     width: 60px;
     height: 60px;
@@ -1077,7 +945,6 @@
   .video-btn i {
     font-size: 40px;
   }
-
   .banner-area.banner-area-four {
     height: 100%;
     padding-top: 220px;
@@ -1086,7 +953,6 @@
   .banner-area.banner-area-four .banner-content {
     margin: auto;
   }
-
   .banner-area.banner-area-five {
     padding-top: 230px;
     padding-bottom: 110px;
@@ -1094,7 +960,6 @@
   .banner-area.banner-area-five .banner-content {
     margin-top: 0;
   }
-
   .navbar-area .main-nav .navbar {
     padding: 15px 0;
   }
@@ -1119,11 +984,9 @@
     font-size: 14px;
     padding: 10px 15px;
   }
-
   .about-us-area .about-img.mb_30 {
     margin-bottom: 30px;
   }
-
   .the-plan-single-box .icon {
     font-size: 30px;
     width: 60px;
@@ -1134,77 +997,66 @@
     width: 70px;
     height: 70px;
   }
-
   .left-sidebar {
     margin-bottom: 30px;
   }
-
   .onboard-mobile-adjustment {
     bottom: -20px !important;
   }
-
   .onboard-mobile-top-row-adjustment {
     bottom: -100px !important;
   }
-
   .at-a-glance-single .mobile-adjustment {
     font-size: 27px;
   }
-
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
 }
+
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
   }
-
   .navbar-area .others-option .get-quote .default-btn {
     padding: 12px 15px;
   }
   .navbar-area .others-option .cart-icon {
     margin-left: 15px;
   }
-
   .navbar-area .main-nav nav .navbar-nav .nav-item a {
     font-size: 16px;
     margin: 0 10px;
   }
-
   .banner-video {
     top: 0;
     right: 0;
     text-align: center;
   }
-
   .banner-content h1 {
     font-size: 45px;
   }
-
   .single-feature {
     padding: 20px;
   }
   .single-feature h3 {
     font-size: 18px;
   }
-
   .the-plan-content {
     margin-left: 0;
   }
-
   .the-plan-single {
     padding: 15px;
   }
   .the-plan-single h3 {
     font-size: 18px;
   }
-
   .the-plan-area .row {
-    align-items: normal !important;
+    -webkit-box-align: normal !important;
+        -ms-flex-align: normal !important;
+            align-items: normal !important;
   }
-
   .the-plan-img {
     background-image: url(/images/approach-img.jpg);
     background-position: center center;
@@ -1215,7 +1067,7 @@
     position: relative;
   }
   .the-plan-img::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1226,19 +1078,17 @@
   .the-plan-img img {
     display: none;
   }
-
   .protect-content {
     margin-left: 0;
   }
-
   .about-area .row {
-    align-items: unset !important;
+    -webkit-box-align: unset !important;
+        -ms-flex-align: unset !important;
+            align-items: unset !important;
   }
-
   .about-content {
     margin-left: 0;
   }
-
   .about-img {
     background-image: url(/images/about-img.jpg);
     background-position: center center;
@@ -1249,7 +1099,7 @@
     position: relative;
   }
   .about-img::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1260,20 +1110,16 @@
   .about-img img {
     display: none;
   }
-
   .single-pricing {
     padding: 20px;
   }
-
   .counter-area .counter-max-wide {
     margin-right: auto;
   }
-
   .single-team .team-content {
     margin-left: 0;
     margin-right: 0;
   }
-
   .single-blog-posts .single-blog-content {
     padding: 20px;
   }
@@ -1284,20 +1130,20 @@
     margin-right: 10px;
     padding-right: 10px;
   }
-
   .sidebar-widget.recent-post ul li a {
     font-size: 15px;
   }
-
-  .blog-details-content .blog-top-content .news-content .admin li {
+  .blog-details-content
+.blog-top-content
+.news-content
+.admin
+li {
     padding-right: 10px;
     margin-right: 10px;
   }
-
   .main-contact-area .contact-info {
     padding: 20px;
   }
-
   .single-services .services-content {
     bottom: 0;
     padding: 15px;
@@ -1313,32 +1159,26 @@
   .single-services .services-content .read-more {
     font-size: 13px;
   }
-
   .protect-area .single-challenges h3 {
     font-size: 18px;
   }
-
   .banner-area.banner-area-three .banner-content h1 {
     font-size: 45px;
   }
-
   .sail-log-area.sail-log-area-three .sail-log-shape-left {
     top: 0;
     max-width: 90px;
   }
-
   .single-safety {
     padding: 15px;
   }
   .single-safety h3 {
     font-size: 17px;
   }
-
   .safety-area .safety-shape-3 {
     bottom: 30px;
     max-width: 120px;
   }
-
   .single-counter {
     padding-left: 130px;
   }
@@ -1353,32 +1193,29 @@
   .single-counter h3 {
     font-size: 14px;
   }
-
   .faq-area .faq-right-shape {
     max-width: 50px;
   }
-
   .faq-accordion .accordion .accordion__button {
     font-size: 15px;
   }
-
   .at-a-glance-single .mobile-adjustment {
     font-size: 34px;
   }
-
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
   .at-a-glance-single .mobile-adjustment {
     font-size: 36px;
   }
-
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
 }
+
 /* Max width 1550px */
 @media only screen and (min-width: 1550px) {
   .banner-area.banner-area-four {
@@ -1391,18 +1228,14 @@
   .banner-area.banner-area-five {
     height: 100vh;
   }
-
   ß .counter-area.counter-area-three .counter-max-wide {
     max-width: 918px;
   }
-
   .at-a-glance-single .mobile-adjustment {
     font-size: 36px;
   }
-
   .mobile-size-adjustment {
     min-height: 46rem !important;
   }
 }
-
 /*# sourceMappingURL=responsive.css.map */

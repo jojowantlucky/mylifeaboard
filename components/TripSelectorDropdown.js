@@ -42,18 +42,16 @@ const TripSelectorDropdown = () => {
       sx={{
         maxWidth: '50%',
         paddingBottom: '1rem',
-        margin: 'auto',
       }}>
       <FormControl fullWidth>
-        <InputLabel id='map-trip-selector'>
-          Select a Trip
-        </InputLabel>
+        <InputLabel id='map-trip-selector'>Trip</InputLabel>
         <Select
           labelId='trip-label'
           id='trip-label'
           value={trip}
           label='Trip'
-          onChange={handleChange}>
+          onChange={handleChange}
+          placeholder='Current Trip/Location'>
           {tripList.map((trip) => (
             <MenuItem ref={chosenTrip} value={trip.id}>
               {trip.name}

@@ -28,8 +28,8 @@ const SailLog = () => {
             <div className='col-lg-6'>
               <div className='sail-log-content'>
                 <div className='sail-log-title'>
-                  <span>Real-Time Sail Log</span>
-                  <h2>How it works</h2>
+                  <span>How it works</span>
+                  <h2>Real-Time Sail Log</h2>
                 </div>
 
                 <div className='row'>
