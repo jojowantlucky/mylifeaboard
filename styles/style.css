@@ -15,7 +15,6 @@
 ** - Onboard Equipment Area (Services)
 ** - Sail Log Area Style (Solution)
 ** - Get In Touch Area Style
-** - Protect Area Style
 ** - Testimonials Area Style
 ** - Sponsor Area Style
 ** - Latest News Area Style
@@ -689,7 +688,7 @@ Navbar Area Style
   width: 35px;
   transition: all 0.3s;
   background: #fff;
-  height: 4px;
+  height: 2px;
   display: block;
   border-radius: 3px;
 }

@@ -208,24 +208,6 @@
     margin-bottom: 20px;
   }
 
-  .protect-content {
-    margin-right: 0;
-  }
-
-  .protect-content .protect-title {
-    margin-bottom: 30px;
-  }
-  .protect-content .protect-title h2 {
-    font-size: 25px;
-  }
-
-  .protect-area .col-lg-6 .row .col-lg-6:nth-child(2) .single-challenges {
-    margin-top: 0;
-  }
-  .protect-area .col-lg-6 .row .col-lg-6:nth-child(3) .single-challenges {
-    margin-top: 0;
-  }
-
   .single-blog .blog-content {
     margin-top: 20px;
   }
@@ -473,96 +455,9 @@
     float: right;
   }
 
-  .product-img img {
-    width: 100%;
-  }
-
   .showing-result-count {
     margin-bottom: 15px;
     text-align: center;
-  }
-
-  .shopping-cart-area {
-    overflow: hidden;
-  }
-  .shopping-cart-area .cart-table {
-    text-align: center;
-  }
-  .shopping-cart-area .cart-table table thead tr th {
-    font-size: 16px;
-  }
-  .shopping-cart-area .cart-table table tbody tr td a {
-    font-size: 14px;
-  }
-  .shopping-cart-area .cart-table table thead tr th {
-    padding: 0 40px 10px;
-    white-space: nowrap;
-  }
-  .shopping-cart-area .cart-table table thead tr th:first-child {
-    text-align: left;
-    padding-left: 0;
-  }
-  .shopping-cart-area .cart-table table tbody tr td {
-    white-space: nowrap;
-  }
-  .shopping-cart-area .cart-table table tbody tr td:first-child {
-    text-align: left;
-    padding-left: 0;
-  }
-  .shopping-cart-area .cart-table table tbody tr td.product-subtotal .remove {
-    margin-left: 15px;
-    float: unset;
-  }
-  .shopping-cart-area .coupon-cart .form-group .default-btn {
-    position: unset;
-    top: 0;
-    right: 0;
-    height: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .shopping-cart-area .cart-totals {
-    padding: 20px;
-  }
-  .shopping-cart-area .default-btn {
-    display: block;
-  }
-  .shopping-cart-area .default-btn.update {
-    padding: 16px 20px;
-  }
-
-  .checkout-area .billing-details {
-    margin-bottom: 30px;
-    padding: 20px;
-  }
-  .checkout-area .billing-details h3 {
-    font-size: 25px;
-  }
-  .checkout-area .cart-totals {
-    padding: 20px;
-  }
-  .checkout-area .faq-accordion .default-btn {
-    margin-bottom: 0;
-  }
-  .checkout-area .faq-accordion {
-    padding: 20px;
-  }
-
-  .product-details-area .section-title {
-    margin: -15px auto 30px;
-  }
-  .product-details-area .product-details-image {
-    margin-bottom: 20px;
-  }
-  .product-details-area .products-details-tab {
-    margin-top: 30px;
-  }
-  .product-details-area .products-details-tab .tab_content {
-    padding: 0;
-    padding-top: 30px;
-  }
-  .product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-comments .review-item {
-    padding-right: 0;
   }
 
   .portfolio-details-content .portfolio-top-content .news-content h3 {
@@ -573,18 +468,6 @@
   }
   .portfolio-details-content .portfolio-top-content .news-content-3 h3 {
     font-size: 20px;
-  }
-
-  .product-view-one .modal-content .product-content h3 a {
-    margin-top: 28px;
-  }
-
-  .shopping-cart-area .cart-totals {
-    max-width: 100%;
-  }
-
-  .checkout-area .billing-details {
-    margin-bottom: 35px;
   }
 
   .sidebar-widget.recent-post ul li {
@@ -634,6 +517,10 @@
 
   .onboard-equipment-details-content .services-content h2 {
     font-size: 25px;
+  }
+
+  .onboard-equipment-content {
+    bottom: -94px !important;
   }
 
   .blog-details-content .blog-top-content .news-content .admin {
@@ -691,7 +578,7 @@
   }
   .navbar-area .main-nav .navbar .navbar-collapse {
     padding: 10px 15px;
-    background: #232323;
+    background: #2323239e;
     margin-top: 10px;
     overflow-y: auto;
     max-height: 70vh;
@@ -998,28 +885,6 @@
     margin-bottom: 20px;
   }
 
-  .protect-content {
-    margin-right: 0;
-  }
-
-  .protect-img img {
-    width: 100%;
-  }
-
-  .protect-content .protect-title {
-    margin-bottom: 30px;
-  }
-  .protect-content .protect-title h2 {
-    font-size: 25px;
-  }
-
-  .protect-area .col-lg-6 .row .col-lg-6:nth-child(2) .single-challenges {
-    margin-top: 0;
-  }
-  .protect-area .col-lg-6 .row .col-lg-6:nth-child(3) .single-challenges {
-    margin-top: 0;
-  }
-
   .single-blog .blog-img a {
     display: block;
   }
@@ -1088,16 +953,6 @@
     text-align: center;
   }
 
-  .single-safety {
-    padding: 15px;
-  }
-  .single-safety img {
-    margin-bottom: 15px;
-  }
-  .single-safety h3 {
-    margin-bottom: 10px;
-  }
-
   .shape-three {
     display: none;
   }
@@ -1164,17 +1019,6 @@
   }
   .error-area .error-content h1 {
     font-size: 200px;
-  }
-
-  .checkout-area .billing-details {
-    margin-bottom: 30px;
-  }
-
-  .product-details-image {
-    margin-bottom: 30px;
-  }
-  .product-details-image img {
-    width: 100%;
   }
 
   .sidebar-widget.recent-post ul li {
@@ -1363,41 +1207,11 @@
     display: none;
   }
 
-  .single-challenges {
-    padding: 20px;
-  }
-
   .protect-content {
     margin-left: 0;
   }
 
-  .protect-img {
-    background-image: url(/images/protect-img.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-    position: relative;
-  }
-  .protect-img::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-color: #ffffff;
-  }
-  .protect-img img {
-    display: none;
-  }
-
-  .testimonials {
-    margin-right: auto;
-  }
-
-  .about-us-area .row {
+  .about-area .row {
     align-items: unset !important;
   }
 
