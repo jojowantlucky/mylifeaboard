@@ -7,7 +7,7 @@ const RefitLiveAboardSailLog = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-lg-4 col-sm-6'>
-            <Link href='/coming-soon'>
+            <Link href='/diy-refit-remodel'>
               <div className='RefitLiveAboardSailLog-single overlay-one'>
                 <div className='overlay-two'>
                   <div className='title'>
@@ -25,7 +25,7 @@ const RefitLiveAboardSailLog = () => {
           </div>
 
           <div className='col-lg-4 col-sm-6'>
-            <Link href='/coming-soon'>
+            <Link href='/living-aboard-onnie'>
               <div className='RefitLiveAboardSailLog-single overlay-one'>
                 <div className='overlay-two'>
                   <div className='title'>

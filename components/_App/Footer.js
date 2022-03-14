@@ -20,10 +20,11 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consec tetur
-                  adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna
-                  aliqua consec tetur adipiscing.
+                  Onnie is a 1974 Cascade High Side 42.5
+                  hailing from Portland, OR. Purchased in
+                  2022, her adventure started with a refit
+                  that is sure to span many years and it's
+                  all documented here.
                 </p>
 
                 <ul className='social-icon'>
@@ -91,33 +92,24 @@ const Footer = () => {
 
                 <ul className='import-link'>
                   <li>
-                    <Link href='/coming-soon'>
+                    <Link href='/diy-refit-remodel'>
                       <a>DIY Refit &amp; Remodel</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/coming-soon'>
+                    <Link href='/living-aboard-onnie'>
                       <a>Living Aboard Onnie</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/coming-soon'>
-                      <a>Videos</a>
+                    <Link href='https://www.youtube.com/channel/UCNEPqqyC1MiqYgauqqMxNrA'>
+                      <a target='_blank'>Videos</a>
                     </Link>
                   </li>
+
                   <li>
-                    <Link href='/coming-soon'>
-                      <a>Sailing Community</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='https://www.patreon.com/mylifeaboard'>
-                      <a>Support Onnie</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/coming-soon'>
-                      <a>Collaboration</a>
+                    <Link href='https://www.patreon.com/mlifeaboard'>
+                      <a target='_blank'>Support Onnie</a>
                     </Link>
                   </li>
                 </ul>
@@ -136,22 +128,24 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href='https://asa.com/'>
-                      <a>American Sailing Association</a>
+                      <a target='_blank'>
+                        American Sailing Association
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href='/coming-soon'>
-                      <a>Onnie Merch</a>
+                      <a target='_blank'>Onnie Merch</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/blog-1'>
+                    <Link href='/main-blog-posts-page'>
                       <a>Blog</a>
                     </Link>
                   </li>
                   <li>
                     <Link href='/coming-soon'>
-                      <a>Case Studies</a>
+                      <a>User Guides</a>
                     </Link>
                   </li>
                   <li>

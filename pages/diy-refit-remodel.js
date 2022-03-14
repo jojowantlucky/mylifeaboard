@@ -1,13 +1,13 @@
-import React from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const Navigation = () => {
-  const [days, setDays] = React.useState('');
-  const [hours, setHours] = React.useState('');
-  const [minutes, setMinutes] = React.useState('');
-  const [seconds, setSeconds] = React.useState('');
+const DiyRefitRemodel = () => {
+  const [days, setDays] = useState('');
+  const [hours, setHours] = useState('');
+  const [minutes, setMinutes] = useState('');
+  const [seconds, setSeconds] = useState('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       commingSoonTime();
     }, 1000);
@@ -58,7 +58,7 @@ const Navigation = () => {
               </a>
             </Link>
 
-            <h2>We are launching soon</h2>
+            <h2>I'm still working on this page....</h2>
 
             <div
               id='timer'
@@ -116,4 +116,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default DiyRefitRemodel;
