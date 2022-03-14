@@ -10,7 +10,7 @@ import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import 'leaflet-defaulticon-compatibility';
 import ResetViewControl from '@20tab/react-leaflet-resetview';
 
-const Map = ({width, height='100%'}) => {
+const Map = ({ width, height = '100%' }) => {
   const homePortCoordinates = [
     45.60514012056267, -122.65578868429517,
   ];
@@ -46,12 +46,13 @@ const Map = ({width, height='100%'}) => {
       center={centerCoordinates}
       zoom={8}
       scrollWheelZoom={true}
+      className='mobile-size-adjustment'
       style={{
-        height: '100%',
-        width: {width},
+        height: '9  0%',
+        width: { width },
         paddingBottom: '40px',
-        minWidth: '350px',
-        minHeight: '350px',
+        minWidth: '253px',
+        minHeight: '253px',
         margin: 'auto',
       }}>
       <TileLayer

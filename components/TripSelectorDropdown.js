@@ -4,14 +4,17 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { TextField } from '@mui/material';
+import getTripCoordinates from '../api/getTripCoordinates'
 
 const TripSelectorDropdown = () => {
-  const [trip, setTrip] = useState('');
-  const currentTripID = '0';
-  const chosenTrip = useRef(currentTripID);
+  const [selectedTrip, setSelectedTrip] = useState('1');
 
-  const handleChange = () => {
-    setTrip(chosenTrip.current);
+  const handleChange = (event) => {
+    setSelectedTrip(event.target.value);
+    //format setSelectedTrip to use with getTripCoordinates. 
+    // const formattedSelectedTrip = setSelectedTrip
+    //getTripCoordinates(formattedSelectedTrip)
   };
 
   const tripList = [
@@ -42,24 +45,22 @@ const TripSelectorDropdown = () => {
       sx={{
         maxWidth: '50%',
         paddingBottom: '1rem',
-        margin: 'auto',
       }}>
       <FormControl fullWidth>
-        <InputLabel id='map-trip-selector'>
-          Select a Trip
-        </InputLabel>
-        <Select
+        <InputLabel id='map-trip-selector'>Trip</InputLabel>
+        <TextField
+          select
           labelId='trip-label'
           id='trip-label'
-          value={trip}
+          value={selectedTrip}
           label='Trip'
-          onChange={handleChange}>
+          onChange={handleChange}
+          placeholder='Current Trip/Location'
+          helperText='Choose past trips here.'>
           {tripList.map((trip) => (
-            <MenuItem ref={chosenTrip} value={trip.id}>
-              {trip.name}
-            </MenuItem>
+            <MenuItem value={trip.id}>{trip.name}</MenuItem>
           ))}
-        </Select>
+        </TextField>
       </FormControl>
     </Box>
   );

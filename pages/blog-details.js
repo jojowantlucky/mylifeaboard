@@ -5,6 +5,25 @@ import BlogSidebar from '../components/Blog/BlogSidebar';
 import Comments from '../components/Blog/Comments';
 import Footer from '../components/_App/Footer';
 
+const postMeta = {
+  author: 'John Doe',
+  authorAboutPage: '/about-joe',
+  postId: '2304980392',
+  date: 'September 23, 2022',
+  comments: [
+    {
+      commentAuthor: 'Jane Doe',
+      commentDate: '1/1/2022',
+      commentBody:
+        "d;alkfjla;d -eriaiojfasd a'dfkl;adflkda' fewjoi adf",
+    },
+  ],
+};
+
+const clickHandler = () => {
+  console.log('clicked');
+};
+
 const BlogDetails = () => {
   return (
     <Fragment>
@@ -32,9 +51,9 @@ const BlogDetails = () => {
                   <div className='news-content'>
                     <ul className='admin'>
                       <li>
-                        <a href='#'>
+                        <a href={postMeta.authorAboutPage}>
                           <i className='bx bx-user-circle'></i>
-                          Posted by: Carl Bradshaw
+                          Written by: {postMeta.author}
                         </a>
                       </li>
 
@@ -47,7 +66,7 @@ const BlogDetails = () => {
 
                       <li className='float'>
                         <i className='bx bx-calendar-alt'></i>
-                        September 20, 2020
+                        {postMeta.date}
                       </li>
                     </ul>
 
