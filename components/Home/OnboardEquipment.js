@@ -26,7 +26,7 @@ const Equipment = () => {
                   </a>
                 </Link>
               </div>
-              <div className='onboard-equipment-content'>
+              <div className='onboard-equipment-content onboard-mobile-top-row-adjustment'>
                 <h3>
                   <Link href='/electronics-and-nav'>
                     <a>Electronics &amp; Nav</a>
@@ -55,7 +55,7 @@ const Equipment = () => {
                   </a>
                 </Link>
               </div>
-              <div className='onboard-equipment-content'>
+              <div className='onboard-equipment-content onboard-mobile-top-row-adjustment'>
                 <h3>
                   <Link href='/deck-hardware'>
                     <a>Deck Hardware</a>
@@ -84,7 +84,7 @@ const Equipment = () => {
                   </a>
                 </Link>
               </div>
-              <div className='onboard-equipment-content'>
+              <div className='onboard-equipment-content onboard-mobile-bottom-row-adjustment'>
                 <h3>
                   <Link href='/propulsion'>
                     <a>Propulsion</a>
@@ -116,7 +116,7 @@ const Equipment = () => {
                   </a>
                 </Link>
               </div>
-              <div className='onboard-equipment-content'>
+              <div className='onboard-equipment-content onboard-mobile-bottom-row-adjustment'>
                 <h3>
                   <Link href='/power-generation'>
                     <a>Power &amp; Electrical</a>
