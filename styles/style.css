@@ -2728,6 +2728,9 @@ Coming Soon Area Style
   z-index: 1;
   height: 100vh;
 }
+.error-area img {
+  max-width: 300px;
+}
 .error-area .error-content {
   z-index: 1;
   position: relative;
