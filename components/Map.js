@@ -9,6 +9,9 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
 import ResetViewControl from '@20tab/react-leaflet-resetview';
+import Link from 'next/link'
+
+const clickHandler = () => {};
 
 const Map = ({ width, height = '100%' }) => {
   const homePortCoordinates = [
@@ -18,6 +21,7 @@ const Map = ({ width, height = '100%' }) => {
   const theCliffCoordinates = [
     12.920836911295423, 100.86285125163124,
   ];
+
   const [rawGpsData, setRawGpsData] = useState([
     {
       trip: 'Default useState',
@@ -40,6 +44,8 @@ const Map = ({ width, height = '100%' }) => {
   }, []);
 
   const centerCoordinates = homePortCoordinates;
+  const popupDate = 'September 20, 2021';
+  const dateSlug = '2021-09-20'
 
   return (
     <MapContainer
@@ -64,7 +70,27 @@ const Map = ({ width, height = '100%' }) => {
         position={centerCoordinates}
         draggable={false}
         animate={true}>
-        <Popup>Onnie's Current Location</Popup>
+        <Popup>
+          <h5>Onnie's Current Location</h5>
+          <p className='popupInfo'>Date: {popupDate}</p>
+          <p className='popupInfo'>
+            Lat: {centerCoordinates[0]}
+          </p>
+          <p className='popupInfo'>
+            Long: {centerCoordinates[1]}
+          </p>
+          <Link href={`/gallery/${dateSlug}`}>
+            <a>
+              <img
+                src='/images/about-img.jpg'
+                alt='about image'
+              />
+            </a>
+          </Link>
+          <p className='popupLink' onClick={clickHandler}>
+            Learn more...
+          </p>
+        </Popup>
       </Marker>
 
       <ResetViewControl
