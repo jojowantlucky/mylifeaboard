@@ -822,6 +822,12 @@
       margin-top: 10px;
     }
   }
+
+  .at-a-glance-single {
+    .mobile-adjustment {
+      font-size: 27px;
+    }
+  }
 }
 
 /* Min width 576px to Max width 767px */
@@ -1366,6 +1372,12 @@
   .onboard-mobile-top-row-adjustment {
     bottom: -100px !important;
   }
+
+  .at-a-glance-single {
+    .mobile-adjustment {
+      font-size: 27px;
+    }
+  }
 }
 
 /* Min width 992px to Max width 1199px */
@@ -1615,6 +1627,20 @@
       }
     }
   }
+
+  .at-a-glance-single {
+    .mobile-adjustment {
+      font-size: 34px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1549px) {
+  .at-a-glance-single {
+    .mobile-adjustment {
+      font-size: 36px;
+    }
+  }
 }
 
 /* Max width 1550px */
@@ -1636,6 +1662,11 @@
       .counter-max-wide {
         max-width: 918px;
       }
+    }
+  }
+  .at-a-glance-single {
+    .mobile-adjustment {
+      font-size: 36px;
     }
   }
 }
