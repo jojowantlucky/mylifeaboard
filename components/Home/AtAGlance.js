@@ -9,7 +9,7 @@ const AtAGlance = () => {
     timeDifference / (1000 * 3600 * 24)
   );
 
-  const totalCost = '5,637.34';
+  const totalCost = '35,637.34';
   const milesSailed = '1,000';
   const completedProjects = '0';
 
@@ -59,7 +59,9 @@ const AtAGlance = () => {
                   <a>
                     <div className='overlay-two'>
                       <span className='material-icons paid'></span>
-                      <h2>${totalCost}</h2>
+                      <h2 className='mobile-adjustment'>
+                        ${totalCost}
+                      </h2>
                       <h3>Total Cost (USD)</h3>
                     </div>
                   </a>

@@ -683,6 +683,10 @@
 .top-header .header-right-content {
     margin-top: 10px;
   }
+
+  .at-a-glance-single .mobile-adjustment {
+    font-size: 27px;
+  }
 }
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1135,12 +1139,16 @@
     margin-bottom: 30px;
   }
 
-  .onboard-mobile-bottom-row-adjustment {
-    bottom: -126px !important;
+  .onboard-mobile-adjustment {
+    bottom: -20px !important;
   }
 
   .onboard-mobile-top-row-adjustment {
     bottom: -100px !important;
+  }
+
+  .at-a-glance-single .mobile-adjustment {
+    font-size: 27px;
   }
 }
 /* Min width 992px to Max width 1199px */
@@ -1349,6 +1357,15 @@
   .faq-accordion .accordion .accordion__button {
     font-size: 15px;
   }
+
+  .at-a-glance-single .mobile-adjustment {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1549px) {
+  .at-a-glance-single .mobile-adjustment {
+    font-size: 36px;
+  }
 }
 /* Max width 1550px */
 @media only screen and (min-width: 1550px) {
@@ -1365,6 +1382,10 @@
 
   ß .counter-area.counter-area-three .counter-max-wide {
     max-width: 918px;
+  }
+
+  .at-a-glance-single .mobile-adjustment {
+    font-size: 36px;
   }
 }
 
