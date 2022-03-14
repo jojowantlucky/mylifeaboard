@@ -13,7 +13,8 @@ const TripSelectorDropdown = () => {
     setSelectedTrip(event.target.value);
     //format setSelectedTrip to use with getTripCoordinates.
     // const formattedSelectedTrip = setSelectedTrip
-    getTripCoordinates()
+    // getTripCoordinates()
+    alert('hi there!');
   };
 
   const tripList = [
