@@ -18,8 +18,10 @@ const LatestNews = () => {
         </div>
 
         <div className='row'>
-          {dummyLatestBlogs.map((blogPost) => (
-            <div className='col-lg-4 col-md-6'>
+          {dummyLatestBlogs.map((blogPost, index) => (
+            <div
+              key={`${blogPost.headline}-${blogPost.id}`}
+              className='col-lg-4 col-md-6'>
               <div className='latest-news-single'>
                 <div className='latest-news-img'>
                   <div className='latest-news-cover-img-border'></div>

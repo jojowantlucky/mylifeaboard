@@ -32,6 +32,7 @@
 ** - Nice select Area
 ** - Services Details Area Style
 ** - Learn More Area Style
+** - Equipment Details Area
 
 ******************************************* 
 /*
@@ -1153,6 +1154,8 @@ RefitLiveAboardSailLog Area Style
     }
   }
 }
+
+
 
 /*
 The Plan Area Style 
@@ -4583,4 +4586,41 @@ Services Details Area Style
       color: $main-color;
     }
   }
+}
+
+/*
+Services Details Area Style
+======================================================*/
+.equipment-details-area {
+  padding: 2rem;
+  padding-top: 8rem;
+
+  .row {
+    padding-bottom: 8rem;
+  }
+  .mosaic-picker {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      padding-right: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    &:hover {
+      color: $main-color;
+    }
+  }
+  .mosaic-area {
+    padding-bottom: 4rem;
+  }
+}
+
+/*
+Table Area Style
+======================================================*/
+.table {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }

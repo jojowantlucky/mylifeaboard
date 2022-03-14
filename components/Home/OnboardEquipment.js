@@ -17,7 +17,7 @@ const Equipment = () => {
           <div className='col-lg-3 col-sm-6'>
             <div className='onboard-equipment-single'>
               <div className='onboard-equipment-img'>
-                <Link href='/navigation'>
+                <Link href='/electronics-and-nav'>
                   <a>
                     <img
                       src='/images/onboard-equipment/navigation.jpg'
@@ -28,12 +28,12 @@ const Equipment = () => {
               </div>
               <div className='onboard-equipment-content'>
                 <h3>
-                  <Link href='/navigation'>
+                  <Link href='/electronics-and-nav'>
                     <a>Electronics &amp; Nav</a>
                   </Link>
                 </h3>
                 <p>Electronics and navigation systems.</p>
-                <Link href='/navigation'>
+                <Link href='/electronics-and-nav'>
                   <a className='read-more'>
                     Read More
                     <i className='flaticon-right-arrow'></i>
