@@ -6,6 +6,7 @@ const Custom404 = () => {
     <div className='error-area ptb-100'>
       <div className='d-table'>
         <div className='d-table-cell'>
+          <img src='/images/logo.png' />
           <div className='error-content'>
             <h1>
               <span className='a'>4</span>{' '}
