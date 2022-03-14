@@ -685,7 +685,7 @@ Navbar Area Style
   box-shadow: none;
 }
 .navbar-toggler .icon-bar {
-  width: 35px;
+  width: 30px;
   transition: all 0.3s;
   background: #fff;
   height: 2px;
