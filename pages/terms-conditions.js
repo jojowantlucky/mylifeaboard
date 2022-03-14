@@ -20,7 +20,9 @@ const TermsConditions = () => {
           <div className='terms-conditions'>
             <div className='title'>
               <span>Information &amp; Notices</span>
-              <h2>Nezox Terms of Service</h2>
+              <h2>
+                Noteworthy Productions, LLC Terms of Service
+              </h2>
             </div>
 
             <ol>
