@@ -1042,6 +1042,7 @@ Banner Area Style
 /*
 RefitLiveAboardSailLog Area Style 
 ======================================================*/
+
 .RefitLiveAboardSailLog-area {
   position: relative;
   margin-top: -130px;
@@ -1117,7 +1118,8 @@ RefitLiveAboardSailLog Area Style
     position: relative;
     margin-bottom: 28px;
 
-    i {
+    span {
+      font-size: 3rem;
       position: absolute;
       top: 0;
       font-size: 50px;
@@ -1140,7 +1142,7 @@ RefitLiveAboardSailLog Area Style
     transform: translateY(-5px);
 
     .title {
-      i {
+      span {
         transform: rotateY(360deg);
         color: $white-color;
       }

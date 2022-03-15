@@ -15,10 +15,10 @@ const Contact = () => {
     <Fragment>
       <Navbar />
       <PageBanner
-        pageTitle='Contact Us'
+        pageTitle='Contact Me'
         homePageUrl='/'
         homePageText='Home'
-        activePageText='Contact Us'
+        activePageText='Contact Me'
       />
 
       <section className='main-contact-area ptb-100'>
