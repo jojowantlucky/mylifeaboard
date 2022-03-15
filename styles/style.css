@@ -1365,6 +1365,9 @@ Get In Touch Area Style
   max-width: 810px;
   margin: auto;
 }
+.get-in-touch-form .recaptcha {
+  margin: auto;
+}
 .get-in-touch-form .form-group {
   margin-bottom: 30px;
 }

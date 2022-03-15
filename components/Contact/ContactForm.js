@@ -67,9 +67,8 @@ const ContactForm = () => {
           <h2>Drop Me a Line </h2>
         </div>
 
-        <form
-          id='contactForm'
-          onSubmit={handleSubmit(onSubmit)}>
+        <form id='contactForm'>
+          {/* onSubmit={}> */}
           <div className='row'>
             <div className='col-lg-6 col-md-6'>
               <div className='form-group'>
@@ -171,6 +170,10 @@ const ContactForm = () => {
             </div>
 
             <div className='col-lg-12 col-sm-12'>
+              <ReCAPTCHA
+                sitekey='6LdmkN8eAAAAALRzH2QYX27HqAn3TL0m3TW9rfqR'
+                onChange={handleSubmit(onSubmit)}
+              />
               <button
                 type='submit'
                 className='default-btn btn-two'>
