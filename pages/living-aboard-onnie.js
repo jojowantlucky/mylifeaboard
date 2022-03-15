@@ -3,7 +3,7 @@ import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 import PartnersTwo from '../components/Common/PartnersTwo';
-import Services from '../components/Projects/Projects';
+import Services from '../components/Projects/ProjectCategoryGrid';
 import Link from 'next/link';
 
 const LivingAboardOnnie = () => {

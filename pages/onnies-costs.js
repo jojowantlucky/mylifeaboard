@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import Related from '../components/Services/Related';
-import CostsSidebar from '../components/Services/CostsSidebar';
+import Related from '../components/Projects/Related';
+import CostsSidebar from '../components/Projects/CostsSidebar';
 import Footer from '../components/_App/Footer';
 
 const OnniesCost = () => {

@@ -32,6 +32,7 @@
 ** - Learn More Area Style
 ** - Equipment Details Area
 ** - Map Area Style
+** - ProjectCategoryGrid Area Style
 
 ******************************************* 
 /*
@@ -4049,6 +4050,14 @@ Gallery Area Style
   &:hover {
     transform: translateY(-5px);
   }
+}
+
+
+/*
+ProjectCategoryGrid Area Style*/
+
+.project-category-grid-area {
+  margin-top: 4rem;
 }
 
 /*====================================================

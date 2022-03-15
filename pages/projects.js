@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
-import Link from 'next/link';
 import Footer from '../components/_App/Footer';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import Projects from '../components/Projects/Projects';
+import ProjectCategoryGrid from '../components/Projects/ProjectCategoryGrid';
+import getBlogPosts from '../pages/api/getBlogPosts';
 
-const Projects = () => {
+console.log(getBlogPosts);
+
+const ProjectsPage = () => {
   return (
     <Fragment>
       <Navbar />
@@ -15,10 +17,10 @@ const Projects = () => {
         homePageText='Home'
         activePageText='Projects'
       />
-      <Projects />
+      <ProjectCategoryGrid />
       <Footer />
     </Fragment>
   );
 };
 
-export default Projects;
+export default ProjectsPage;
