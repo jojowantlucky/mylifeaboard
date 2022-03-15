@@ -130,9 +130,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              
-              <div className='others-option'>
-                <div className='get-quote'>
+
+              <div className='donate-button-container'>
+                <div className='donate'>
                   <Link href='https://www.patreon.com/mylifeaboard'>
                     <a
                       className='default-btn'
