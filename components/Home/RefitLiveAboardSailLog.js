@@ -11,7 +11,9 @@ const RefitLiveAboardSailLog = () => {
               <div className='RefitLiveAboardSailLog-single overlay-one'>
                 <div className='overlay-two'>
                   <div className='title'>
-                    <i className='flaticon-testing'></i>
+                    <span className='material-icons'>
+                      handyman
+                    </span>
                     <h3>Refit</h3>
                   </div>
                   <p>
@@ -29,7 +31,9 @@ const RefitLiveAboardSailLog = () => {
               <div className='RefitLiveAboardSailLog-single overlay-one'>
                 <div className='overlay-two'>
                   <div className='title'>
-                    <i className='flaticon-innovation'></i>
+                    <span className='material-icons'>
+                      home
+                    </span>
                     <h3>Live Aboard</h3>
                   </div>
                   <p>
@@ -47,7 +51,10 @@ const RefitLiveAboardSailLog = () => {
               <div className='RefitLiveAboardSailLog-single overlay-one'>
                 <div className='overlay-two'>
                   <div className='title'>
-                    <i className='flaticon-cyber-security'></i>
+                    {/* <i className='flaticon-cyber-security'></i> */}
+                    <span className='material-icons'>
+                      history
+                    </span>
                     <h3>Sail Log</h3>
                   </div>
                   <p>
