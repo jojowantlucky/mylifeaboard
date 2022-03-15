@@ -1033,36 +1033,6 @@
       margin-bottom: 20px;
     }
   }
-  // .protect-content {
-  //   margin-right: 0;
-  // }
-  // .protect-img {
-  //   img {
-  //     width: 100%;
-  //   }
-  // }
-  // .protect-content {
-  //   .protect-title {
-  //     margin-bottom: 30px;
-  //     h2 {
-  //       font-size: 25px;
-  //     }
-  //   }
-  // }
-  // .protect-area {
-  //   .col-lg-6 .row .col-lg-6 {
-  //     &:nth-child(2) {
-  //       .single-challenges {
-  //         margin-top: 0;
-  //       }
-  //     }
-  //     &:nth-child(3) {
-  //       .single-challenges {
-  //         margin-top: 0;
-  //       }
-  //     }
-  //   }
-  // }
 
   .single-blog {
     .blog-img {
@@ -1139,15 +1109,7 @@
     margin-top: 30px;
     text-align: center;
   }
-  // .single-safety {
-  //   padding: 15px;
-  //   img {
-  //     margin-bottom: 15px;
-  //   }
-  //   h3 {
-  //     margin-bottom: 10px;
-  //   }
-  // }
+
   .shape-three {
     display: none;
   }
@@ -1381,6 +1343,12 @@
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
+  .RefitLiveAboardSailLog-single {
+    min-height: 15rem;
+  }
+  .the-plan-single {
+    min-height: 10rem;
+  }
 }
 
 /* Min width 992px to Max width 1199px */
@@ -1425,6 +1393,7 @@
   }
   .the-plan-single {
     padding: 15px;
+    min-height: 15rem;
     h3 {
       font-size: 18px;
     }
@@ -1456,34 +1425,10 @@
       display: none;
     }
   }
-  // .single-challenges {
-  //   padding: 20px;
-  // }
+
   .protect-content {
     margin-left: 0;
   }
-  // .protect-img {
-  //   background-image: url(/images/protect-img.jpg);
-  //   background-position: center center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   position: relative;
-  //   height: 100%;
-  //   position: relative;
-  //   &::before {
-  //     content: '';
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 30px;
-  //     background-color: #ffffff;
-  //   }
-  //   img {
-  //     display: none;
-  //   }
-  // }
-
   .about-area {
     .row {
       align-items: unset !important;
@@ -1640,6 +1585,9 @@
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
+  .RefitLiveAboardSailLog-single {
+    min-height: 17rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
@@ -1650,6 +1598,12 @@
   }
   .mobile-size-adjustment {
     min-height: 24rem !important;
+  }
+  .RefitLiveAboardSailLog-single {
+    min-height: 12rem;
+  }
+  .the-plan-single {
+    min-height: 12rem;
   }
 }
 
@@ -1681,5 +1635,8 @@
   }
   .mobile-size-adjustment {
     min-height: 46rem !important;
+  }
+  .the-plan-single {
+    min-height: 12rem;
   }
 }

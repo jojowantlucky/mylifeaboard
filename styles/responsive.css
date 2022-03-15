@@ -1154,6 +1154,14 @@
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
+
+  .RefitLiveAboardSailLog-single {
+    min-height: 15rem;
+  }
+
+  .the-plan-single {
+    min-height: 10rem;
+  }
 }
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1196,6 +1204,7 @@
 
   .the-plan-single {
     padding: 15px;
+    min-height: 15rem;
   }
   .the-plan-single h3 {
     font-size: 18px;
@@ -1369,6 +1378,10 @@
   .mobile-size-adjustment {
     min-height: 24rem !important;
   }
+
+  .RefitLiveAboardSailLog-single {
+    min-height: 17rem;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
   .at-a-glance-single .mobile-adjustment {
@@ -1377,6 +1390,14 @@
 
   .mobile-size-adjustment {
     min-height: 24rem !important;
+  }
+
+  .RefitLiveAboardSailLog-single {
+    min-height: 12rem;
+  }
+
+  .the-plan-single {
+    min-height: 12rem;
   }
 }
 /* Max width 1550px */
@@ -1402,6 +1423,10 @@
 
   .mobile-size-adjustment {
     min-height: 46rem !important;
+  }
+
+  .the-plan-single {
+    min-height: 12rem;
   }
 }
 
