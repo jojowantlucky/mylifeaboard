@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Link from '../../utils/ActiveLink';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
@@ -63,7 +63,7 @@ const Navbar = () => {
                 id='navbarSupportedContent'>
                 <ul className='navbar-nav m-auto'>
                   <li className='nav-item'>
-                    <Link href='/' activeClassName='active'>
+                    <Link href='/' activeclassname='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
@@ -73,8 +73,9 @@ const Navbar = () => {
                   </li>
 
                   <li className='nav-item'>
-                    <Link href='/#the-plan'
-                    activeClassName='active'>
+                    <Link
+                      href='/#the-plan'
+                      activeclassname='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
@@ -84,8 +85,9 @@ const Navbar = () => {
                   </li>
 
                   <li className='nav-item'>
-                    <Link href='/#about'
-                    activeClassName='active'>
+                    <Link
+                      href='/#about'
+                      activeclassname='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
@@ -99,7 +101,7 @@ const Navbar = () => {
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'
-                        activeClassName='active'>
+                        activeclassname='active'>
                         At A Glance
                       </a>
                     </Link>
@@ -108,7 +110,7 @@ const Navbar = () => {
                   <li className='nav-item'>
                     <Link
                       href='/main-blog-posts-page'
-                      activeClassName='active'>
+                      activeclassname='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
@@ -120,7 +122,7 @@ const Navbar = () => {
                   <li className='nav-item'>
                     <Link
                       href='/contact'
-                      activeClassName='active'>
+                      activeclassname='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
