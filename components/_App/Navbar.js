@@ -73,7 +73,8 @@ const Navbar = () => {
                   </li>
 
                   <li className='nav-item'>
-                    <Link href='/#the-plan'>
+                    <Link href='/#the-plan'
+                    activeClassName='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
@@ -83,7 +84,8 @@ const Navbar = () => {
                   </li>
 
                   <li className='nav-item'>
-                    <Link href='/#about'>
+                    <Link href='/#about'
+                    activeClassName='active'>
                       <a
                         onClick={toggleNavbar}
                         className='nav-link'>
@@ -96,7 +98,8 @@ const Navbar = () => {
                     <Link href='/#at-a-glance'>
                       <a
                         onClick={toggleNavbar}
-                        className='nav-link'>
+                        className='nav-link'
+                        activeClassName='active'>
                         At A Glance
                       </a>
                     </Link>

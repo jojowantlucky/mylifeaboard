@@ -40,7 +40,7 @@
 Default Style
 ============================*/
 :root {
-  scroll-behavior: initial;
+  scroll-behavior: smooth;
 }
 
 body {

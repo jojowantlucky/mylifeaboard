@@ -57,8 +57,10 @@ $form-color: #f7f9fb;
 // Dark Blue: #0b3b5c
 
 :root {
-  scroll-behavior: initial;
+  scroll-behavior: smooth;
 }
+
+
 
 body {
   font-size: $font-size;
