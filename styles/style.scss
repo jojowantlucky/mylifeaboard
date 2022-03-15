@@ -500,7 +500,7 @@ Navbar Area Style
               margin-left: -2px;
             }
             &:hover {
-              color: $white-color;
+              color: $main-color;
             }
             &.active {
               color: $white-color;
@@ -1335,6 +1335,7 @@ The Plan Area Style
 }
 .the-plan-img {
   margin-bottom: 30px;
+  background-image: url(/images/the-plan.jpg);
 }
 
 /*
@@ -1565,6 +1566,10 @@ Get In Touch Area Style
   text-align: center;
   max-width: 810px;
   margin: auto;
+
+  .recaptcha {
+    margin: auto;
+  }
 
   .form-group {
     margin-bottom: 30px;

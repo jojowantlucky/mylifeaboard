@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 const MySwal = withReactContent(Swal);
 import baseUrl from '../../utils/baseUrl';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const alertContent = () => {
   MySwal.fire({
@@ -65,14 +66,12 @@ const GetInTouchForm = () => {
       <div className='container'>
         <div className='section-title'>
           <span>Get In Touch</span>
-          <h2>
-            Drop me a line and say hi!
-          </h2>
+          <h2>Drop me a line and say hi!</h2>
         </div>
 
         <form
           id='contactForm'
-          onSubmit={handleSubmit(onSubmit)}
+          // onSubmit={handleSubmit(onSubmit)}
           className='get-in-touch-form'>
           <div className='row'>
             <div className='col-lg-6 col-md-6'>
@@ -175,6 +174,12 @@ const GetInTouchForm = () => {
             </div>
 
             <div className='col-lg-12 col-sm-12'>
+              <div className='recaptcha'>
+                <ReCAPTCHA
+                  sitekey='6LdmkN8eAAAAALRzH2QYX27HqAn3TL0m3TW9rfqR'
+                  onChange={handleSubmit(onSubmit)}
+                />
+              </div>
               <button type='submit' className='default-btn'>
                 Send
               </button>
@@ -185,7 +190,7 @@ const GetInTouchForm = () => {
 
       <div className='get-in-touch-shape'>
         <img
-          src='/images/index/get-in-touch/steering-wheel.svg'
+          src='/images/home/get-in-touch/steering-wheel.svg'
           alt='Image'
         />
       </div>
