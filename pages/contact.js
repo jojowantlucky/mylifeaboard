@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import ContactForm from '../components/Contact/ContactForm';
 import Footer from '../components/_App/Footer';
 import dynamic from 'next/dynamic';
+import GetInTouchForm from '../components/Common/GetInTouchForm';
 
 const Contact = () => {
   const MapWithNoSSR = dynamic(
@@ -25,7 +25,7 @@ const Contact = () => {
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-lg-8'>
-              <ContactForm />
+              <GetInTouchForm />
             </div>
 
             <div className='col-lg-4'>
