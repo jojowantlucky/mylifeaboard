@@ -3345,6 +3345,9 @@ Blog Column One Area Style
 /*
 Learn More Area Style
 ======================================================*/
+.learn-more-details-area .learn-more-content {
+  margin-top: 4rem;
+}
 .learn-more-details-area .sail-log-content {
   margin-bottom: 30px;
 }

@@ -60,8 +60,6 @@ $form-color: #f7f9fb;
   scroll-behavior: smooth;
 }
 
-
-
 body {
   font-size: $font-size;
   font-family: $body-family;
@@ -3736,6 +3734,9 @@ Blog Column One Area Style
 Learn More Area Style
 ======================================================*/
 .learn-more-details-area {
+  .learn-more-content {
+    margin-top: 4rem;
+  }
   .sail-log-content {
     margin-bottom: 30px;
 
