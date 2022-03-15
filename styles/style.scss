@@ -32,6 +32,7 @@
 ** - Learn More Area Style
 ** - Equipment Details Area
 ** - Map Area Style
+** - ProjectCategoryGrid Area Style
 
 ******************************************* 
 /*
@@ -59,8 +60,6 @@ $form-color: #f7f9fb;
 :root {
   scroll-behavior: smooth;
 }
-
-
 
 body {
   font-size: $font-size;
@@ -634,137 +633,14 @@ Navbar Area Style
       }
     }
   }
-  .others-option {
-    .get-quote {
+  .donate-button-container {
+    .donate {
       display: inline-block;
       position: relative;
       top: 3px;
     }
-    .cart-icon {
-      top: 0;
-      display: inline-block;
-      margin-right: 40px;
-      position: relative;
-
-      a {
-        i {
-          font-size: 30px;
-          transition: $transition;
-          line-height: 1;
-          line-height: 50px;
-          text-align: center;
-          display: inline-block;
-          color: $white-color;
-          border-radius: 50px;
-        }
-        span {
-          position: absolute;
-          top: 5px;
-          right: -10px;
-          width: 15px;
-          height: 15px;
-          line-height: 15px;
-          background-color: $main-color;
-          border-radius: 50%;
-          text-align: center;
-          color: $white-color;
-          font-size: 11px;
-        }
-        &:hover {
-          i {
-            color: $main-color;
-          }
-        }
-      }
-    }
   }
-  &.navbar-area-two {
-    background-color: $white-color;
 
-    .main-nav {
-      nav {
-        .navbar-nav {
-          .nav-item {
-            a {
-              color: $black-color;
-
-              &:hover {
-                color: $main-color;
-              }
-              &.active {
-                color: $main-color;
-              }
-            }
-            .dropdown-menu {
-              li {
-                a {
-                  color: $heading-color;
-
-                  &:hover {
-                    color: $main-color;
-                  }
-                  &.active {
-                    color: $main-color;
-                  }
-                }
-                .dropdown-menu {
-                  li {
-                    a {
-                      color: $heading-color;
-
-                      &:hover {
-                        color: $main-color;
-                      }
-                      &:focus {
-                        color: $main-color;
-                      }
-                      &.active {
-                        color: $main-color;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .others-option {
-      .cart-icon {
-        a {
-          i {
-            color: $black-color;
-          }
-          &:hover {
-            i {
-              color: $main-color;
-            }
-          }
-        }
-      }
-    }
-    &.is-sticky {
-      background-color: $white-color !important;
-    }
-  }
-  &.navbar-area-four {
-    .others-option {
-      .cart-icon {
-        margin-left: 30px;
-        margin-right: 10px;
-      }
-    }
-  }
-  &.navbar-area-five {
-    background-color: rgba(0, 2, 25, 0.6);
-    .others-option {
-      .cart-icon {
-        margin-left: 30px;
-        margin-right: 10px;
-      }
-    }
-  }
   &.is-sticky {
     position: fixed;
     top: 0;
@@ -3736,6 +3612,9 @@ Blog Column One Area Style
 Learn More Area Style
 ======================================================*/
 .learn-more-details-area {
+  .learn-more-content {
+    margin-top: 4rem;
+  }
   .sail-log-content {
     margin-bottom: 30px;
 
@@ -4048,6 +3927,13 @@ Gallery Area Style
   &:hover {
     transform: translateY(-5px);
   }
+}
+
+/*
+ProjectCategoryGrid Area Style*/
+
+.project-category-grid-area {
+  margin-top: 4rem;
 }
 
 /*====================================================

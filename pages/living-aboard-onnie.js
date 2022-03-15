@@ -1,118 +1,110 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment } from 'react';
+import Navbar from '../components/_App/Navbar';
+import PageBanner from '../components/Common/PageBanner';
+import Footer from '../components/_App/Footer';
+import PartnersTwo from '../components/Common/PartnersTwo';
+import Services from '../components/Projects/ProjectCategoryGrid';
 import Link from 'next/link';
 
 const LivingAboardOnnie = () => {
-  const [days, setDays] = useState('');
-  const [hours, setHours] = useState('');
-  const [minutes, setMinutes] = useState('');
-  const [seconds, setSeconds] = useState('');
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      commingSoonTime();
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const commingSoonTime = () => {
-    let endTime = new Date('August 23, 2022 17:00:00 PDT');
-    let endTimeParse = Date.parse(endTime) / 1000;
-    let now = new Date();
-    let nowParse = Date.parse(now) / 1000;
-    let timeLeft = endTimeParse - nowParse;
-    let days = Math.floor(timeLeft / 86400);
-    let hours = Math.floor(
-      (timeLeft - days * 86400) / 3600
-    );
-    let minutes = Math.floor(
-      (timeLeft - days * 86400 - hours * 3600) / 60
-    );
-    let seconds = Math.floor(
-      timeLeft - days * 86400 - hours * 3600 - minutes * 60
-    );
-    if (hours < '10') {
-      hours = '0' + hours;
-    }
-    if (minutes < '10') {
-      minutes = '0' + minutes;
-    }
-    if (seconds < '10') {
-      seconds = '0' + seconds;
-    }
-    setDays(days);
-    setHours(hours);
-    setMinutes(minutes);
-    setSeconds(seconds);
-  };
   return (
-    <div className='coming-soon-area'>
-      <div className='d-table'>
-        <div className='d-table-cell'>
-          <div className='coming-soon-content'>
-            <Link href='/'>
-              <a className='logo'>
-                <img
-                  src='/images/black-logo.png'
-                  alt='image'
-                />
-              </a>
-            </Link>
+    <Fragment>
+      <Navbar />
+      <PageBanner
+        pageTitle='Living Aboard Onnie'
+        homePageUrl='/'
+        homePageText='Home'
+        activePageText='Living Aboard Onnie'
+      />
 
-            <h2>I'm still working on this page....</h2>
+      <div className='learn-more-details-area ptb-100'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-lg-6'>
+              <div className='learn-more-content'>
+                <h3>Living Aboard Onnie</h3>
+                <p>
+                  I'm a total noob at this and living aboard
+                  is already very different from living on
+                  land. Thankfully, I downsized a couple of
+                  years ago. Despite being 42', space is a
+                  rare commodity.
+                </p>
+                <p>
+                  Since I don't know how to sail yet and
+                  have no experience on such a big boat,
+                  Onnie is going to stay put in the marina.
+                  This is actually a good thing because I
+                  can learn while I'm fixing her up.
+                </p>
 
-            <div
-              id='timer'
-              className='flex-wrap d-flex justify-content-center'>
-              <div
-                id='days'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {days} <span>Days</span>
-              </div>
-              <div
-                id='hours'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {hours} <span>Hours</span>
-              </div>
-              <div
-                id='minutes'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {minutes} <span>Minutes</span>
-              </div>
-              <div
-                id='seconds'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {seconds} <span>Seconds</span>
+                <p>
+                  Living aboard and fixing her up going to
+                  be challenging. Her head doesn't work and
+                  I can't use much power. So...what have I
+                  learned so far?
+                </p>
               </div>
             </div>
 
-            <form className='newsletter-form'>
-              <div className='form-group'>
-                <input
-                  type='email'
-                  className='input-newsletter'
-                  placeholder='Enter your email'
-                  name='EMAIL'
-                  required
+            <div className='col-lg-6'>
+              <div className='learn-more-content-one'>
+                <img
+                  src='/images/solution-details/solution-details-1.jpg'
+                  alt='Image'
                 />
-                <span className='label-title'>
-                  <i className='bx bx-envelope'></i>
-                </span>
               </div>
+            </div>
 
-              <button type='submit' className='default-btn'>
-                <span>Subscribe</span>
-              </button>
+            <div className='col-lg-12'>
+              <div className='learn-more-content two'>
+                <h3>I didn't see that coming!</h3>
 
-              <p>
-                If you would like to be notified when your
-                app is live, Please subscribe to our mailing
-                list.
-              </p>
-            </form>
+                <p>
+                  Prior to buying Onnie I got her a{' '}
+                  <Link href='/surveys/#vessel'>
+                    <a>survey</a>
+                  </Link>
+                  ,{' '}
+                  <Link href='/surveys/#mechanical'>
+                    <a> mechanical inspection</a>
+                  </Link>
+                  , and{' '}
+                  <Link href='/surveys/#rigging'>
+                    <a>rigging inspection.</a>
+                  </Link>{' '}
+                  It was a{' '}
+                  <Link href='/onnies-costs'>
+                    <a>bit pricey</a>
+                  </Link>
+                  , but was totally worth it. The surveys
+                  alone revealed around 100 <Link href="/projects">projects</Link>{' '} to get
+                  me started.
+                </p>
+
+                <p>
+                  Ut wisi enim ad minim veniam, quis nostrud
+                  exerci tation ullamcorper suscipit
+                  lobortis nisl ut aliquip ex ea commodo
+                  consequat. Duis autem vel eum iriure dolor
+                  in hendrerit in vulputate velit esse
+                  molestie consequat, vel illum dolore eu
+                  feugiat nulla facilisis at vero eros et
+                  accumsan et iusto odio dignissim qui
+                  blandit praesent luptatum zzril delenit
+                  augue duis dolore te feugait nulla
+                  facilisi.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <PartnersTwo />
+      <Services />
+
+      <Footer />
+    </Fragment>
   );
 };
 

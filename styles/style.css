@@ -32,6 +32,7 @@
 ** - Learn More Area Style
 ** - Equipment Details Area
 ** - Map Area Style
+** - ProjectCategoryGrid Area Style
 
 ******************************************* 
 /*
@@ -574,95 +575,10 @@ Navbar Area Style
   visibility: visible;
   margin-top: 0;
 }
-.navbar-area .others-option .get-quote {
+.navbar-area .donate-button-container .donate {
   display: inline-block;
   position: relative;
   top: 3px;
-}
-.navbar-area .others-option .cart-icon {
-  top: 0;
-  display: inline-block;
-  margin-right: 40px;
-  position: relative;
-}
-.navbar-area .others-option .cart-icon a i {
-  font-size: 30px;
-  transition: all ease 0.5s;
-  line-height: 1;
-  line-height: 50px;
-  text-align: center;
-  display: inline-block;
-  color: #e1e5e9;
-  border-radius: 50px;
-}
-.navbar-area .others-option .cart-icon a span {
-  position: absolute;
-  top: 5px;
-  right: -10px;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  background-color: #e21f36;
-  border-radius: 50%;
-  text-align: center;
-  color: #e1e5e9;
-  font-size: 11px;
-}
-.navbar-area .others-option .cart-icon a:hover i {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two {
-  background-color: #e1e5e9;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item a {
-  color: #2f3238;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item a:hover {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item a.active {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
-  color: #0b3c5cae;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
-  color: #0b3c5cae;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two .others-option .cart-icon a i {
-  color: #2f3238;
-}
-.navbar-area.navbar-area-two .others-option .cart-icon a:hover i {
-  color: #e21f36;
-}
-.navbar-area.navbar-area-two.is-sticky {
-  background-color: #e1e5e9 !important;
-}
-.navbar-area.navbar-area-four .others-option .cart-icon {
-  margin-left: 30px;
-  margin-right: 10px;
-}
-.navbar-area.navbar-area-five {
-  background-color: rgba(0, 2, 25, 0.6);
-}
-.navbar-area.navbar-area-five .others-option .cart-icon {
-  margin-left: 30px;
-  margin-right: 10px;
 }
 .navbar-area.is-sticky {
   position: fixed;
@@ -3345,6 +3261,9 @@ Blog Column One Area Style
 /*
 Learn More Area Style
 ======================================================*/
+.learn-more-details-area .learn-more-content {
+  margin-top: 4rem;
+}
 .learn-more-details-area .sail-log-content {
   margin-bottom: 30px;
 }
@@ -3638,6 +3557,12 @@ Gallery Area Style
 }
 .gallery-single:hover {
   transform: translateY(-5px);
+}
+
+/*
+ProjectCategoryGrid Area Style*/
+.project-category-grid-area {
+  margin-top: 4rem;
 }
 
 /*====================================================
