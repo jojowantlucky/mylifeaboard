@@ -17,9 +17,9 @@ const RefitLiveAboardSailLog = () => {
                     <h3>Refit</h3>
                   </div>
                   <p>
-                    Onnie needed some TLC when I first
-                    bought her. All of her refit projects
-                    are here.
+                    Much of her equipment is original and
+                    she needed some repairs. Most projects
+                    are DIY but some are hired out.
                   </p>
                 </div>
               </div>
@@ -58,9 +58,7 @@ const RefitLiveAboardSailLog = () => {
                     <h3>Sail Log</h3>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore.
+                    When at sea, Onnie's location will update the map automatically. See every sailing trip since March 2022. 
                   </p>
                 </div>
               </div>
