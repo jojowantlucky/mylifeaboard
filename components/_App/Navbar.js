@@ -130,6 +130,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
+              
               <div className='others-option'>
                 <div className='get-quote'>
                   <Link href='https://www.patreon.com/mylifeaboard'>
