@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import Services from '../components/Services/Services';
+import Services from '../components/Projects/Services';
 import Footer from '../components/_App/Footer';
 
 const ServicesStyleOne = () => {
