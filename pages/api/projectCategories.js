@@ -1,42 +1,42 @@
 const projectCategories = [
   {
-    id: '0',
+    categoryId: 'category-00',
     categoryName: 'Category 01',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '1',
+    categoryId: 'category-01',
     categoryName: 'Category 02',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '2',
+    categoryId: 'category-02',
     categoryName: 'Category 03',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '3',
+    categoryId: 'category-03',
     categoryName: 'Category 04',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '4',
+    categoryId: 'category-04',
     categoryName: 'Category 05',
     url: '/',
     imgUrl: '/images/services/services-1.jpg',
@@ -45,55 +45,55 @@ const projectCategories = [
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '5',
+    categoryId: 'category-05',
     categoryName: 'Category 06',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '6',
+    categoryId: 'category-06',
     categoryName: 'Category 07',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '7',
+    categoryId: 'category-07',
     categoryName: 'Category 08',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '8',
+    categoryId: 'category-08',
     categoryName: 'Category 09',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '9',
+    categoryId: 'category-09',
     categoryName: 'Category 10',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',
   },
   {
-    id: '10',
-    categoryName: 'Category 02',
+    categoryId: 'category-10',
+    categoryName: 'Category 11',
     url: '/',
-    imgUrl: '/images/services/services-1.jpg',
+    categoryThumbnailUrl: '/images/services/services-1.jpg',
     altText: 'this is alt text',
     description:
       'Lorem ipsum dolor sit amet, con sectetur adipiscing elit sed do.',

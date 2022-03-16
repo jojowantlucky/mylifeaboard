@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import RelatedServices from '../components/Services/RelatedServices';
-import ServiceSidebar from '../components/Services/ServiceSidebar';
+import RelatedServices from '../components/Projects/RelatedServices';
+import ServiceSidebar from '../components/Projects/ServiceSidebar';
 import Footer from '../components/_App/Footer';
 
 const ServicesDetails = () => {
@@ -24,7 +24,8 @@ const ServicesDetails = () => {
                 <div className='services-content'>
                   <h2>Cost Breakdown For Onnie</h2>
                   <p>
-                    I have tracked every boat-related purchase. 
+                    I have tracked every boat-related
+                    purchase.
                   </p>
 
                   <div className='services-details-one'>
