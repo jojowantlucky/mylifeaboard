@@ -21,7 +21,7 @@ const PieChartCostData = [
   },
   {
     id: '05',
-    category: 'Gadetry',
+    category: 'Gadgetry',
     totalCost: '$4,240.19',
   },
   {

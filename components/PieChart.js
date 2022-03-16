@@ -12,33 +12,31 @@ data shape:
 },
 */
 
-
-
-
 const labels = [];
+const cost = [];
+
 PieChartCostData.forEach((item) => {
   labels.push(item.category);
+  cost.push(
+    parseFloat(item.totalCost.replace(/\$|,/g, ''))
+  );
 });
 
-console.log(labels);
+console.log('$5,830.32'.substring(1));
+console.log('cost: ', cost);
+
+// console.log(labels);
 
 const PieChart = () => {
   return (
     <div>
       <Pie
         data={{
-          labels: [
-            'Red',
-            'Blue',
-            'Yellow',
-            'Green',
-            'Purple',
-            'Orange',
-          ],
+          labels: labels,
           datasets: [
             {
               label: '# of votes',
-              data: [12, 19, 3, 5, 2, 3],
+              data: cost,
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
