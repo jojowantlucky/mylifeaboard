@@ -9,7 +9,7 @@ const ServiceSidebar = () => {
           <li>
             <Link href='/services-details'>
               <a>
-                Cyber Security{' '}
+                Cyber Security
                 <i className='bx bx-chevron-right'></i>
               </a>
             </Link>

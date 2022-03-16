@@ -4,6 +4,7 @@ import PageBanner from '../components/Common/PageBanner';
 import Related from '../components/Projects/Related';
 import CostsSidebar from '../components/Projects/CostsSidebar';
 import Footer from '../components/_App/Footer';
+import PieChart from '../components/PieChart';
 
 const OnniesCost = () => {
   return (
@@ -29,10 +30,7 @@ const OnniesCost = () => {
                   </p>
 
                   <div className='services-details-one'>
-                    <img
-                      src='/images/services-details/services-details-1.jpg'
-                      alt='Image'
-                    />
+                    <PieChart />
                   </div>
                 </div>
 

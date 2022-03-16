@@ -15,13 +15,15 @@ const clickHandler = (category) => {
   console.log(category);
 };
 
-const ServiceSidebar = () => {
+const CostsSidebar = () => {
   return (
     <div className='services-sidebar'>
       <div className='services-category'>
         <ul>
-          {costCategories.map((category) => (
-            <li onClick={() => clickHandler(category)}>
+          {costCategories.map((category, index) => (
+            <li
+              key={`${category}-${index}`}
+              onClick={() => clickHandler(category)}>
               <Link href='/coming-soon'>
                 <a>
                   {category}{' '}
@@ -65,4 +67,4 @@ const ServiceSidebar = () => {
   );
 };
 
-export default ServiceSidebar;
+export default CostsSidebar;
