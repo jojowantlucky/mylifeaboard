@@ -8,7 +8,6 @@ const Gallery = () => {
 
   const clickHandler = (category) => {
     setSelectedCategory(category);
-    console.log('chosen category: ', category);
   };
 
   return (

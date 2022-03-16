@@ -6,7 +6,9 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 
-const ImageCollage = () => {
+const ImageCollage = (props) => {
+  console.log('chosen category: ', props.selectedCategory);
+
   return (
     <Box
       sx={{
