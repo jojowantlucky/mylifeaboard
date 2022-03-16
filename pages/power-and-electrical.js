@@ -7,7 +7,7 @@ import EquipmentTable from '../components/equipmentTable';
 import LatestNews from '../components/Common/LatestNews';
 import OnboardEquipmentMosaic from '../components/Common/OnboardEquipmentMosaic';
 
-const Propulsion = () => {
+const PowerAndElectrical = () => {
   const clickHandler = (event) => {
     console.log('clicked: ', event.target.innerHTML);
   };
@@ -27,13 +27,33 @@ const Propulsion = () => {
         pageTitle='Electronics &amp; Navigation Equipment'
         homePageUrl='/'
         homePageText='Home'
-        activePageText='Propulsion'
+        activePageText='Power &amp; Electrical Equipment'
       />
 
       <div className='equipment-details-area'>
         <div className='container'>
           <div className='row'>
-            <h1>Propulsion</h1>
+            <h1>Power Equipment</h1>
+            <ul className='mosaic-category'>
+              {categoryList.map((item, index) => (
+                <li
+                  className='mosaic-category-item'
+                  key={`${item}-${index}`}
+                  onClick={clickHandler}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Divider
+              sx={{ marginBottom: '1rem' }}></Divider>
+            <div className='mosaic-area col-lg-12'>
+              <OnboardEquipmentMosaic category={'nav'} />
+            </div>
+            <Divider />
+            <EquipmentTable equipmentCategory={'nav'} />
+          </div>
+          <div className='row'>
+            <h1>Electrical Equipment</h1>
             <ul className='mosaic-category'>
               {categoryList.map((item, index) => (
                 <li
@@ -48,15 +68,15 @@ const Propulsion = () => {
               sx={{ marginBottom: '1rem' }}></Divider>
             <div className='mosaic-area col-lg-12'>
               <OnboardEquipmentMosaic
-                category={'deck-hardware'}
+                category={'electronics'}
               />
             </div>
+            <div className='mosaic-area col-lg-12'></div>
             <Divider />
             <EquipmentTable
-              equipmentCategory={'deck-hardware'}
+              equipmentCategory={'electronics'}
             />
           </div>
-
           <LatestNews />
         </div>
       </div>
@@ -66,4 +86,4 @@ const Propulsion = () => {
   );
 };
 
-export default Propulsion;
+export default PowerAndElectrical;

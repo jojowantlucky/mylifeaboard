@@ -7,7 +7,14 @@ import EquipmentTable from '../components/equipmentTable';
 import LatestNews from '../components/Common/LatestNews';
 import OnboardEquipmentMosaic from '../components/Common/OnboardEquipmentMosaic';
 
-const Propulsion = () => {
+// pageTitle='Electronics &amp; Navigation Equipment'
+// homePageUrl='/'
+// homePageText='Home'
+// activePageText='Electronics &amp; Navigation Equipment'
+// props.title = 'Navigation Equipment"
+// props.category = 'nav'
+
+const OnboardEquipmentDetails = (props) => {
   const clickHandler = (event) => {
     console.log('clicked: ', event.target.innerHTML);
   };
@@ -24,16 +31,16 @@ const Propulsion = () => {
     <Fragment>
       <Navbar />
       <PageBanner
-        pageTitle='Electronics &amp; Navigation Equipment'
-        homePageUrl='/'
+        pageTitle={props.pageTitle}
+        homePageUrl={props.homePageUrl}
         homePageText='Home'
-        activePageText='Propulsion'
+        activePageText={props.pageTitle}
       />
 
       <div className='equipment-details-area'>
         <div className='container'>
           <div className='row'>
-            <h1>Propulsion</h1>
+            <h1>{props.title}</h1>
             <ul className='mosaic-category'>
               {categoryList.map((item, index) => (
                 <li
@@ -48,16 +55,14 @@ const Propulsion = () => {
               sx={{ marginBottom: '1rem' }}></Divider>
             <div className='mosaic-area col-lg-12'>
               <OnboardEquipmentMosaic
-                category={'deck-hardware'}
+                category={props.category}
               />
             </div>
             <Divider />
             <EquipmentTable
-              equipmentCategory={'deck-hardware'}
+              equipmentCategory={props.category}
             />
           </div>
-
-          <LatestNews />
         </div>
       </div>
 
@@ -66,4 +71,4 @@ const Propulsion = () => {
   );
 };
 
-export default Propulsion;
+export default OnboardEquipmentDetails;

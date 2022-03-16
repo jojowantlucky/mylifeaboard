@@ -1,119 +1,69 @@
-import React from 'react';
-import Link from 'next/link';
+import { Fragment } from 'react';
+import Navbar from '../components/_App/Navbar';
+import PageBanner from '../components/Common/PageBanner';
+import Footer from '../components/_App/Footer';
+import { Divider } from '@mui/material';
+import EquipmentTable from '../components/equipmentTable';
+import LatestNews from '../components/Common/LatestNews';
+import OnboardEquipmentMosaic from '../components/Common/OnboardEquipmentMosaic';
 
-const DeckHardware = () => {
-  const [days, setDays] = React.useState('');
-  const [hours, setHours] = React.useState('');
-  const [minutes, setMinutes] = React.useState('');
-  const [seconds, setSeconds] = React.useState('');
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      commingSoonTime();
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const commingSoonTime = () => {
-    let endTime = new Date('August 23, 2022 17:00:00 PDT');
-    let endTimeParse = Date.parse(endTime) / 1000;
-    let now = new Date();
-    let nowParse = Date.parse(now) / 1000;
-    let timeLeft = endTimeParse - nowParse;
-    let days = Math.floor(timeLeft / 86400);
-    let hours = Math.floor(
-      (timeLeft - days * 86400) / 3600
-    );
-    let minutes = Math.floor(
-      (timeLeft - days * 86400 - hours * 3600) / 60
-    );
-    let seconds = Math.floor(
-      timeLeft - days * 86400 - hours * 3600 - minutes * 60
-    );
-    if (hours < '10') {
-      hours = '0' + hours;
-    }
-    if (minutes < '10') {
-      minutes = '0' + minutes;
-    }
-    if (seconds < '10') {
-      seconds = '0' + seconds;
-    }
-    setDays(days);
-    setHours(hours);
-    setMinutes(minutes);
-    setSeconds(seconds);
+const ElectronicsAndNav = () => {
+  const clickHandler = (event) => {
+    console.log('clicked: ', event.target.innerHTML);
   };
+
+  const categoryList = [
+    'Category 1',
+    'Category 2',
+    'Category 3',
+    'Category 4',
+    'Category 5',
+  ];
+
   return (
-    <div className='coming-soon-area'>
-      <div className='d-table'>
-        <div className='d-table-cell'>
-          <div className='coming-soon-content'>
-            <Link href='/'>
-              <a className='logo'>
-                <img
-                  src='/images/black-logo.png'
-                  alt='image'
-                />
-              </a>
-            </Link>
+    <Fragment>
+      <Navbar />
+      <PageBanner
+        pageTitle='Electronics &amp; Navigation Equipment'
+        homePageUrl='/'
+        homePageText='Home'
+        activePageText='Deck Hardware'
+      />
 
-            <h2>We are launching soon</h2>
-
-            <div
-              id='timer'
-              className='flex-wrap d-flex justify-content-center'>
-              <div
-                id='days'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {days} <span>Days</span>
-              </div>
-              <div
-                id='hours'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {hours} <span>Hours</span>
-              </div>
-              <div
-                id='minutes'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {minutes} <span>Minutes</span>
-              </div>
-              <div
-                id='seconds'
-                className='align-items-center flex-column d-flex justify-content-center'>
-                {seconds} <span>Seconds</span>
-              </div>
+      <div className='equipment-details-area'>
+        <div className='container'>
+          <div className='row'>
+            <h1>Deck Hardware</h1>
+            <ul className='mosaic-category'>
+              {categoryList.map((item, index) => (
+                <li
+                  className='mosaic-category-item'
+                  key={`${item}-${index}`}
+                  onClick={clickHandler}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Divider
+              sx={{ marginBottom: '1rem' }}></Divider>
+            <div className='mosaic-area col-lg-12'>
+              <OnboardEquipmentMosaic
+                category={'deck-hardware'}
+              />
             </div>
-
-            <form className='newsletter-form'>
-              <div className='form-group'>
-                <input
-                  type='email'
-                  className='input-newsletter'
-                  placeholder='Enter your email'
-                  name='EMAIL'
-                  required
-                />
-                <span className='label-title'>
-                  <i className='bx bx-envelope'></i>
-                </span>
-              </div>
-
-              <button type='submit' className='default-btn'>
-                <span>Subscribe</span>
-              </button>
-
-              <p>
-                If you would like to be notified when your
-                app is live, Please subscribe to our mailing
-                list.
-              </p>
-            </form>
+            <Divider />
+            <EquipmentTable
+              equipmentCategory={'deck-hardware'}
+            />
           </div>
+
+          <LatestNews />
         </div>
       </div>
-    </div>
+
+      <Footer />
+    </Fragment>
   );
 };
 
-export default DeckHardware;
+export default ElectronicsAndNav;

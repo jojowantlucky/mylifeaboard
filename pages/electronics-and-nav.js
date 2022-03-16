@@ -5,8 +5,7 @@ import Footer from '../components/_App/Footer';
 import { Divider } from '@mui/material';
 import EquipmentTable from '../components/equipmentTable';
 import LatestNews from '../components/Common/LatestNews';
-import mosaicImages from './api/mosaicImages';
-
+import OnboardEquipmentMosaic from '../components/Common/OnboardEquipmentMosaic';
 const ElectronicsAndNav = () => {
   const clickHandler = (event) => {
     console.log('clicked: ', event.target.innerHTML);
@@ -33,27 +32,11 @@ const ElectronicsAndNav = () => {
       <div className='equipment-details-area'>
         <div className='container'>
           <div className='row'>
-            <h1>Navigation Equipment</h1>
-            <ul className='mosaic-picker'>
+            <h1>Electronic Equipment</h1>
+            <ul className='mosaic-category'>
               {categoryList.map((item, index) => (
                 <li
-                  key={`${item}-${index}`}
-                  onClick={clickHandler}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <Divider
-              sx={{ marginBottom: '1rem' }}></Divider>
-            <div className='mosaic-area col-lg-12'></div>
-            <Divider />
-            <EquipmentTable />
-          </div>
-          <div className='row'>
-            <h1>Electronics Equipment</h1>
-            <ul className='mosaic-picker'>
-              {categoryList.map((item, index) => (
-                <li
+                  className='mosaic-category-item'
                   key={`${item}-${index}`}
                   onClick={clickHandler}>
                   {item}
@@ -63,12 +46,35 @@ const ElectronicsAndNav = () => {
             <Divider
               sx={{ marginBottom: '1rem' }}></Divider>
             <div className='mosaic-area col-lg-12'>
-              {/* ****************************
-MOSIAC GOES HERE
-**************************** */}
+              <OnboardEquipmentMosaic category={'nav'} />
             </div>
             <Divider />
-            <EquipmentTable />
+            <EquipmentTable equipmentCategory={'nav'} />
+          </div>
+          <div className='row'>
+            <h1>Navigation Equipment</h1>
+            <ul className='mosaic-category'>
+              {categoryList.map((item, index) => (
+                <li
+                  className='mosaic-category-item'
+                  key={`${item}-${index}`}
+                  onClick={clickHandler}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Divider
+              sx={{ marginBottom: '1rem' }}></Divider>
+            <div className='mosaic-area col-lg-12'>
+              <OnboardEquipmentMosaic
+                category={'electronics'}
+              />
+            </div>
+            <div className='mosaic-area col-lg-12'></div>
+            <Divider />
+            <EquipmentTable
+              equipmentCategory={'electronics'}
+            />
           </div>
           <LatestNews />
         </div>
