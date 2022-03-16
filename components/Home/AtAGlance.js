@@ -41,15 +41,13 @@ const AtAGlance = () => {
 
             <div className='col-lg-6 col-sm-6'>
               <div className='at-a-glance-single overlay-one'>
-                <Link href='/days'>
-                  <a>
-                    <div className='overlay-two'>
-                      <span className='material-icons calendar_month'></span>
-                      <h2>{adventureDays}</h2>
-                      <h3>Days</h3>
-                    </div>
-                  </a>
-                </Link>
+                <a>
+                  <div className='overlay-two'>
+                    <span className='material-icons calendar_month'></span>
+                    <h2>{adventureDays}</h2>
+                    <h3>Days</h3>
+                  </div>
+                </a>
               </div>
             </div>
 
