@@ -1,6 +1,15 @@
 import React from 'react';
+import ImageCollage from './ImageCollage';
+import { useState } from 'react';
 
 const Gallery = () => {
+  const [selectedCategory, setSelectedCategory] =
+    useState('all');
+
+  const clickHandler = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <div className='gallery-area pt-100 pb-70 jarallax'>
       <div className='container'>
@@ -11,7 +20,9 @@ const Gallery = () => {
 
         <div className='row'>
           <div className='col-lg-3 col-sm-6'>
-            <div className='gallery-single overlay-one'>
+            <div
+              className='gallery-single overlay-one'
+              onClick={() => clickHandler('construction')}>
               <div className='overlay-two'>
                 <i className='flaticon-threat'></i>
                 <h3>Construction 1974</h3>
@@ -24,7 +35,11 @@ const Gallery = () => {
           </div>
 
           <div className='col-lg-3 col-sm-6'>
-            <div className='gallery-single overlay-one'>
+            <div
+              className='gallery-single overlay-one'
+              onClick={() =>
+                clickHandler('exterior-below')
+              }>
               <div className='overlay-two'>
                 <i className='flaticon-cyber-security-1'></i>
                 <span className='material-icons build'></span>
@@ -41,7 +56,9 @@ const Gallery = () => {
           </div>
 
           <div className='col-lg-3 col-sm-6'>
-            <div className='gallery-single overlay-one'>
+            <div
+              className='gallery-single overlay-one'
+              onClick={() => clickHandler('interior')}>
               <div className='overlay-two'>
                 <i className='flaticon-cyber-security-1'></i>
                 <h3>Interior</h3>
@@ -55,7 +72,11 @@ const Gallery = () => {
           </div>
 
           <div className='col-lg-3 col-sm-6'>
-            <div className='gallery-single overlay-one'>
+            <div
+              className='gallery-single overlay-one'
+              onClick={() =>
+                clickHandler('exterior-above')
+              }>
               <div className='overlay-two'>
                 <i className='flaticon-password'></i>
                 <h3>Exterior Above Decks</h3>
@@ -66,6 +87,13 @@ const Gallery = () => {
                 <span className='flaticon-password'></span>
               </div>
             </div>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='collage-area'>
+            <ImageCollage
+              selectedCategory={selectedCategory}
+            />
           </div>
         </div>
       </div>

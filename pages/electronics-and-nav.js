@@ -2,10 +2,10 @@ import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
-import StackGrid from 'react-stack-grid';
 import { Divider } from '@mui/material';
 import EquipmentTable from '../components/equipmentTable';
 import LatestNews from '../components/Common/LatestNews';
+import mosaicImages from './api/mosaicImages';
 
 const ElectronicsAndNav = () => {
   const clickHandler = (event) => {
@@ -45,37 +45,7 @@ const ElectronicsAndNav = () => {
             </ul>
             <Divider
               sx={{ marginBottom: '1rem' }}></Divider>
-            <div className='mosaic-area col-lg-12'>
-              <StackGrid
-                columnWidth={150}
-                gutterWidth={10}
-                gutterHeight={10}>
-                <div key='key1'>
-                  <img src='/images/placeholder/mosaic-10.jpg' />
-                </div>
-                <div key='key2'>
-                  <img src='/images/placeholder/mosaic-1.jpg' />
-                </div>
-                <div key='key3'>
-                  <img src='/images/placeholder/mosaic-3.jpg' />
-                </div>
-                <div key='key4'>
-                  <img src='/images/placeholder/mosaic-8.jpg' />
-                </div>
-                <div key='key5'>
-                  <img src='/images/placeholder/mosaic-2.jpg' />
-                </div>
-                <div key='key6'>
-                  <img src='/images/placeholder/mosaic-4.jpg' />
-                </div>
-                <div key='key7'>
-                  <img src='/images/placeholder/mosaic-7.jpg' />
-                </div>
-                <div key='key8'>
-                  <img src='/images/placeholder/mosaic-6.jpg' />
-                </div>
-              </StackGrid>
-            </div>
+            <div className='mosaic-area col-lg-12'></div>
             <Divider />
             <EquipmentTable />
           </div>
@@ -93,35 +63,9 @@ const ElectronicsAndNav = () => {
             <Divider
               sx={{ marginBottom: '1rem' }}></Divider>
             <div className='mosaic-area col-lg-12'>
-              <StackGrid
-                columnWidth={150}
-                gutterWidth={10}
-                gutterHeight={10}>
-                <div key='key1'>
-                  <img src='/images/placeholder/mosaic-10.jpg' />
-                </div>
-                <div key='key2'>
-                  <img src='/images/placeholder/mosaic-1.jpg' />
-                </div>
-                <div key='key3'>
-                  <img src='/images/placeholder/mosaic-3.jpg' />
-                </div>
-                <div key='key4'>
-                  <img src='/images/placeholder/mosaic-8.jpg' />
-                </div>
-                <div key='key5'>
-                  <img src='/images/placeholder/mosaic-2.jpg' />
-                </div>
-                <div key='key6'>
-                  <img src='/images/placeholder/mosaic-4.jpg' />
-                </div>
-                <div key='key7'>
-                  <img src='/images/placeholder/mosaic-7.jpg' />
-                </div>
-                <div key='key8'>
-                  <img src='/images/placeholder/mosaic-6.jpg' />
-                </div>
-              </StackGrid>
+              {/* ****************************
+MOSIAC GOES HERE
+**************************** */}
             </div>
             <Divider />
             <EquipmentTable />

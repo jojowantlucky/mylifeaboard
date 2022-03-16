@@ -1588,6 +1588,9 @@
   .RefitLiveAboardSailLog-single {
     min-height: 17rem;
   }
+  .gallery-single {
+    min-height: 20rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
@@ -1605,9 +1608,12 @@
   .the-plan-single {
     min-height: 12rem;
   }
+  .gallery-single {
+    min-height: 20rem;
+  }
 }
 
-/* Max width 1550px */
+/* Min width 1550px */
 @media only screen and (min-width: 1550px) {
   .banner-area {
     &.banner-area-four {
@@ -1638,5 +1644,8 @@
   }
   .the-plan-single {
     min-height: 12rem;
+  }
+  .gallery-single {
+    min-height: 20rem;
   }
 }
