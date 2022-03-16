@@ -21,7 +21,12 @@ const Gallery = () => {
         <div className='row'>
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'construction' ||
+                selectedCategory === 'all'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() => clickHandler('construction')}>
               <div className='overlay-two'>
                 <i className='flaticon-threat'></i>
@@ -36,7 +41,12 @@ const Gallery = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'exterior-below' ||
+                selectedCategory === 'all'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() =>
                 clickHandler('exterior-below')
               }>
@@ -57,7 +67,12 @@ const Gallery = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'interior' ||
+                selectedCategory === 'all'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() => clickHandler('interior')}>
               <div className='overlay-two'>
                 <i className='flaticon-cyber-security-1'></i>
@@ -73,7 +88,12 @@ const Gallery = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'exterior-above' ||
+                selectedCategory === 'all'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() =>
                 clickHandler('exterior-above')
               }>

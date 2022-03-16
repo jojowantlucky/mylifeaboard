@@ -3893,6 +3893,16 @@ Gallery Area Style
   z-index: 1;
   min-height: 16rem;
 
+  &.active {
+    background-color: $main-color;
+    opacity: .8;
+    color: $white-color;
+
+    i {
+      color: $white-color;
+    }
+  }
+
   i {
     font-size: 50px;
     color: $main-color;
