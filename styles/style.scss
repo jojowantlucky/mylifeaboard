@@ -8,7 +8,7 @@
 ** - Section Title Area Style
 ** - Header Area Style
 ** - Navbar Area Style
-** - Mobile Navbar Area Style
+** - Mobile Nav bar Area Style
 ** - Banner Area Style
 ** - RefitLiveAboardSailLog Area Style
 ** - The Plan Area Style (Our Approach)
@@ -33,6 +33,7 @@
 ** - Equipment Details Area
 ** - Map Area Style
 ** - ProjectCategoryGrid Area Style
+** - ImageCollage 
 
 ******************************************* 
 /*
@@ -3890,6 +3891,7 @@ Gallery Area Style
   padding: 30px 25px;
   text-align: center;
   z-index: 1;
+  min-height: 16rem;
 
   i {
     font-size: 50px;
@@ -4531,4 +4533,11 @@ Map Area Style
 .popupLink {
   color: $main-color;
   cursor: pointer;
+}
+
+/*
+ImageCollage Style
+============================*/
+.MuiSlider-root:hover {
+  color: #2e8b57;
 }
