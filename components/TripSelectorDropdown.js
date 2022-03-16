@@ -4,7 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import { TextField } from '@mui/material';
-import getTripCoordinates from '../pages/api/getTripCoordinates';
+import getTripCoordinates from '../pages/api/dummyGetTripCoordinates';
 
 const TripSelectorDropdown = () => {
   const [selectedTrip, setSelectedTrip] = useState('01');

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { blogPosts } from '../../pages/api/blogPosts';
+import { blogPosts } from '../../pages/api/dummyBlogPosts';
 
 const BlogSidebar = () => {
   const sortedByDate = blogPosts.sort((a, b) => {

@@ -1,9 +1,9 @@
-import getTrips from './getTrips';
+import getTrips from './dummyGetTrips';
 
 const getTripCoordinates = () => {
   // load in data from airtable.
   const allTrips = getTrips();
-  console.log(allTrips)
+  console.log(allTrips);
   // filter db by trip id
   // filter out by trip id
   // create array of object:
