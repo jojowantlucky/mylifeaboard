@@ -18,6 +18,54 @@ const projects = [
       'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit',
     author: "John Doe", 
     publishDate: 'September 1, 2029'
+  },  {
+    id: '01',
+    catogory: 'engine',
+    blogBaseUrl: '/blog-details/',
+    mainImgSrcUrl: '/images/blog/blog-4.jpg',
+    mainImgAltText: 'alt text goes here',
+    headline: 'headline 1',
+    byline: 'byline goes here',
+    firstParagraph:
+      'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit',
+    author: "John Doe", 
+    publishDate: 'September 1, 2029'
+  },  {
+    id: '01',
+    catogory: 'engine',
+    blogBaseUrl: '/blog-details/',
+    mainImgSrcUrl: '/images/blog/blog-4.jpg',
+    mainImgAltText: 'alt text goes here',
+    headline: 'headline 1',
+    byline: 'byline goes here',
+    firstParagraph:
+      'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit',
+    author: "John Doe", 
+    publishDate: 'September 1, 2029'
+  },  {
+    id: '01',
+    catogory: 'engine',
+    blogBaseUrl: '/blog-details/',
+    mainImgSrcUrl: '/images/blog/blog-4.jpg',
+    mainImgAltText: 'alt text goes here',
+    headline: 'headline 1',
+    byline: 'byline goes here',
+    firstParagraph:
+      'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit',
+    author: "John Doe", 
+    publishDate: 'September 1, 2029'
+  },  {
+    id: '01',
+    catogory: 'engine',
+    blogBaseUrl: '/blog-details/',
+    mainImgSrcUrl: '/images/blog/blog-4.jpg',
+    mainImgAltText: 'alt text goes here',
+    headline: 'headline 1',
+    byline: 'byline goes here',
+    firstParagraph:
+      'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit',
+    author: "John Doe", 
+    publishDate: 'September 1, 2029'
   },
 ];
 
