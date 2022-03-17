@@ -42,7 +42,7 @@ const AtAGlance = () => {
   );
 
   const totalCost = calculateTotalSpent();
-  const milesSailed = '1,000';
+  const milesSailed = '0.0';
   const completedProjects = '0';
 
   return (
