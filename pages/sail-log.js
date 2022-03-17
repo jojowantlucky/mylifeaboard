@@ -104,7 +104,7 @@ const SailLog = () => {
             </div>
 
             <div className='col-lg-6 pr-0'>
-              <TripSelectorDropdown />
+              {/* <TripSelectorDropdown /> */}
               <MapWithNoSSR width={'100%'} />
             </div>
           </div>

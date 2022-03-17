@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import RelatedServices from '../components/Projects/RelatedServices';
-import ServiceSidebar from '../components/Projects/ServiceSidebar';
+// import ServiceSidebar from '../components/Projects/ServiceSidebar';
 import Footer from '../components/_App/Footer';
 
 const ServicesDetails = () => {
@@ -91,7 +91,7 @@ const ServicesDetails = () => {
             </div>
 
             <div className='col-lg-4'>
-              <ServiceSidebar />
+              {/* <ServiceSidebar /> */}
             </div>
           </div>
         </div>
