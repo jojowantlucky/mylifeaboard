@@ -40,11 +40,15 @@ const OnniesCost = (props) => {
                     Any costs associated with Onnie will
                     appear here. This chart does not include
                     equipment or tools that I already owned,
-                    valued at less than $500. This chart updates in real time. 
+                    valued at less than $500. This chart
+                    updates in real time and tracking
+                    started with transacations dating to
+                    February 1, 2022. A year selector tool
+                    is coming soon.
                   </p>
                 </div>
 
-                <div className='services-content'>
+                {/* <div className='services-content'>
                   <h3>Why is it Important?</h3>
                   <p>
                     Duis autem vel eum iriure dolor in
@@ -73,7 +77,7 @@ const OnniesCost = (props) => {
                     ipsum dolor sit amet, consectetuer
                     adipiscing elit,
                   </p>
-                </div>
+                </div> */}
 
                 <Related />
               </div>
