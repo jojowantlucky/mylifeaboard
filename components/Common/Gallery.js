@@ -16,6 +16,11 @@ const Gallery = () => {
         <div className='section-title white-title'>
           <span>Gallery</span>
           <h2>Onnie over the years</h2>
+          <p
+            className='view-all'
+            onClick={() => clickHandler('all')}>
+            View All
+          </p>
         </div>
 
         <div className='row'>
@@ -91,6 +96,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
+        
         <div className='row'>
           <div className='collage-area'>
             <ImageCollage

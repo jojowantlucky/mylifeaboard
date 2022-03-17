@@ -164,27 +164,16 @@ const AboutOnnieContent = () => {
                       <a>Source</a>
                     </Link>
                   </div>
-                  <ul>
-                    {/* <li>
-                      <i className='bx bx-check-circle'></i>
-                      Learn what you can
-                    </li>
-                    <li>
-                      <i className='bx bx-check-circle'></i>
-                      Stay humble
-                    </li>
-                    <li>
-                      <i className='bx bx-check-circle'></i>
-                      Embrace uncertainty
-                    </li>
-                    <li>
-                      <i className='bx bx-check-circle'></i>
-                      Get it done
-                    </li> */}
-                  </ul>
                 </TabPanel>
               </Tabs>
             </div>
+            <img
+              className='cascade-logo'
+              src='/images/about/cascade-logo.png'
+              alt='cascade yachts logo'
+              width={150}
+              height={150}
+            />
           </div>
         </div>
       </div>

@@ -22,14 +22,8 @@ const AboutOnnie = () => {
 
       <div className='pt-100 pb-70'>
         <AboutOnnieContent />
+        
       </div>
-      <Image
-        className='cascade-logo'
-        src='/images/about/cascade-logo.png'
-        alt='cascade yachts logo'
-        width={150}
-        height={150}
-      />
       <Gallery />
 
       <Sponsors />
