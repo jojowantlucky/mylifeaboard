@@ -1,44 +1,28 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import projectCategories from '../../pages/api/dummyProjectCategories';
-const ProjectCategoryGrid = () => {
-  const [blogPosts, setBlogPosts] = useState([]);
+import getCategories from '../../pages/api/getCategories';
 
-  /*
-  1. fetch allBlogPosts
-  2. fetch allBlogPostCategories
-  3. create new array of objects called blogCategoryTiles
-    a. for each allBlogPosts.category name, find allBlogPostCategory object name that matches allBlogPosts.category name. 
-    b. add that allBlogPostCategory object to blogCategoryTiles 
-  */
+const ProjectCategoryGrid = () => {
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch(
-      'https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/blog-posts?',
-      {
-        headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}`,
-        },
-      }
-    )
-      .then((res) => res.json())
-      .then((blogPost) => {
-        setBlogPosts(blogPost.records);
-      })
-      .catch((error) => console.log(error));
+    const getAllCategories = async () => {
+      getCategories().then((categories) => {
+        setCategories(categories);
+      });
+    };
+    getAllCategories();
   }, []);
 
-  const blogCategoriesDupes = [];
-
-  blogPosts.forEach((post) =>
-    blogCategoriesDupes.push(
-      post.fields.categories.split(', ')
-    )
-  );
-
-  const blogCategories = [
-    ...new Set(blogCategoriesDupes.flat()),
-  ];
+  const titleCase = (word) => {
+    return word.replace(/\w\S*/g, (text) => {
+      return (
+        text.charAt(0).toUpperCase() +
+        text.substr(1).toLowerCase()
+      );
+    });
+  };
 
   return (
     <div className='project-category-grid-area pb-70'>
@@ -49,9 +33,9 @@ const ProjectCategoryGrid = () => {
         </div>
 
         <div className='row'>
-          {projectCategories.map((project) => (
+          {categories.map((category) => (
             <div
-              key={`${project.categoryName}-${project.id}`}
+              key={`${category.fields.categoryName}-${category.fields.id}`}
               className='col-lg-3 col-sm-6'>
               <div className='onboard-equipment-single'>
                 <div className='onboard-equipment-img'>
@@ -68,12 +52,14 @@ const ProjectCategoryGrid = () => {
                 <div className='onboard-equipment-content'>
                   <h3>
                     <Link href='/onboard-equipment-details'>
-                      <a>{project.categoryName}</a>
+                      <a>{titleCase(category.fields.categoryName)}</a>
                     </Link>
                   </h3>
-                  <p>{project.description}</p>
+                  <p>
+                    {category.fields.categoryDescription}
+                  </p>
 
-                  <Link href={project.url}>
+                  <Link href={category.fields.categoryUrl}>
                     <a className='read-more'>
                       Read more{' '}
                       <i className='flaticon-right-arrow'></i>
