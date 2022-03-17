@@ -1,13 +1,38 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 import Link from 'next/link';
 import BlogSidebar from '../components/Blog/BlogSidebar';
-
+import { useRouter } from 'next/router';
 import { blogPosts } from './api/dummyBlogPosts';
+import getAllBlogPosts from './api/getAllBlogPosts';
 
 const MainBlogPostsPage = () => {
+  const route = useRouter();
+  const [posts, setPosts] = useState([]);
+  const [allBlogPosts, setAllBlogPosts] = useState([]);
+  const pathname = route.asPath;
+  const blogCategory = pathname.replace(
+    /\/main-blog-posts-page\/\?category=/g,
+    ''
+  );
+
+  useEffect(() => {
+    const getBlogPosts = async () => {
+      getAllBlogPosts().then((posts) => {
+        setAllBlogPosts(posts);
+      });
+    };
+    getBlogPosts();
+  }, []);
+
+  const filteredPosts = allBlogPosts.filter(
+    (post) => post.fields.categories === blogCategory
+  );
+
+  console.log(filteredPosts);
+
   return (
     <Fragment>
       <Navbar />
@@ -23,49 +48,51 @@ const MainBlogPostsPage = () => {
           <div className='row'>
             <div className='col-lg-4'>
               <div className='left-sidebar'>
-                <BlogSidebar />
+                <BlogSidebar/>
               </div>
             </div>
 
             <div className='col-lg-8'>
               <div className='row'>
-                {blogPosts.map((post) => (
+                {filteredPosts.map((post) => (
                   <div
                     className='col-lg-6 col-md-6'
                     key={post.id}>
                     <div className='single-blog-posts'>
                       <Link
-                        href={`/blog-details/${post.id}`}>
+                        href={`/blog-details/${post.fields.id}`}>
                         <a>
                           <img
-                            src={post.imgUrl}
-                            alt={post.alt}
+                            src={`/images/blog${post.fields.mainImgUrl}`}
+                            alt={post.fields.mainImgAltText}
                           />
                         </a>
                       </Link>
 
                       <div className='single-blog-content'>
-                        <span>{post.category}</span>
+                        <span>
+                          {post.fields.categories}
+                        </span>
 
                         <h3>
                           <Link
                             href={`/blog-details/${post.slug}`}>
-                            <a>{post.headline}</a>
+                            <a>{post.fields.headline}</a>
                           </Link>
                         </h3>
 
-                        <p>{post.abstract}</p>
+                        <p>{post.fields.abstract}</p>
 
                         <ul className='admin'>
                           <li>
                             <a href='#'>
                               <i className='bx bx-user-circle'></i>
-                              {post.author}
+                              {post.fields.postAuthor}
                             </a>
                           </li>
                           <li className='float'>
                             <i className='bx bx-calendar-alt'></i>
-                            {post.date}
+                            {post.fields.publishDate}
                           </li>
                         </ul>
                       </div>

@@ -39,7 +39,8 @@ const ProjectCategoryGrid = () => {
               className='col-lg-3 col-sm-6'>
               <div className='onboard-equipment-single'>
                 <div className='onboard-equipment-img'>
-                  <Link href='/'>
+                  <Link
+                    href={`main-blog-posts-page${category.fields.categoryUrl}`}>
                     <a>
                       <img
                         src='/images/services/services-1.jpg'
@@ -51,15 +52,21 @@ const ProjectCategoryGrid = () => {
 
                 <div className='onboard-equipment-content'>
                   <h3>
-                    <Link href='/onboard-equipment-details'>
-                      <a>{titleCase(category.fields.categoryName)}</a>
+                    <Link
+                      href={`main-blog-posts-page${category.fields.categoryUrl}`}>
+                      <a>
+                        {titleCase(
+                          category.fields.categoryName
+                        )}
+                      </a>
                     </Link>
                   </h3>
                   <p>
                     {category.fields.categoryDescription}
                   </p>
 
-                  <Link href={category.fields.categoryUrl}>
+                  <Link
+                    href={`main-blog-posts-page${category.fields.categoryUrl}`}>
                     <a className='read-more'>
                       Read more{' '}
                       <i className='flaticon-right-arrow'></i>
