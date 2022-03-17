@@ -12,10 +12,11 @@ const costCategories = [
 ];
 
 const clickHandler = (category) => {
-  console.log(category);
+  // console.log(category);
 };
 
-const CostsSidebar = () => {
+const CostsSidebar = (props) => {
+  // console.log(props)
   return (
     <div className='services-sidebar'>
       <div className='services-category'>

@@ -102,7 +102,7 @@ const OnniesCost = (props) => {
             </div>
 
             <div className='col-lg-4'>
-              <CostsSidebar />
+              <CostsSidebar {...props}/>
             </div>
           </div>
         </div>
