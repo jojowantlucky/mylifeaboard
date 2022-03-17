@@ -6,7 +6,20 @@ import CostsSidebar from '../components/Projects/CostsSidebar';
 import Footer from '../components/_App/Footer';
 import PieChart from '../components/PieChart';
 
-const OnniesCost = () => {
+const getAllTransactions = async () => {
+  const res = await fetch(
+    `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/costs?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}`
+  );
+  const data = await res.json();
+  return data;
+};
+
+export async function getStaticProps() {
+  const transactions = await getAllTransactions();
+  return { props: { transactions } };
+}
+
+const OnniesCost = (props) => {
   return (
     <Fragment>
       <Navbar />
@@ -30,7 +43,7 @@ const OnniesCost = () => {
                   </p>
 
                   <div className='services-details-one'>
-                    <PieChart />
+                    <PieChart {...props} />
                   </div>
                 </div>
 

@@ -19,6 +19,20 @@ const randomColorGenerator = () => {
   return [background, border];
 };
 
+const categoryDedupe = (allTransactions) => {
+  const categoryList = [];
+
+  allTransactions.forEach((item) => {
+    categoryList.push(item.fields.category);
+  });
+
+  const categories = console.log([
+    ...new Set(categoryList),
+  ]);
+
+  return [...new Set(categoryList)];
+};
+
 PieChartCostData.forEach((item) => {
   const colors = randomColorGenerator();
   labels.push(item.category);
@@ -29,16 +43,51 @@ PieChartCostData.forEach((item) => {
   borderColor.push(colors[1]);
 });
 
-const PieChart = () => {
+const categoryAdder = (allTransactions) => {
+  const categoryList = [];
+  let tempObject = {};
+
+  allTransactions.forEach((item) => {
+    const amount = parseFloat(
+      item.fields.subtotal.replace(/\$|,/g, '')
+    );
+    if (tempObject.hasOwnProperty(item.fields.category)) {
+      tempObject[item.fields.category] =
+        tempObject[item.fields.category] + amount;
+    } else {
+      tempObject[item.fields.category] = amount;
+    }
+  });
+
+  let categoryCosts = [];
+  for (let prop in tempObject) {
+    categoryCosts.push({
+      name: prop,
+      value: tempObject[prop],
+    });
+  }
+
+  return categoryCosts;
+};
+
+const PieChart = (props) => {
+  const costByCategory = categoryAdder(
+    props.transactions.records
+  );
+
+  const categories = categoryDedupe(
+    props.transactions.records
+  );
+
   return (
     <div>
       <Pie
         data={{
-          labels: labels,
+          labels: categories,
           datasets: [
             {
               label: 'Cost Breakdown',
-              data: cost,
+              data: costByCategory,
               backgroundColor: backgroundColor,
               borderColor: borderColor,
               borderWidth: 1,
@@ -65,7 +114,7 @@ const PieChart = () => {
                   family: "'Montserrat', sans-serif",
                 },
                 display: true,
-                text: 'Cost Categories',
+                text: 'Click to Remove',
               },
             },
           },
