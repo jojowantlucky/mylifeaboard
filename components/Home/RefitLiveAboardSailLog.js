@@ -7,7 +7,7 @@ const RefitLiveAboardSailLog = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-lg-4 col-sm-6'>
-            <Link href='/diy-refit-remodel'>
+            <Link href='/projects'>
               <div className='RefitLiveAboardSailLog-single overlay-one'>
                 <div className='overlay-two'>
                   <div className='title'>
@@ -58,7 +58,9 @@ const RefitLiveAboardSailLog = () => {
                     <h3>Sail Log</h3>
                   </div>
                   <p>
-                    When at sea, Onnie's location will update the map automatically. See every sailing trip since March 2022. 
+                    When at sea, Onnie's location will
+                    update the map automatically. See every
+                    sailing trip since March 2022.
                   </p>
                 </div>
               </div>
