@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import projectCategories from '../../pages/api/projectCategories';
 
 const ProjectCategoryGrid = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -40,7 +39,6 @@ const ProjectCategoryGrid = () => {
   const blogCategories = [
     ...new Set(blogCategoriesDupes.flat()),
   ];
-  console.log(blogCategories);
 
   return (
     <div className='project-category-grid-area pb-70'>
