@@ -8,10 +8,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import LatestNews from '../components/Common/LatestNews';
 
-// function createData(name, calories, fat, carbs, protein) {
-//   return { name, calories, fat, carbs, protein };
-// }
-
 const rowData = [
   {
     rowId: '01',
@@ -78,8 +74,6 @@ const rowData = [
     category: 'category8',
   },
 ];
-
-
 
 const EquipmentTable = () => {
   return (

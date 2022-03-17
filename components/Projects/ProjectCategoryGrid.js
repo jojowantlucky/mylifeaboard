@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
+import projectCategories from '../../pages/api/dummyProjectCategories';
 const ProjectCategoryGrid = () => {
   const [blogPosts, setBlogPosts] = useState([]);
 
