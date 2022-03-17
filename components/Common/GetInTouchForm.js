@@ -175,10 +175,10 @@ const GetInTouchForm = () => {
 
             <div className='col-lg-12 col-sm-12'>
               <div className='recaptcha'>
-                <ReCAPTCHA
+                {/* <ReCAPTCHA
                   sitekey='6LdmkN8eAAAAALRzH2QYX27HqAn3TL0m3TW9rfqR'
                   onChange={handleSubmit(onSubmit)}
-                />
+                /> */}
               </div>
               <button type='submit' className='default-btn'>
                 Send
