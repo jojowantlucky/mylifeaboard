@@ -14,7 +14,7 @@ import OnboardEquipmentMosaic from '../components/Common/OnboardEquipmentMosaic'
 // props.title = 'Navigation Equipment"
 // props.category = 'nav'
 
-const OnboardEquipmentDetails = (props) => {
+const OnboardEquipmentDetails = () => {
   const clickHandler = (event) => {
     console.log('clicked: ', event.target.innerHTML);
   };
@@ -31,16 +31,16 @@ const OnboardEquipmentDetails = (props) => {
     <Fragment>
       <Navbar />
       <PageBanner
-        pageTitle={props.pageTitle}
-        homePageUrl={props.homePageUrl}
+        pageTitle={'Onboard Equipment'}
+        homePageUrl='/'
         homePageText='Home'
-        activePageText={props.pageTitle}
+        activePageText='Onboard Equipment'
       />
 
       <div className='equipment-details-area'>
         <div className='container'>
           <div className='row'>
-            <h1>{props.title}</h1>
+            <h1>Onbard Equipment</h1>
             <ul className='mosaic-category'>
               {categoryList.map((item, index) => (
                 <li
@@ -54,14 +54,14 @@ const OnboardEquipmentDetails = (props) => {
             <Divider
               sx={{ marginBottom: '1rem' }}></Divider>
             <div className='mosaic-area col-lg-12'>
-              <OnboardEquipmentMosaic
+              {/* <OnboardEquipmentMosaic
                 category={props.category}
-              />
+              /> */}
             </div>
             <Divider />
-            <EquipmentTable
+            {/* <EquipmentTable
               equipmentCategory={props.category}
-            />
+            /> */}
           </div>
         </div>
       </div>
