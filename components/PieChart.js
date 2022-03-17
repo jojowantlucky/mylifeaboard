@@ -8,6 +8,7 @@ import sumCategoryCosts from '../lib/sumCategoryCosts';
 
 const PieChart = (props) => {
   const [transactions, setTransactions] = useState([]);
+
   useEffect(() => {
     const getTransactions = async () => {
       getAllTransactions().then((transactions) => {
@@ -17,28 +18,25 @@ const PieChart = (props) => {
     getTransactions();
   }, []);
 
-  if (transactions.length > 0) {
-    const colors = getChartColors(transactions.length);
-    // console.log(transactions);
+  const uniqueCategories = dedupeCategories(transactions);
+  const [backgroundColor, borderColor] = getChartColors(
+    uniqueCategories.length
+  );
 
-    const categories = dedupeCategories(transactions);
-    // console.log('categories: ', categories);
-
-    const costs = sumCategoryCosts(transactions);
-    // console.log('costs: ', costs);
-  }
+  const [categories, costs] =
+    sumCategoryCosts(transactions);
 
   return (
     <div>
       <Pie
         data={{
-          // labels: categories,
+          labels: categories,
           datasets: [
             {
               label: 'Cost Breakdown',
-              // data: costs,
-              // backgroundColor: backgroundColor,
-              // borderColor: borderColor,
+              data: costs,
+              backgroundColor: backgroundColor,
+              borderColor: borderColor,
               borderWidth: 1,
             },
           ],
