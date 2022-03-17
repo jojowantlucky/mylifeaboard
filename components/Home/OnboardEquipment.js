@@ -118,7 +118,7 @@ const Equipment = () => {
               </div>
               <div className='onboard-equipment-content onboard-mobile-adjustment'>
                 <h3>
-                  <Link href='/power-generation'>
+                  <Link href='/power-and-electrical'>
                     <a>Power &amp; Electrical</a>
                   </Link>
                 </h3>

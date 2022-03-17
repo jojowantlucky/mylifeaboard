@@ -8,7 +8,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "sass": "sass --watch ./styles/style.scss ./styles/style.css"
+    "sass": "sass --watch ./styles/style.scss ./styles/style.css && ./styles/responsive.scss ./styles/responsive.css"
   },
   "author": "EnvyTheme.com",
   "license": "ISC",

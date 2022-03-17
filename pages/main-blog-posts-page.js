@@ -5,7 +5,7 @@ import Footer from '../components/_App/Footer';
 import Link from 'next/link';
 import BlogSidebar from '../components/Blog/BlogSidebar';
 
-import { blogPosts } from './api/blogPosts';
+import { blogPosts } from './api/dummyBlogPosts';
 
 const MainBlogPostsPage = () => {
   return (

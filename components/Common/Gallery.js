@@ -21,33 +21,34 @@ const Gallery = () => {
         <div className='row'>
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'construction'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() => clickHandler('construction')}>
               <div className='overlay-two'>
                 <i className='flaticon-threat'></i>
-                <h3>Construction 1974</h3>
-                <p>
-                  Onnie was finished by XXXX at the YYYYY in
-                  ZZZZZ.
-                </p>
+                <h6>Initial Build 1974</h6>
               </div>
             </div>
           </div>
 
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'exterior-below'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() =>
                 clickHandler('exterior-below')
               }>
               <div className='overlay-two'>
                 <i className='flaticon-cyber-security-1'></i>
                 <span className='material-icons build'></span>
-                <h3>Exterior Below Decks</h3>
-                <p>
-                  Pictures found on the original PopYachts
-                  listing from 2022.
-                </p>
+                <h6>Exterior Below</h6>
+
                 <span className='material-icons build'></span>
 
                 {/* <span className='flaticon-cyber'></span> */}
@@ -57,15 +58,15 @@ const Gallery = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'interior'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() => clickHandler('interior')}>
               <div className='overlay-two'>
                 <i className='flaticon-cyber-security-1'></i>
-                <h3>Interior</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, con sectetur
-                  adipiscing elit sed do.
-                </p>
+                <h6>Interior</h6>
                 <span className='flaticon-cyber-security-1'></span>
               </div>
             </div>
@@ -73,17 +74,18 @@ const Gallery = () => {
 
           <div className='col-lg-3 col-sm-6'>
             <div
-              className='gallery-single overlay-one'
+              className={
+                selectedCategory === 'exterior-above'
+                  ? 'gallery-single overlay-one active'
+                  : 'gallery-single overlay-one'
+              }
               onClick={() =>
                 clickHandler('exterior-above')
               }>
               <div className='overlay-two'>
                 <i className='flaticon-password'></i>
-                <h3>Exterior Above Decks</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, con sectetur
-                  adipiscing elit sed do.
-                </p>
+                <h6>Exterior Above</h6>
+
                 <span className='flaticon-password'></span>
               </div>
             </div>

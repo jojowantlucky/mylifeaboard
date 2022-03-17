@@ -1,7 +1,39 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import getAllTransactions from '../../pages/api/getAllTransactions';
 
 const AtAGlance = () => {
+  const [transactions, setTransactions] = useState([]);
+
+  useEffect(() => {
+    const getTransactions = async () => {
+      getAllTransactions().then((transactions) => {
+        setTransactions(transactions);
+      });
+    };
+    getTransactions();
+  }, []);
+
+  const formatSubtotal = (string) => {
+    return Number(string.replace(/\$|,/g, ''));
+  };
+
+  let formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+
+  const calculateTotalSpent = () => {
+    const total = 0;
+
+    for (let i in transactions) {
+      let formattedSubtotal = formatSubtotal(
+        transactions[i].fields.subtotal
+      );
+      total = total + formattedSubtotal;
+    }
+    return formatter.format(total);
+  };
   const dayOne = new Date('3/23/2022');
   const today = new Date();
   const timeDifference = today.getTime() - dayOne.getTime();
@@ -9,8 +41,8 @@ const AtAGlance = () => {
     timeDifference / (1000 * 3600 * 24)
   );
 
-  const totalCost = '35,637.34';
-  const milesSailed = '1,000';
+  const totalCost = calculateTotalSpent();
+  const milesSailed = '0.0';
   const completedProjects = '0';
 
   return (
@@ -41,15 +73,13 @@ const AtAGlance = () => {
 
             <div className='col-lg-6 col-sm-6'>
               <div className='at-a-glance-single overlay-one'>
-                <Link href='/days'>
-                  <a>
-                    <div className='overlay-two'>
-                      <span className='material-icons calendar_month'></span>
-                      <h2>{adventureDays}</h2>
-                      <h3>Days</h3>
-                    </div>
-                  </a>
-                </Link>
+                <a>
+                  <div className='overlay-two'>
+                    <span className='material-icons calendar_month'></span>
+                    <h2>{adventureDays}</h2>
+                    <h3>Days</h3>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -60,7 +90,7 @@ const AtAGlance = () => {
                     <div className='overlay-two'>
                       <span className='material-icons paid'></span>
                       <h2 className='mobile-adjustment'>
-                        ${totalCost}
+                        {totalCost}
                       </h2>
                       <h3>Total Cost (USD)</h3>
                     </div>
