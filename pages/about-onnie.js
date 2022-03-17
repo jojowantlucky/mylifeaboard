@@ -32,7 +32,6 @@ const AboutOnnie = () => {
       />
       <Gallery />
 
-      <Protects />
       <Sponsors />
 
       <Footer />
