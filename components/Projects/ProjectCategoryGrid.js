@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import projectCategories from '../../pages/api/dummyProjectCategories';
 import getCategories from '../../pages/api/getCategories';
 
 const ProjectCategoryGrid = () => {
