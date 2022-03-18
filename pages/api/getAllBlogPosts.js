@@ -1,10 +1,12 @@
 const getAllBlogPosts = async (sortBy, sortDirection) => {
-  let fetchUrl = `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/posts?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}`;
+  const dateFilter = `filterByFormula=OR%28IS_SAME%28%7Bdate%7D%2C%20TODAY%28%29%29%2C%20IS_BEFORE%28%7Bdate%7D%2C%20TODAY%28%29%29%29`;
+
+  let fetchUrl = `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/posts?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}&${dateFilter}`;
 
   if (sortBy && sortDirection) {
     const sortBySuffix = `sort%5B0%5D%5Bfield%5D=${sortBy}`;
     const sortDescSuffix = `sort%5B0%5D%5Bdirection%5D=${sortDirection}`;
-    fetchUrl = `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/posts?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}&${sortBySuffix}&${sortDescSuffix}`;
+    fetchUrl = `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/posts?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}&${dateFilter}&${sortBySuffix}&${sortDescSuffix}`;
   }
 
   return await fetch(fetchUrl)
@@ -14,3 +16,4 @@ const getAllBlogPosts = async (sortBy, sortDirection) => {
 };
 
 export default getAllBlogPosts;
+//OR%28 IS_SAME%28%7Bdate%7D%2C%20TODAY%28%29%29% 29

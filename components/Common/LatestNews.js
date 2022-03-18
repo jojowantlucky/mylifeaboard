@@ -22,6 +22,7 @@ const LatestNews = () => {
     getPosts();
   }, []);
 
+  console.log(posts);
   const threeRecentPosts = posts.slice(0, 3);
 
   return (
@@ -53,8 +54,7 @@ const LatestNews = () => {
                 <div className='latest-news-content'>
                   <span>{post.fields.date}</span>
                   <h3>
-                    <Link
-                      href={`/post/${post.fields.url}`}>
+                    <Link href={`/post/${post.fields.url}`}>
                       <a>{post.fields.headline}</a>
                     </Link>
                   </h3>

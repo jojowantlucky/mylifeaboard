@@ -18,7 +18,8 @@ const PieChart = (props) => {
     getTransactions();
   }, []);
 
-  const uniqueCategories = dedupeCostCategories(transactions);
+  const uniqueCategories =
+    dedupeCostCategories(transactions);
   const [backgroundColor, borderColor] = getChartColors(
     uniqueCategories.length
   );
