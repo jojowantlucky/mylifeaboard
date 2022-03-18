@@ -39,7 +39,7 @@ const BlogSidebar = () => {
         <h3 className='widget-title'>Recent Posts</h3>
         <ul>
           {threeRecentPosts.map((post, index) => (
-            <li key={index}>
+            <li key={`recents-${index}`}>
               <Link
                 href={`/blog-details/${post.fields.url}`}>
                 <a>
@@ -60,8 +60,8 @@ const BlogSidebar = () => {
         <h3>Categories</h3>
 
         <ul>
-          {categories.map((category) => (
-            <li>
+          {categories.map((category, index) => (
+            <li key={`cateory-${index}`}>
               <a href='/blog-1'>{category}</a>
             </li>
           ))}
