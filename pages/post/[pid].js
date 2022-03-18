@@ -19,6 +19,7 @@ const BlogDetails = (props) => {
       getAllBlogPosts().then((posts) => setAllPosts(posts));
     };
     getBlogPosts();
+    console.log('allPosts: ', allPosts);
   }, []);
 
   if (allPosts.length > 0) {
