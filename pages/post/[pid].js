@@ -12,7 +12,6 @@ const BlogDetails = (props) => {
   const [allPosts, setAllPosts] = useState([]);
   const router = useRouter();
   const { pid } = router.query;
-  // const [post, setPost] = useState(null);
   let post;
 
   useEffect(() => {
@@ -54,11 +53,9 @@ const BlogDetails = (props) => {
                   <div className='news-content'>
                     <ul className='admin'>
                       <li>
-                        {/* <a href={postMeta.authorAboutPage}> */}
                         <i className='bx bx-user-circle'></i>
                         Written by:
                         {post && post[0].fields.author}
-                        {/* </a> */}
                       </li>
 
                       <li>

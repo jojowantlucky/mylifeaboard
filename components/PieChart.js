@@ -2,7 +2,7 @@ import { Pie } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import { useEffect, useState } from 'react';
 import getChartColors from '../lib/getChartColors';
-import dedupeCategories from '../lib/dedupeCategories';
+import dedupeCostCategories from '../lib/dedupeCostCategories';
 import getAllTransactions from '../pages/api/getAllTransactions';
 import sumCategoryCosts from '../lib/sumCategoryCosts';
 
@@ -18,7 +18,7 @@ const PieChart = (props) => {
     getTransactions();
   }, []);
 
-  const uniqueCategories = dedupeCategories(transactions);
+  const uniqueCategories = dedupeCostCategories(transactions);
   const [backgroundColor, borderColor] = getChartColors(
     uniqueCategories.length
   );
