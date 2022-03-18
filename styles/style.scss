@@ -20,7 +20,6 @@
 ** - Latest News Area Style
 ** - Footer Top Area Style
 ** - Copy Right Area Style
-** - About Area Style
 ** - At A Glance Area Style
 ** - About Area Style
 ** - Sponsors Area Style
@@ -3371,6 +3370,9 @@ Blog Details Area Style
             position: absolute;
             top: 0;
             left: 0;
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
           }
         }
         span {
@@ -3833,6 +3835,10 @@ Gallery Area Style
   position: relative;
   overflow: hidden;
   z-index: 1;
+
+  .view-all {
+    cursor: pointer;
+  }
 
   &::before {
     content: '';
@@ -4571,4 +4577,8 @@ Onboard Equipment Mosaic Style
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+.cascade-logo {
+  margin: auto;
 }

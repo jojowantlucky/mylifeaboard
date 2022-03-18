@@ -1,6 +1,7 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { dummyLatestBlogs } from '../../pages/api/dummyLatestBlogs';
+// import { dummyLatestBlogs } from '../../pages/api/dummyLatestBlogs';
+import getAllBlogPosts from '../../pages/api/getAllBlogPosts';
 
 const blogImgUrl = [
   '/images/blog/blog-cover-images/buying-onnie-cover.jpg',
@@ -8,7 +9,21 @@ const blogImgUrl = [
   '/images/blog/blog-cover-images/to-do-cover.jpg',
 ];
 
+// get 3 most recent posts
+
 const LatestNews = () => {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    const getPosts = async () => {
+      getAllBlogPosts('date', 'desc').then((posts) => {
+        setPosts(posts);
+      });
+    };
+    getPosts();
+  }, []);
+
+  const threeRecentPosts = posts.slice(0, 3);
+
   return (
     <div className='latest-news-area pb-70'>
       <div className='container'>
@@ -18,17 +33,17 @@ const LatestNews = () => {
         </div>
 
         <div className='row'>
-          {dummyLatestBlogs.map((blogPost, index) => (
+          {threeRecentPosts.map((post, index) => (
             <div
-              key={`${blogPost.headline}-${blogPost.id}`}
+              key={`${post.fields.headline}-${index}`}
               className='col-lg-4 col-md-6'>
               <div className='latest-news-single'>
                 <div className='latest-news-img'>
                   <div className='latest-news-cover-img-border'></div>
-                  <Link href={blogPost.url}>
+                  <Link href={`/post/${post.fields.url}`}>
                     <a>
                       <img
-                        src={blogPost.coverImageUrl}
+                        src={`/images/blog/blog-cover-images/${post.fields.thumbnailUrl}`}
                         alt='Image'
                       />
                     </a>
@@ -36,10 +51,11 @@ const LatestNews = () => {
                 </div>
 
                 <div className='latest-news-content'>
-                  <span>{blogPost.date}</span>
+                  <span>{post.fields.date}</span>
                   <h3>
-                    <Link href='/blog-details'>
-                      <a>{blogPost.headline}</a>
+                    <Link
+                      href={`/post/${post.fields.url}`}>
+                      <a>{post.fields.headline}</a>
                     </Link>
                   </h3>
                 </div>

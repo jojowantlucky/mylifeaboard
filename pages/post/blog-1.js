@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
-import Navbar from '../components/_App/Navbar';
-import PageBanner from '../components/Common/PageBanner';
+import Navbar from '../../components/_App/Navbar';
+import PageBanner from '../../components/Common/PageBanner';
 import Link from 'next/link';
-import BlogSidebar from '../components/Blog/BlogSidebar';
-import Footer from '../components/_App/Footer';
+import BlogSidebar from '../../components/Blog/BlogSidebar';
+import Footer from '../../components/_App/Footer';
 
 const Blog = () => {
   return (
