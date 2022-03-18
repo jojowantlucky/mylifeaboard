@@ -38,8 +38,8 @@ const BlogSidebar = () => {
       <div className='sidebar-widget recent-post'>
         <h3 className='widget-title'>Recent Posts</h3>
         <ul>
-          {threeRecentPosts.map((post) => (
-            <li key={`${post.fields.url}`}>
+          {threeRecentPosts.map((post, index) => (
+            <li key={index}>
               <Link
                 href={`/blog-details/${post.fields.url}`}>
                 <a>

@@ -1,21 +1,22 @@
 import { Fragment, useState, useEffect } from 'react';
-import Navbar from '../components/_App/Navbar';
-import PageBanner from '../components/Common/PageBanner';
-import BlogSidebar from '../components/Blog/BlogSidebar';
-import Comments from '../components/Blog/Comments';
-import Footer from '../components/_App/Footer';
+import Navbar from '../../components/_App/Navbar';
+import PageBanner from '../../components/Common/PageBanner';
+import BlogSidebar from '../../components/Blog/BlogSidebar';
+import Comments from '../../components/Blog/Comments';
+import Footer from '../../components/_App/Footer';
 import { useRouter } from 'next/router';
-import getAllBlogPosts from './api/getAllBlogPosts';
+import getAllBlogPosts from '../api/getAllBlogPosts';
 import { ContactsOutlined } from '@material-ui/icons';
 
-const BlogDetails = () => {
+const BlogDetails = (props) => {
   const [allPosts, setAllPosts] = useState([]);
   const router = useRouter();
+  const { id } = router.query;
+  console.log(id);
 
   useEffect(() => {
     const getBlogPosts = async () => {
-      getAllBlogPosts()
-        .then((posts) => setAllPosts(posts));
+      getAllBlogPosts().then((posts) => setAllPosts(posts));
     };
     getBlogPosts();
   }, []);
@@ -29,8 +30,6 @@ const BlogDetails = () => {
   const post = allPosts.filter((post) => {
     return post.fields.url === path;
   });
-
-  console.log(post)
 
   return (
     <Fragment>

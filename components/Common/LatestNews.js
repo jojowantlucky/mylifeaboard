@@ -40,7 +40,7 @@ const LatestNews = () => {
               <div className='latest-news-single'>
                 <div className='latest-news-img'>
                   <div className='latest-news-cover-img-border'></div>
-                  <Link href={`?=${post.fields.url}`}>
+                  <Link href={`/post/${post.fields.url}`}>
                     <a>
                       <img
                         src={`/images/blog/blog-cover-images/${post.fields.thumbnailUrl}`}
@@ -54,7 +54,7 @@ const LatestNews = () => {
                   <span>{post.fields.date}</span>
                   <h3>
                     <Link
-                      href={`blog-details/?=${post.fields.url}`}>
+                      href={`/post/${post.fields.url}`}>
                       <a>{post.fields.headline}</a>
                     </Link>
                   </h3>
