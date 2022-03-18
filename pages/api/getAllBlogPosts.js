@@ -16,4 +16,3 @@ const getAllBlogPosts = async (sortBy, sortDirection) => {
 };
 
 export default getAllBlogPosts;
-//OR%28 IS_SAME%28%7Bdate%7D%2C%20TODAY%28%29%29% 29
