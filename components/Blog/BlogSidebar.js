@@ -1,13 +1,23 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { blogPosts } from '../../pages/api/dummyBlogPosts';
+// import { blogPosts } from '../../pages/api/dummyBlogPosts';
+import getAllBlogPosts from '../../pages/api/getAllBlogPosts';
+import dedupeCategories from '../../lib/dedupeCategories';
 
 const BlogSidebar = () => {
-  const sortedByDate = blogPosts.sort((a, b) => {
-    a.date > b.date ? 1 : -1;
-  });
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    const getPosts = async () => {
+      getAllBlogPosts('date', 'desc').then((posts) => {
+        setPosts(posts);
+      });
+    };
+    getPosts();
+  }, []);
 
-  const threeMostRecentPosts = sortedByDate.slice(0, 3);
+  const categories = dedupeCategories(posts);
+  // console.log(posts);
+  const threeRecentPosts = posts.slice(0, 3);
 
   return (
     <div className='widget-sidebar'>
@@ -28,18 +38,19 @@ const BlogSidebar = () => {
       <div className='sidebar-widget recent-post'>
         <h3 className='widget-title'>Recent Posts</h3>
         <ul>
-          {threeMostRecentPosts.map((post) => (
-            <li key={post.id}>
-              <Link href={`/blog-details/${post.slug}`}>
+          {threeRecentPosts.map((post) => (
+            <li key={`${post.fields.url}`}>
+              <Link
+                href={`/blog-details/${post.fields.url}`}>
                 <a>
-                  {post.headline}
+                  {post.fields.headline}
                   <img
-                    src={post.recentPostImgUrl}
-                    alt={post.alt}
+                    src={`/images/blog/blog-cover-images/${post.fields.thumbnailUrl}`}
+                    alt={post.fields.thumbnailAltText}
                   />
                 </a>
               </Link>
-              <span>{post.date}</span>
+              <span>{post.fields.date}</span>
             </li>
           ))}
         </ul>
@@ -49,36 +60,11 @@ const BlogSidebar = () => {
         <h3>Categories</h3>
 
         <ul>
-          <li>
-            <a href='/blog-1'>Hull</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Deck</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Interior</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Electrical</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Plumbing</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Navigation</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Explorations</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Planning Projects</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Gadgetry</a>
-          </li>
-          <li>
-            <a href='/blog-1'>Propulsion</a>
-          </li>
+          {categories.map((category) => (
+            <li>
+              <a href='/blog-1'>{category}</a>
+            </li>
+          ))}
         </ul>
       </div>
 

@@ -1,9 +1,11 @@
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import BlogSidebar from '../components/Blog/BlogSidebar';
 import Comments from '../components/Blog/Comments';
 import Footer from '../components/_App/Footer';
+import { useRouter } from 'next/router';
+import getAllBlogPosts from './api/getAllBlogPosts';
 
 const postMeta = {
   author: 'John Doe',
@@ -25,6 +27,26 @@ const clickHandler = () => {
 };
 
 const BlogDetails = () => {
+  const [posts, setPosts] = useState([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    const getBlogPosts = async () => {
+      getAllBlogPosts().then((posts) => setPosts(posts));
+    };
+    getBlogPosts();
+  }, []);
+
+  // filter blog posts based on blog title
+
+  // replace hard copy with appropriate fields of filtered blog post.
+
+  const path = router.pathname.substring(1);
+  const postToDisplay = posts.filter(
+    (post) => post.fields.url === path
+  );
+  console.log('postToDisplay: ', postToDisplay);
+
   return (
     <Fragment>
       <Navbar />
