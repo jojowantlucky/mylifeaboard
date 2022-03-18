@@ -1,18 +1,19 @@
 import { Fragment, useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Navbar from '../../components/_App/Navbar';
 import PageBanner from '../../components/Common/PageBanner';
 import BlogSidebar from '../../components/Blog/BlogSidebar';
 import Comments from '../../components/Blog/Comments';
 import Footer from '../../components/_App/Footer';
-import { useRouter } from 'next/router';
 import getAllBlogPosts from '../api/getAllBlogPosts';
 import { ContactsOutlined } from '@material-ui/icons';
 
 const BlogDetails = (props) => {
   const [allPosts, setAllPosts] = useState([]);
   const router = useRouter();
-  const { id } = router.query;
-  console.log(id);
+  const { pid } = router.query;
+  // const [post, setPost] = useState(null);
+  let post;
 
   useEffect(() => {
     const getBlogPosts = async () => {
@@ -21,24 +22,20 @@ const BlogDetails = (props) => {
     getBlogPosts();
   }, []);
 
-  const fullPath = router.asPath;
-  const path = fullPath.replace(
-    /\/blog-details\/\?\=/g,
-    ''
-  );
-
-  const post = allPosts.filter((post) => {
-    return post.fields.url === path;
-  });
+  if (allPosts.length > 0) {
+    post = allPosts.filter((post) => {
+      return post.fields.url === pid;
+    });
+  }
 
   return (
     <Fragment>
       <Navbar />
       <PageBanner
-        pageTitle='Blog Details'
+        pageTitle={post && post[0].fields.headline}
         homePageUrl='/'
         homePageText='Home'
-        activePageText='Blog Details'
+        activePageText={post && post[0].fields.headline}
       />
 
       <div className='blog-details-area ptb-100'>
@@ -60,7 +57,7 @@ const BlogDetails = (props) => {
                         {/* <a href={postMeta.authorAboutPage}> */}
                         <i className='bx bx-user-circle'></i>
                         Written by:
-                        {/* {post[0].fields.author} */}
+                        {post && post[0].fields.author}
                         {/* </a> */}
                       </li>
 
@@ -73,24 +70,34 @@ const BlogDetails = (props) => {
 
                       <li className='float'>
                         <i className='bx bx-calendar-alt'></i>
-                        {/* {post.fields.date} */}
+                        {post && post[0].fields.date}
                       </li>
                     </ul>
 
-                    {/* <h3>{post.fields.headline}</h3> */}
+                    <h3>
+                      {post && post[0].fields.headline}
+                    </h3>
 
-                    {/* <p>{post.fields.paragraph1}</p> */}
+                    <p>
+                      {post && post[0].fields.paragraph1}
+                    </p>
 
-                    {/* <p>{post.fields.paragraph2}</p> */}
+                    <p>
+                      {post && post[0].fields.paragraph2}
+                    </p>
                   </div>
 
                   <blockquote>
-                    {/* <p>{post.fields.testimonial}</p> */}
+                    <p>
+                      {post && post[0].fields.testimonial}
+                    </p>
                     <i className='bx bxs-quote-alt-left'></i>
                   </blockquote>
 
                   <div className='news-content-2'>
-                    {/* <p>{post.fields.paragraph3}</p> */}
+                    <p>
+                      {post && post[0].fields.paragraph3}
+                    </p>
                   </div>
 
                   <div className='row'>
@@ -113,7 +120,9 @@ const BlogDetails = (props) => {
                   </div>
 
                   <div className='news-content-3'>
-                    {/* <p>{post.fields.paragraph4}</p> */}
+                    <p>
+                      {post && post[0].fields.paragraph4}
+                    </p>
                   </div>
 
                   <div className='tag-list'>
@@ -121,7 +130,9 @@ const BlogDetails = (props) => {
 
                     <ul>
                       <li>
-                        <a href='#' target='_blank'></a>
+                        <a href='#' target='_blank'>
+                          adfjadkf{' '}
+                        </a>
                       </li>
                     </ul>
                   </div>
