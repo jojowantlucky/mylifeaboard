@@ -14,7 +14,8 @@ const BlogDetails = () => {
 
   useEffect(() => {
     const getBlogPosts = async () => {
-      getAllBlogPosts().then((posts) => setAllPosts(posts));
+      getAllBlogPosts()
+        .then((posts) => setAllPosts(posts));
     };
     getBlogPosts();
   }, []);
@@ -29,7 +30,7 @@ const BlogDetails = () => {
     return post.fields.url === path;
   });
 
-  console.log(post);
+  console.log(post)
 
   return (
     <Fragment>
@@ -60,7 +61,7 @@ const BlogDetails = () => {
                         {/* <a href={postMeta.authorAboutPage}> */}
                         <i className='bx bx-user-circle'></i>
                         Written by:
-                        {/* {console.log(post.fields)} */}
+                        {/* {post[0].fields.author} */}
                         {/* </a> */}
                       </li>
 
