@@ -13,7 +13,6 @@ const LatestNews = () => {
     getPosts();
   }, []);
 
-  console.log(posts);
   const threeRecentPosts = posts.slice(0, 3);
 
   return (
