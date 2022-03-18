@@ -1,15 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-// import { dummyLatestBlogs } from '../../pages/api/dummyLatestBlogs';
 import getAllBlogPosts from '../../pages/api/getAllBlogPosts';
-
-const blogImgUrl = [
-  '/images/blog/blog-cover-images/buying-onnie-cover.jpg',
-  '/images/blog/blog-cover-images/day-one-cover.jpg',
-  '/images/blog/blog-cover-images/to-do-cover.jpg',
-];
-
-// get 3 most recent posts
 
 const LatestNews = () => {
   const [posts, setPosts] = useState([]);
