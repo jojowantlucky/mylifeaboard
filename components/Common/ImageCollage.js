@@ -6,6 +6,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import getGalleryImages from '../../pages/api/getGalleryImages';
+import TransitionsModal from '../TransitionsModal';
 
 const ImageCollage = (props) => {
   const [images, setImages] = useState([]);
@@ -29,6 +30,7 @@ const ImageCollage = (props) => {
         overflowY: 'none',
       }}>
       <ImageList variant='masonry' cols={3} gap={8}>
+        {/* <TransitionsModal> */}
         {images &&
           images.map((item) => (
             <ImageListItem key={item.id}>
@@ -53,6 +55,7 @@ const ImageCollage = (props) => {
               />
             </ImageListItem>
           ))}
+        {/* </TransitionsModal> */}
       </ImageList>
     </Box>
   );
