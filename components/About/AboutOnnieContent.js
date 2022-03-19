@@ -35,24 +35,20 @@ const AboutOnnieContent = () => {
               <Tabs>
                 <TabList>
                   <Tab>History</Tab>
-                  <Tab>Cascade/Yach Constructors</Tab>
+                  <Tab>Cascade/Yacht Constructors</Tab>
                   <Tab>Vetus Engines</Tab>
                 </TabList>
 
                 <TabPanel>
                   <p>
-                    Onnie was build in 1974 for Cillum nulla
-                    velit est nulla minim nisi in dolore.
-                    Nostrud velit adipisicing commodo aliqua
-                    cillum ut ea proident laborum pariatur
-                    consectetur ut. Irure do magna
-                    adipisicing nostrud incididunt qui
-                    veniam ut velit nostrud sint duis. Ex
-                    occaecat et eu ad. Labore dolore ea
-                    magna tempor quis cupidatat ex minim ea
-                    esse ut consequat. Et in incididunt
-                    fugiat consectetur proident aliqua in
-                    sit dolor pariatur pariatur irure.
+                    Onnie was built in 1974 and finished by
+                    XXXXX. Her name comes from her original
+                    owner's kids names. John - her previous
+                    owner and builder's son - share that
+                    "while not exact names my siblings were
+                    known by Connie, Donnie, Johnny and
+                    Bonnie. So the obvious name for the boat
+                    was ‘Onnie'.
                   </p>
                   <br />
                   <p>
@@ -110,7 +106,7 @@ const AboutOnnieContent = () => {
                     They started the company by the name of
                     Yacht Constructors and they decided to
                     build the 34‘ sloop “Vigilant” designed
-                    by Frederick Geiger of Yacht Sales &
+                    by Frederick Geiger of Yacht Sales &amp;
                     Service in Philadelphia, PA.
                   </p>
                   <div className='source-url'>
