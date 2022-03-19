@@ -6,7 +6,6 @@ import BlogSidebar from '../../components/Blog/BlogSidebar';
 import Comments from '../../components/Blog/Comments';
 import Footer from '../../components/_App/Footer';
 import getAllBlogPosts from '../api/getAllBlogPosts';
-import { ContactsOutlined } from '@material-ui/icons';
 
 const BlogDetails = (props) => {
   const [allPosts, setAllPosts] = useState([]);
@@ -19,7 +18,6 @@ const BlogDetails = (props) => {
       getAllBlogPosts().then((posts) => setAllPosts(posts));
     };
     getBlogPosts();
-    console.log('allPosts: ', allPosts);
   }, []);
 
   if (allPosts.length > 0) {
