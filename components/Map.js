@@ -9,7 +9,8 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
 import ResetViewControl from '@20tab/react-leaflet-resetview';
-import Link from 'next/link'
+import Link from 'next/link';
+import getCoordinates from '../pages/api/getCoordinates';
 
 const clickHandler = () => {};
 
@@ -45,7 +46,7 @@ const Map = ({ width, height = '100%' }) => {
 
   const centerCoordinates = homePortCoordinates;
   const popupDate = 'September 20, 2021';
-  const dateSlug = '2021-09-20'
+  const dateSlug = '2021-09-20';
 
   return (
     <MapContainer
