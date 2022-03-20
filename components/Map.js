@@ -15,38 +15,25 @@ import getCoordinates from '../pages/api/getCoordinates';
 const clickHandler = () => {};
 
 const Map = ({ width, height = '100%' }) => {
+  const [coordinates, setCoordinates] = useState([]);
+
   const homePortCoordinates = [
     45.60514012056267, -122.65578868429517,
   ];
 
-  const theCliffCoordinates = [
-    12.920836911295423, 100.86285125163124,
-  ];
-
-  const [rawGpsData, setRawGpsData] = useState([
-    {
-      trip: 'Default useState',
-      latLon: homePortCoordinates,
-      timestamp: new Date(),
-    },
-  ]);
-
   useEffect(() => {
-    fetch(
-      `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/sea-log?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setRawGpsData(data.records);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    const fetchCoordinates = async () => {
+      getCoordinates()
+        .then((coord) => setCoordinates(coord))
+        .catch((err) => console.log(err));
+    };
+    fetchCoordinates();
   }, []);
 
-  const centerCoordinates = homePortCoordinates;
-  const popupDate = 'September 20, 2021';
-  const dateSlug = '2021-09-20';
+  // const centerCoordinates = homePortCoordinates;
+  // const popupDate = 'September 20, 2021';
+  // const dateSlug = '2021-09-20';
+  console.log(coordinates);
 
   return (
     <MapContainer

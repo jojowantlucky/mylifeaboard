@@ -8,16 +8,6 @@ const getGalleryImages = async (filter) => {
       `&filterByFormula=%7Bcategory%7D%20%3D%20%27${filter}%27%0A`;
   }
 
-  console.log('url: ', url);
-
-  // if (filter === 'popyachts-listing-2021') {
-  //   urlFilter =
-  //     '%7Bsubject%7D%20%3D%20%27popyachts-listing-2021%27%0A';
-  //   url = url + urlFilter;
-  //   console.log('url: ', url);
-  // } else if (filter === "construction") {
-  //   urlFilter=
-  // }
   return await fetch(url)
     .then((res) => res.json())
     .then((data) => data.records)
