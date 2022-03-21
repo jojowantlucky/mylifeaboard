@@ -15,24 +15,22 @@ import getCoordinates from '../pages/api/getCoordinates';
 const clickHandler = () => {};
 
 const Map = ({ width, height = '100%' }) => {
+  const homePortCoordinates =
+    '45.60514012056267, -122.65578868429517';
   const [coordinateData, setCoordinateData] = useState([
     {
-      id: 'recz6UXyKcImA84YR',
+      id: 'current-location',
       fields: {
-        title: 'title 1',
-        timestamp: 'Sun, 20 Mar 2022 12:55:37 +0003',
-        body: '45.60545536686442, -122.6552415136658',
-        trip: 'test',
+        title: "Onnie's Current Location",
+        timestamp: new Date(),
+        body: homePortCoordinates,
+        trip: '',
         learnMore: 'www.mylifeaboard.com',
       },
       createdTime: '2022-03-20T19:51:10.000Z',
     },
   ]);
   const [chosenTrip, setChosenTrip] = useState('test');
-
-  const homePortCoordinates = [
-    '45.60514012056267, -122.65578868429517',
-  ];
 
   let location;
   const popupDate = 'September 20, 2021';
@@ -50,19 +48,7 @@ const Map = ({ width, height = '100%' }) => {
     fetchCoordinates();
   }, []);
 
-  if (coordinateData.length === 0) {
-    setCoordinateData({
-      id: 'current-location',
-      fields: {
-        title: "Onnie's Current Location",
-        timestamp: new Date(),
-        body: homePortCoordinates,
-        trip: '',
-        learnMore: 'www.mylifeaboard.com',
-      },
-      createdTime: '2022-03-20T19:51:10.000Z',
-    });
-  }
+  console.log('coordinateData: ', coordinateData);
 
   return (
     <MapContainer
@@ -84,6 +70,7 @@ const Map = ({ width, height = '100%' }) => {
       />
       {coordinateData.map((marker) => (
         <Marker
+          key={marker.id}
           position={marker.fields.body.split(', ')}
           draggable={false}
           animate={true}>
