@@ -1,5 +1,4 @@
 const getGalleryImages = async (filter) => {
-  console.log('filter: ', filter);
   let url = `https://api.airtable.com/v0/appgzYrTBQ3bcGlF0/gallery?api_key=${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}&`;
 
   if (filter !== 'all') {
