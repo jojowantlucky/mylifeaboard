@@ -27,11 +27,14 @@ const Gallery = () => {
           <div className='col-lg-3 col-sm-6'>
             <div
               className={
-                selectedCategory === 'construction'
+                selectedCategory ===
+                'original-build-circa-1974'
                   ? 'gallery-single overlay-one active'
                   : 'gallery-single overlay-one'
               }
-              onClick={() => clickHandler('construction')}>
+              onClick={() =>
+                clickHandler('original-build-circa-1974')
+              }>
               <div className='overlay-two'>
                 <i className='flaticon-threat'></i>
                 <h6>Initial Build 1974</h6>
@@ -42,11 +45,14 @@ const Gallery = () => {
           <div className='col-lg-3 col-sm-6'>
             <div
               className={
-                selectedCategory === 'popyachts-listing-2021'
+                selectedCategory ===
+                'popyachts-listing-2021'
                   ? 'gallery-single overlay-one active'
                   : 'gallery-single overlay-one'
               }
-              onClick={() => clickHandler('popyachts-listing-2021')}>
+              onClick={() =>
+                clickHandler('popyachts-listing-2021')
+              }>
               <div className='overlay-two'>
                 <i className='flaticon-cyber-security-1'></i>
                 <span className='material-icons build'></span>
