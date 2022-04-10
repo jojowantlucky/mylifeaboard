@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] =
-    useState('all');
+    useState('original-build-circa-1974');
 
   const clickHandler = (category) => {
     setSelectedCategory(category);
@@ -28,7 +28,7 @@ const Gallery = () => {
             <div
               className={
                 selectedCategory ===
-                'original-build-circa-1974'
+                  'original-build-circa-1974' 
                   ? 'gallery-single overlay-one active'
                   : 'gallery-single overlay-one'
               }
@@ -46,7 +46,7 @@ const Gallery = () => {
             <div
               className={
                 selectedCategory ===
-                'popyachts-listing-2021'
+                  'popyachts-listing-2021' 
                   ? 'gallery-single overlay-one active'
                   : 'gallery-single overlay-one'
               }
@@ -68,7 +68,7 @@ const Gallery = () => {
           <div className='col-lg-3 col-sm-6'>
             <div
               className={
-                selectedCategory === 'interior'
+                selectedCategory === 'interior' 
                   ? 'gallery-single overlay-one active'
                   : 'gallery-single overlay-one'
               }
@@ -84,7 +84,7 @@ const Gallery = () => {
           <div className='col-lg-3 col-sm-6'>
             <div
               className={
-                selectedCategory === 'exterior'
+                selectedCategory === 'exterior' 
                   ? 'gallery-single overlay-one active'
                   : 'gallery-single overlay-one'
               }

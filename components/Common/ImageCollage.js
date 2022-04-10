@@ -7,9 +7,16 @@ import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import getGalleryImages from '../../pages/api/getGalleryImages';
 import TransitionsModal from '../TransitionsModal';
+import Modal from '@mui/material/Modal';
+import { Image } from '@material-ui/icons';
+import { Button, Typography } from '@mui/material';
 
 const ImageCollage = (props) => {
   const [images, setImages] = useState([]);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   useEffect(() => {
     const getImages = async () => {
       getGalleryImages(props.selectedCategory).then(
@@ -20,7 +27,18 @@ const ImageCollage = (props) => {
     };
     getImages();
   }, [props.selectedCategory]);
-  console.log('images: ', images);
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 500,
+    bgcolor: 'rgba(0, 0, 0, 0.5)',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
   return (
     <Box
@@ -30,32 +48,46 @@ const ImageCollage = (props) => {
         overflowY: 'none',
       }}>
       <ImageList variant='masonry' cols={3} gap={8}>
-        {/* <TransitionsModal> */}
         {images &&
           images.map((item) => (
-            <ImageListItem key={item.id}>
-              <img
-                src={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format`}
-                srcSet={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format&dpr=2 2x`}
-                alt={item && item.fields.title}
-                loading='lazy'
-              />
-              <ImageListItemBar
-                title={item.fields.title}
-                subtitle={item.fields.subtitle}
-                actionIcon={
-                  <IconButton
-                    sx={{
-                      color: 'rgba(255, 255, 255, 0.54)',
-                    }}
-                    aria-label={`info about things`}>
-                    <InfoIcon />
-                  </IconButton>
-                }
-              />
-            </ImageListItem>
+            <>
+              <Button>
+                <ImageListItem key={item.id}>
+                  <img
+                    src={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format`}
+                    srcSet={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item && item.fields.title}
+                    loading='lazy'
+                    onClick={handleOpen}
+                  />
+
+                  <ImageListItemBar
+                    title={item.fields.title}
+                    subtitle={item.fields.subtitle}
+                  />
+                </ImageListItem>
+                <Modal open={open} onClose={handleClose}>
+                  <Box sx={style}>
+                    <img
+                      src={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format`}
+                    />
+                    <Typography
+                      id='modal-modal-title'
+                      variant='h6'
+                      component='h2'>
+                      Text in a modal
+                    </Typography>
+                    <Typography
+                      id='modal-modal-description'
+                      sx={{ mt: 2 }}>
+                      Duis mollis, est non commodo luctus,
+                      nisi erat porttitor ligula.
+                    </Typography>
+                  </Box>
+                </Modal>
+              </Button>
+            </>
           ))}
-        {/* </TransitionsModal> */}
       </ImageList>
     </Box>
   );
