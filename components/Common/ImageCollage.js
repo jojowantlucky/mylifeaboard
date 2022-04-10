@@ -5,14 +5,29 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import getGalleryImages from '../../pages/api/getGalleryImages';
 import Modal from '@mui/material/Modal';
-import { Button, Typography } from '@mui/material';
+import { Button, Fade, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 const ImageCollage = (props) => {
   const [images, setImages] = useState([]);
   const [openModal, setOpenModal] = useState(null);
-  const handleOpen = (id) => setOpenModal(id);
-  const handleClose = () => setOpenModal(null);
+  const [fade, setFade] = useState(false);
+  const handleOpen = (id) => {
+    setFade(true);
+    setOpenModal(id);
+  };
+  const handleClose = () => {
+    setFade(false);
+    setOpenModal(null);
+  };
+
+  const handleBefore = () => {
+    console.log('Before!');
+  };
+
+  const handleNext = () => {
+    console.log('Next!');
+  };
 
   useEffect(() => {
     const getImages = async () => {
@@ -65,35 +80,45 @@ const ImageCollage = (props) => {
                   open={
                     openModal === item.id ? true : false
                   }
+                  onClose={handleClose}
                   BackdropProps={{
                     style: {
                       backgroundColor: 'rgba(0, 0, 0, .8)',
                     },
                   }}>
-                  <Box sx={modalStyle}>
-                    <CloseIcon
-                      sx={{
-                        marginBottom: '1rem',
-                        cursor: 'pointer',
-                      }}
-                      onClick={handleClose}
-                    />
-                    <img
-                      src={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format`}
-                    />
-                    <Typography
-                      id='modal-modal-title'
-                      variant='h6'
-                      component='h2'>
-                      {item.fields.title}
-                    </Typography>
-                    <Typography
-                      id='modal-modal-description'
-                      sx={{ mt: 2 }}>
-                      Duis mollis, est non commodo luctus,
-                      nisi erat porttitor ligula.
-                    </Typography>
-                  </Box>
+                  <Fade in={fade}>
+                    <Box sx={modalStyle}>
+                      <CloseIcon
+                        sx={{
+                          marginBottom: '1rem',
+                          cursor: 'pointer',
+                        }}
+                        onClick={handleClose}
+                      />
+                      <Box
+                        sx={{
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                        }}>
+                        <img
+                          src={`/images/gallery/${item.fields.url}?w=400&fit=crop&auto=format`}
+                        />
+                      </Box>
+                      <Typography
+                        id='modal-modal-title'
+                        variant='h6'
+                        component='h2'>
+                        {item.fields.title}
+                      </Typography>
+                      <Typography
+                        id='modal-modal-description'
+                        sx={{ mt: 2 }}>
+                        Duis mollis, est non commodo luctus,
+                        nisi erat porttitor ligula.
+                      </Typography>
+                    </Box>
+                  </Fade>
                 </Modal>
               </ImageListItem>
             </Button>
