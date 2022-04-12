@@ -110,7 +110,7 @@ const Equipment = () => {
                 <Link href='/power-generation'>
                   <a>
                     <img
-                      src='/images/onboard-equipment/solar.jpg'
+                      src='/images/onboard-equipment/power-generation.jpg'
                       alt='Image'
                     />
                   </a>

@@ -84,11 +84,7 @@ const AboutOnnieContent = () => {
 
                 <TabPanel>
                   <p>
-                    A Brief History of Yacht Constructors,
-                    Inc., Cascade Yachts, Inc., Cascade
-                    Yacht Builders, LLC, and finally the
-                    current Cascade Yacht Works, LLC In
-                    1954, Tom Green, Merle Starr, Wade
+                    In 1954, Tom Green, Merle Starr, Wade
                     Cornwell, Jarvis Gould and Henry Morton
                     decided to use a new material called
                     fiberglass to build large sailboat
