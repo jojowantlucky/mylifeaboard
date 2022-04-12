@@ -42,13 +42,13 @@ const AboutOnnieContent = () => {
                 <TabPanel>
                   <p>
                     Onnie was built in 1974 and finished by
-                    XXXXX. Her name comes from her original
-                    owner's kids names. John - her previous
-                    owner and builder's son - share that
-                    "while not exact names my siblings were
-                    known by Connie, Donnie, Johnny and
-                    Bonnie. So the obvious name for the boat
-                    was ‘Onnie'.
+                    Jerry Randall from North Bonneville, WA.
+                    Her name comes from Jerry's kid's names.
+                    John - her previous owner and builder's
+                    son - share that "while not exact names
+                    my siblings were known by Connie,
+                    Donnie, Johnny and Bonnie. So the
+                    obvious name for the boat was ‘Onnie'.
                   </p>
                   <br />
                   <p>
