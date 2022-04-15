@@ -45,10 +45,10 @@ const AboutJoeContent = () => {
                     not is a sailer. I've never even lived
                     on boats before. Not only that, Onnie is
                     the first boat I've every owned. She's
-                    42' feet and needs some work, but she's
-                    got good bones. I put my offer down on
-                    her February 1, 2022 and closed on
-                    3/11/2022.
+                    42.5 feet - 48' LOA - and needs some
+                    work, but she's got good bones. I put my
+                    offer down on her February 1, 2022 and
+                    closed on 3/11/2022.
                   </p>
                   <br />
                   <p>
@@ -143,7 +143,7 @@ const AboutJoeContent = () => {
                   <ul>
                     <li>
                       <i className='bx bx-check-circle'></i>
-                      Learn what you can 
+                      Learn what you can
                     </li>
                     <li>
                       <i className='bx bx-check-circle'></i>
