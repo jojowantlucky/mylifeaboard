@@ -53,8 +53,9 @@ const AboutJoeContent = () => {
                   <br />
                   <p>
                     Boats have piqued my interest for the
-                    past couple of years. Everything about
-                    them appeals to me: fixing her up, going
+                    past few years. Everything about them
+                    appeals to me: fixing her up, learning
+                    new things, overcoming challenges, going
                     where ever I want, and having fun. Over
                     the years, I've worked for big companies
                     and for myself. Noteworthy Productions,
